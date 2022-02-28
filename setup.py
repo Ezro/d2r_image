@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='d2r-image',
-    version='0.0.14',
+    version='0.0.15',
     description='A package for parsing items on the ground and hovered tooltips from Diablo II: Resurrected',
     long_description=open('README.md'),
     url="https://github.com/Ezro/d2r_image",
