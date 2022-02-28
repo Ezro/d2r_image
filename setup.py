@@ -21,6 +21,6 @@ setup(
         'pyparsing',
         'psutil',
         'mss',
-        'tesserocr-2.5.2-cp39-cp39-win_amd64.whl'
+        f"d2r-image @ file://localhost/{os.getcwd()}/libs/tesserocr-2.5.2-cp39-cp39-win_amd64.whl"
     ]
 )
