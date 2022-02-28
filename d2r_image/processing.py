@@ -12,7 +12,7 @@ from PIL import Image
 import numpy as np
 
 
-_hud_mask_data = pkgutil.get_data(__name__, "resources/templates/hud_mask.png")
+_hud_mask_data = pkgutil.get_data(__package__, "resources/templates/hud_mask.png")
 print(_hud_mask_data)
 image = Image.open(io.BytesIO(_hud_mask_data))
 image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2GRAY)
