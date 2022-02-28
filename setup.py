@@ -1,11 +1,14 @@
 from setuptools import setup, find_packages
 
+with open('README.md', 'r') as readme:
+    long_description = readme.read()
 
 setup(
     name='d2r-image',
-    version='0.1.0',
+    version='0.1.1',
     description='A package for parsing items on the ground and hovered tooltips from Diablo II: Resurrected',
-    long_description=open('README.md'),
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/Ezro/d2r_image",
     classifiers=[
         "Programming Language :: Python :: 3",

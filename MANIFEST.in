@@ -2,4 +2,3 @@ recursive-include d2r_image/resources/demo_images *.png
 recursive-include d2r_image/resources/templates *.png
 recursive-include d2r_image/resources/tessdata *
 recursive-include d2r_image/utils *
-libs/tesserocr-2.5.2-cp39-cp39-win_amd64.whl
