@@ -13,11 +13,10 @@ import numpy as np
 
 
 _hud_mask_data = pkgutil.get_data('d2r-image', "resources/templates/hud_mask.png")
+print(_hud_mask_data)
 image = Image.open(io.BytesIO(_hud_mask_data))
 image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2GRAY)
 HUD_MASK = cv2.threshold(image_data, 1, 255, cv2.THRESH_BINARY)[1]
-
-
 
 
 def clean_img(inp_img: np.ndarray, black_thresh: int = 14) -> np.ndarray:
