@@ -12,8 +12,6 @@ import numpy as np
 
 
 def demo_all_images():
-    path = os.getenv('APPDATA')
-    print(path)
     print('Loading all demo images. This may take a few seconds...\n')
     debug_line_map = {
         ItemQuality.Gray.value: (123, 123, 123),
