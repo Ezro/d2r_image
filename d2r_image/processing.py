@@ -2,7 +2,7 @@ from typing import Tuple
 import cv2
 import numpy as np
 from d2r_image.data_models import ItemText
-from d2r_image.utils.misc import color_filter
+from d2r_image.utils.misc import color_filter, cut_roi
 from d2r_image.utils.template_finder import TemplateFinder
 from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import BOX_EXPECTED_WIDTH_RANGE, BOX_EXPECTED_HEIGHT_RANGE, COLORS, UI_ROI
@@ -70,7 +70,7 @@ def get_hovered_item(image: np.ndarray, all_results: bool = False, inventory_sid
     return results
 
 
-def get_npc_coords(npc: str) -> Tuple(int, int):
+def get_npc_coords(npc: str) -> Tuple[int, int]:
     return (0, 0)
 
 
@@ -79,11 +79,20 @@ def find_items_by_name(name: str) -> list[Tuple[int, int]]:
 
 
 def get_health(image: np.ndarray) -> float:
-    return 0
+    health_img = cut_roi(image, UI_ROI["health_slice"])
+    mask, _ = color_filter(health_img, COLORS["health_globe_red"])
+    health_percentage = (float(np.sum(mask)) / mask.size) * (1/255.0) * 100
+    mask, _ = color_filter(health_img, COLORS["health_globe_green"])
+    health_percentage_green = (float(np.sum(mask)) / mask.size) * (1/255.0) * 100
+    health = round(max(health_percentage, health_percentage_green), 2)
+    return health
 
 
 def get_mana(image: np.ndarray) -> float:
-    return 0
+    mana_img = cut_roi(image, UI_ROI["mana_slice"])
+    mask, _ = color_filter(mana_img, COLORS["mana_globe"])
+    mana_percentage = (float(np.sum(mask)) / mask.size) * (1/255.0) * 100
+    return round(mana_percentage, 2)
 
 
 def get_stamina(image: np.ndarray) -> float:

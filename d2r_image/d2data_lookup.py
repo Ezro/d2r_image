@@ -1,6 +1,3 @@
-import json
-from parse import compile as compile_pattern
-import time
 import os
 import sys
 from d2r_image.data_models import ItemQuality

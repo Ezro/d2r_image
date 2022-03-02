@@ -29,7 +29,7 @@ word_list = _word_list_data.decode()
 word_list_path = os.path.join(OCR_WORKING_DIR, 'all_strings.txt')
 file = open(word_list_path, 'wb')
 file.write(bytearray(word_list, encoding='utf-8'))
-
+file.close()
 
 def image_to_text(
     images: Union[np.ndarray, List[np.ndarray]],

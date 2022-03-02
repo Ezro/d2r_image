@@ -15,7 +15,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: Microsoft :: Windows :: Windows 10"
     ],
-    packages=find_packages(),
+    packages=find_packages(exclude=['tests*']),
     package_data={'': ['*.png']},
     include_package_data=True,
     install_requires=[

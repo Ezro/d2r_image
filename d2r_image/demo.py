@@ -5,7 +5,7 @@ import keyboard
 import io
 from PIL import Image
 import os
-from d2r_image.processing import get_ground_loot
+from d2r_image.processing import get_ground_loot, get_hovered_item, get_health
 from d2r_image.data_models import ItemQuality
 from pkg_resources import resource_listdir
 import numpy as np
@@ -70,7 +70,7 @@ def demo_ground_images():
     cv2.destroyAllWindows()
 
 
-def demo_hovered_item():
+def demo_hovered_items():
     print('Loading demo hover images. This may take a few seconds...\n')
     all_image_data = []
     all_images = []
@@ -87,23 +87,18 @@ def demo_hovered_item():
             image = Image.open(io.BytesIO(image_bytes))
             image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
             start = time.time()
-            items, unrecognized_items = get_ground_loot(image_data)
-            if unrecognized_items:
-                for quality in unrecognized_items:
-                    for item in unrecognized_items[quality]:
-                        cv2.rectangle(
-                        image_data,
-                        (item['x'], item['y']),
-                        (item['x'] + item['w'], item['y'] + item['h']),
-                        (0, 0, 255),
-                        1
-                    )
+            item = get_hovered_item(image_data)
+            x, y, w, h = item.roi
+            cv2.rectangle(
+                image_data,
+                (x, y),
+                (x+w, y+h),
+                debug_line_map[ItemQuality.Normal.value],
+                1)
             end = time.time()
             elapsed = round(end-start, 2)
             # print(f'Processed {image} in {elapsed} seconds')
             total_elapsed_time += elapsed
-            if items:
-                draw_items_on_image_data(items, image_data)
             all_image_data.append(image_data)
             all_images.append(image)
             demo_image_count += 1
@@ -114,6 +109,25 @@ def demo_hovered_item():
     for image in all_image_data:
         cv2.imshow('D2R Image Demo', image)
         cv2.waitKey()
+    cv2.destroyAllWindows()
+
+
+def demo_get_health():
+    print('Loading demo hover images. This may take a few seconds...\n')
+    resource_paths = ['get_health']
+    for resource_path in resource_paths:
+        for image_name in resource_listdir(f'd2r_image.resources.demo_images.{resource_path}', ''):
+            if not image_name.lower().endswith('.png'):
+                continue
+            image_bytes = pkgutil.get_data(
+                __name__,
+                f'resources/demo_images/{resource_path}/{image_name}')
+            image = Image.open(io.BytesIO(image_bytes))
+            image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
+            health = get_health(image_data)
+            print(health)
+            cv2.imshow(f'{image_name}', image_data)
+            cv2.waitKey()
     cv2.destroyAllWindows()
 
 

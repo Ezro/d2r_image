@@ -48,7 +48,7 @@ UI_ROI = {
     "gold_btn_stash": (150, 480, 40, 65),
     "health_globe": (160, 580, 240, 140),
     "mana_globe": (887, 580, 240, 140),
-    "health_slice": (309, 610, 7, 101),
+    "health_slice": (309, 610, 7, 106),
     "mana_slice": (961, 610, 7, 101),
     "cut_skill_bar": (0, 0, 1280, 653),
     "reduce_to_center": (120, 60, 1040, 540),
