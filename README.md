@@ -26,9 +26,18 @@ class D2Item:
     itemModifiers: dict # TODO: d2data parsed modifiers for a hovered tooltip
 ```
 ### Install
+**IMPORTANT**
+
+Pre-requisite: Prior to pip installing be sure to install tesserocr from conda-forge:
 ```
-pip install -i https://test.pypi.org/simple/ d2r-image
+conda install -c conda-forge tesserocr
 ```
+then run
+```
+pip install d2r-image
+```
+
+_Microsoft Visual Studio C++ Build Tools may be required for tesserocr install_
 ### Usage
 ```py
 import cv2
