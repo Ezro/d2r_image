@@ -29,6 +29,7 @@ class TemplateFinder:
     IMPORTANT: This method must be thread safe!
     """
     TEMPLATE_PATHS = [
+        "resources\\screen_objects",
         "templates\\templates",
         "templates\\npc",
         "templates\\shop",

@@ -1,13 +1,19 @@
+from turtle import Screen
 from typing import Tuple, Union
 import cv2
 import numpy as np
-from d2r_image.data_models import D2Item, ItemText
+from d2r_image.data_models import D2Item, ItemText, ScreenObject
 from d2r_image.utils.misc import color_filter, cut_roi
-from d2r_image.utils.template_finder import TemplateFinder
+from d2r_image.template_finder import TemplateFinder
 from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import BOX_EXPECTED_WIDTH_RANGE, BOX_EXPECTED_HEIGHT_RANGE, COLORS, UI_ROI
 from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items
+from d2r_image.screen_object_helpers import detect_screen_object
 import numpy as np
+
+
+def get_screen_object(image: np.ndarray, screen_object: ScreenObject):
+    return detect_screen_object(screen_object, image)
 
 
 def get_ground_loot(image: np.ndarray) -> Union[list[D2Item], None]:
@@ -49,7 +55,7 @@ def get_hovered_item(image: np.ndarray, all_results: bool = False, inventory_sid
             BOX_EXPECTED_HEIGHT_RANGE[0] < h < BOX_EXPECTED_HEIGHT_RANGE[1]) else False
         expected_width = True if (
             BOX_EXPECTED_WIDTH_RANGE[0] < w < BOX_EXPECTED_WIDTH_RANGE[1]) else False
-        box2 = UI_ROI[f"{inventory_side}_inventory"]
+        box2 = UI_ROI.leftInventory if inventory_side == 'left' else UI_ROI.rightInventory
         # padded height because footer isn't included in contour
         overlaps_inventory = False if (
             x+w < box2[0] or box2[0]+box2[2] < x or y+h+28+10 < box2[1] or box2[1]+box2[3] < y) else True
@@ -70,16 +76,17 @@ def get_hovered_item(image: np.ndarray, all_results: bool = False, inventory_sid
     return results
 
 
-def get_npc_coords(npc: str) -> Tuple[int, int]:
-    return (0, 0)
+def get_npc_coords(image: np.ndarray, npc: ScreenObject) -> Tuple[int, int]:
+    match = detect_screen_object(npc, image)
+    return match
 
 
-def find_items_by_name(name: str) -> list[Tuple[int, int]]:
+def find_items_by_name(image: np.ndarray, name: str) -> list[Tuple[int, int]]:
     return (0, 0)
 
 
 def get_health(image: np.ndarray) -> float:
-    health_img = cut_roi(image, UI_ROI["health_slice"])
+    health_img = cut_roi(image, UI_ROI.healthSlice)
     mask, _ = color_filter(health_img, COLORS["health_globe_red"])
     health_percentage = (float(np.sum(mask)) / mask.size) * (1/255.0) * 100
     mask, _ = color_filter(health_img, COLORS["health_globe_green"])
@@ -89,7 +96,7 @@ def get_health(image: np.ndarray) -> float:
 
 
 def get_mana(image: np.ndarray) -> float:
-    mana_img = cut_roi(image, UI_ROI["mana_slice"])
+    mana_img = cut_roi(image, UI_ROI.manaSlice)
     mask, _ = color_filter(mana_img, COLORS["mana_globe"])
     mana_percentage = (float(np.sum(mask)) / mask.size) * (1/255.0) * 100
     return round(mana_percentage, 2)

@@ -61,14 +61,13 @@ def convert_abs_to_monitor(abs_coord: Tuple[float, float]) -> Tuple[float, float
 
 def set_window_position(offset_x: int, offset_y: int):
     global monitor_roi, monitor_x_range, monitor_y_range, found_offsets
-    from d2r_image import UI_POS
     if found_offsets and monitor_roi["top"] == offset_y and monitor_roi["left"] == offset_x:
         return
     logging.debug(f"Set offsets: left {offset_x}px, top {offset_y}px")
     monitor_roi["top"] = offset_y
     monitor_roi["left"] = offset_x
-    monitor_roi["width"] = UI_POS["screen_width"]
-    monitor_roi["height"] = UI_POS["screen_height"]
+    monitor_roi["width"] = 1280
+    monitor_roi["height"] = 720
     monitor_x_range = (
         monitor_roi["left"] + 10, monitor_roi["left"] + monitor_roi["width"] - 10)
     monitor_y_range = (

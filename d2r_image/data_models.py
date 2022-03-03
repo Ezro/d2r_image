@@ -1,7 +1,8 @@
-from dataclasses import dataclass
-from dataclasses_json import dataclass_json
 from enum import Enum
 import numpy as np
+from typing import Union
+from dataclasses import dataclass
+from dataclasses_json import dataclass_json
 
 
 @dataclass
@@ -62,12 +63,12 @@ class D2Item:
     quality: str
     type: str
     identified: bool
-    amount: int
+    amount: Union[int, None]
     baseItem: dict
-    item: dict
-    uniqueItems: list[dict]
-    setItems: list[dict]
-    itemModifiers: dict
+    item: Union[dict, None]
+    uniqueItems: Union[list[dict], None]
+    setItems: Union[list[dict], None]
+    itemModifiers: Union[dict, None]
 
     def __eq__(self, other):
         return self.boundingBox == other.boundingBox and\
@@ -92,3 +93,20 @@ class ScreenReport:
     mana: float
     stamina: float
     experience: float
+
+
+@dataclass
+class ScreenObject:
+    _screen_object = None
+    refs: list[str]
+    inp_img: np.ndarray = None
+    roi: list[float] = None
+    time_out: float = 30
+    threshold: float = 0.68
+    normalize_monitor: bool = False
+    best_match: bool = False
+    use_grayscale: bool = False
+
+    def __call__(self, cls):
+        cls._screen_object = self
+        return cls
