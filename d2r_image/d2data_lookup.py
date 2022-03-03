@@ -64,7 +64,7 @@ def load_lookup():
         'Rejuvenation Potion', 'Full Rejuvenation Potion',
         'Gold'
         ]:
-        bases_by_name[consumable.upper()] = item_lookup_by_display_name['misc'][consumable]
+        consumables_by_name[consumable.upper()] = item_lookup_by_display_name['misc'][consumable]
     for gem in [
         'Chipped Ruby', 'Flawed Ruby', 'Ruby', 'Flawless Ruby', 'Perfect Ruby',
         'Chipped Sapphire', 'Flawed Sapphire', 'Sapphire', 'Flawless Sapphire', 'Perfect Sapphire',
