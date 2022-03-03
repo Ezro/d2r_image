@@ -17,13 +17,13 @@ def test_ground_loot(filename, expected_items_file):
     image_path = os.path.join(
         os.path.dirname(__file__),
         'resources',
-        'ground_loot',
+        'get_ground_loot',
         filename)
     image = cv2.imread(image_path)
     expected_items_path = os.path.join(
         os.path.dirname(__file__),
         'resources',
-        'ground_loot',
+        'get_ground_loot',
         expected_items_file)
     d2_items = processing.get_ground_loot(image)
     ground_expected = GroundExpected.from_json(open(expected_items_path).read())
@@ -42,7 +42,7 @@ def generate_ground_loot_json(image_filename):
     image_path = os.path.join(
         os.path.dirname(__file__),
         'resources',
-        'ground_loot',
+        'get_ground_loot',
         image_filename)
     image = cv2.imread(image_path)
     d2_items = processing.get_ground_loot(image)
