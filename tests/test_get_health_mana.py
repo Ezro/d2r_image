@@ -10,7 +10,7 @@ from d2r_image import processing
     ('80_32.66.png', 80, 32.66),
     ('46.69_65.png', 46.69, 65),
 ])
-def test_get_health(filename, expected_health, expected_mana):
+def test_get_health_mana(filename, expected_health, expected_mana):
     image_path = os.path.join(
         os.path.dirname(__file__),
         'resources',
