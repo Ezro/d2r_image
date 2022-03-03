@@ -1,6 +1,6 @@
 from dataclasses import dataclass
+from dataclasses_json import dataclass_json
 from enum import Enum
-from typing import Tuple
 import numpy as np
 
 
@@ -54,31 +54,41 @@ class ItemQualityKeyword(Enum):
     Superior = 'SUPERIOR'
 
 
-@dataclass
-class BoundingBox:
-    center: Tuple[int, int] = None
-    x: int = None
-    y: int = None
-    w: int = None
-    h: int = None
-
-
+@dataclass_json
 @dataclass
 class D2Item:
-    boundingBox: BoundingBox = None
-    name: str = None
-    baseItem: dict = None
-    uniqueItems: list[dict] = None
-    setItems: list[dict] = None
-    item: dict = None
+    boundingBox: dict
+    name: str
+    quality: str
+    type: str
+    identified: bool
+    amount: int
+    baseItem: dict
+    item: dict
+    uniqueItems: list[dict]
+    setItems: list[dict]
+    itemModifiers: dict
+
+    def __eq__(self, other):
+        return self.boundingBox == other.boundingBox and\
+            self.name == other.name and\
+            self.type == other.type and\
+            self.identified == other.identified and\
+            self.amount == other.amount and\
+            self.baseItem == other.baseItem and\
+            self.item == other.item and\
+            self.uniqueItems == other.uniqueItems and\
+            self.setItems == other.setItems and\
+            self.itemModifiers == other.itemModifiers
 
 
+@dataclass_json
 @dataclass
 class ScreenReport:
-    groundLoot: list[D2Item] = None
-    hoveredItem: D2Item = None
-    npcs: dict = None
-    health: float = None
-    mana: float = None
-    stamina: float = None
-    experience: float = None
+    groundLoot: list[D2Item]
+    hoveredItem: D2Item
+    npcs: dict
+    health: float
+    mana: float
+    stamina: float
+    experience: float

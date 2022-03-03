@@ -235,7 +235,6 @@ def _check_known_errors(text):
 def _check_wordlist(text: str = None, word_list: str = None, confidences: list = [], match_threshold: float = 0.9) -> str:
     word_count = 0
     new_string = ""
-    print(text)
     text = text.replace('\n', ' NEWLINEHERE ')
     for word in WORD_LIST:
         try:
