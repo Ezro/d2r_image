@@ -5,7 +5,7 @@ with open('README.md', 'r') as readme:
 
 setup(
     name='d2r-image',
-    version='0.1.1',
+    version='0.1.2',
     description='A package for parsing items on the ground and hovered tooltips from Diablo II: Resurrected',
     long_description=long_description,
     long_description_content_type="text/markdown",
