@@ -108,3 +108,11 @@ def get_stamina(image: np.ndarray) -> float:
 
 def get_experience(image: np.ndarray) -> float:
     return 0
+
+
+def get_merc_health(img: np.ndarray) -> float:
+    merc_health_img = cut_roi(img, UI_ROI.mercHealthSlice)
+    merc_health_img = cv2.cvtColor(merc_health_img, cv2.COLOR_BGR2GRAY)
+    _, thresh = cv2.threshold(merc_health_img, 5, 255, cv2.THRESH_BINARY)
+    merc_health_percentage = (float(np.sum(thresh)) / thresh.size) * (1/255.0) * 100
+    return round(merc_health_percentage, 2)

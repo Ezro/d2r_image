@@ -2,13 +2,13 @@ from d2r_image.processing_data import UI_ROI
 from d2r_image.data_models import ScreenObject
 
 
-class TownNpcScreenObjects:
-    Malah = ScreenObject(
-        refs=["MALAH_45", "MALAH_BACK", "MALAH_FRONT", "MALAH_SIDE_2", "MALAH_SIDE"],
-        threshold=0.38,
-        best_match=True,
-        use_grayscale=False
-    )
+# class TownNpcScreenObjects:
+#     Malah = ScreenObject(
+#         refs=["MALAH_45", "MALAH_BACK", "MALAH_FRONT", "MALAH_SIDE_2", "MALAH_SIDE"],
+#         threshold=0.38,
+#         best_match=True,
+#         use_grayscale=False
+#     )
 
 
 class MainMenuScreenObjects:

@@ -49,6 +49,7 @@ class UI_ROI:
     loadingLeftBlack = (0, 0, 350, 720)
     exitGameLogo = (1140, 590, 110, 60)
     offlineOnline = (1030, 16, 232, 31)
+    mercHealthSlice = (15, 14, 40, 1)
 
 
 # UI_ROI = {
