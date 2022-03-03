@@ -1,0 +1,1248 @@
+{
+    "items": [
+        {
+            "boundingBox":
+            {
+                "x": 271,
+                "y": 346,
+                "w": 430,
+                "h": 21
+            },
+            "name": "ACROBATIC GRAND CHARM OF CRAFTMANSHIP",
+            "quality": "magic",
+            "type": "large_charm",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Grand Charm",
+                "sets": [],
+                "type": "large_charm",
+                "uniques": ["gheeds_fortune"]
+            },
+            "item":
+            {
+                "display_name": "Grand Charm",
+                "sets": [],
+                "type": "large_charm",
+                "uniques": ["gheeds_fortune"]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 300,
+                "y": 65,
+                "w": 299,
+                "h": 22
+            },
+            "name": "STURDY CHAIN MAIL OF MIGHT",
+            "quality": "magic",
+            "type": "armor",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chain Mail",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 2,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 45,
+                        "min": 45,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 75,
+                        "min": 72,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["cathans_mesh"],
+                "type": "armor",
+                "uniques": ["sparking_mail"]
+            },
+            "item":
+            {
+                "display_name": "Chain Mail",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 2,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 45,
+                        "min": 45,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 75,
+                        "min": 72,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["cathans_mesh"],
+                "type": "armor",
+                "uniques": ["sparking_mail"]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 383,
+                "y": 260,
+                "w": 146,
+                "h": 45
+            },
+            "name": "DREAD GYRE",
+            "quality": "rare",
+            "type": "orb",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Jared's Stone",
+                "hands": "one",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 50,
+                        "min": 50,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 18,
+                        "min": 8,
+                        "par": null,
+                        "prop": "damage_1hand"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "orb",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Jared's Stone",
+                "hands": "one",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 50,
+                        "min": 50,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 18,
+                        "min": 8,
+                        "par": null,
+                        "prop": "damage_1hand"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "orb",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 280,
+                "y": 217,
+                "w": 145,
+                "h": 42
+            },
+            "name": "BEAST MASTER",
+            "quality": "rare",
+            "type": "ring",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Ring",
+                "sets": ["angelic_halo", "cathans_seal"],
+                "type": "ring",
+                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+            },
+            "item":
+            {
+                "display_name": "Ring",
+                "sets": ["angelic_halo", "cathans_seal"],
+                "type": "ring",
+                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 413,
+                "y": 174,
+                "w": 147,
+                "h": 42
+            },
+            "name": "BITTER WHORL",
+            "quality": "rare",
+            "type": "ring",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Ring",
+                "sets": ["angelic_halo", "cathans_seal"],
+                "type": "ring",
+                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+            },
+            "item":
+            {
+                "display_name": "Ring",
+                "sets": ["angelic_halo", "cathans_seal"],
+                "type": "ring",
+                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 306,
+                "y": 440,
+                "w": 217,
+                "h": 42
+            },
+            "name": "MARA'S KALEIDOSCOPE",
+            "quality": "unique",
+            "type": "amulet",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Amulet",
+                "sets": ["angelic_wings", "arcannas_sign", "cathans_sigil", "civerbs_icon", "irathas_collar", "tal_rashas_adjudication", "tancreds_weird", "telling_of_beads", "vidalas_snare"],
+                "type": "amulet",
+                "uniques": ["nokozan_relic", "the_eye_of_etlich", "the_mahimoak_curio", "the_cats_eye", "the_rising_sun", "crescent_moon", "maras_kaleidoscope", "atmas_scarab", "highlords_wrath", "saracens_chance", "seraphs_hymn", "metalgrid"]
+            },
+            "item":
+            {
+                "base": "amulet",
+                "display_name": "Mara's Kaleidoscope",
+                "props": [
+                    {
+                        "max": 2,
+                        "min": 2,
+                        "par": 0,
+                        "prop": "allskills"
+                    },
+                    {
+                        "max": 30,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "res-all"
+                    },
+                    {
+                        "max": 5,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "str"
+                    },
+                    {
+                        "max": 5,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "dex"
+                    },
+                    {
+                        "max": 5,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "vit"
+                    },
+                    {
+                        "max": 5,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "enr"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 414,
+                "y": 302,
+                "w": 220,
+                "h": 45
+            },
+            "name": "THE STONE OF JORDAN",
+            "quality": "unique",
+            "type": "ring",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Ring",
+                "sets": ["angelic_halo", "cathans_seal"],
+                "type": "ring",
+                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+            },
+            "item":
+            {
+                "base": "ring",
+                "display_name": "The Stone of Jordan",
+                "props": [
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "mana"
+                    },
+                    {
+                        "max": 25,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "mana%"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "ltng-min"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "allskills"
+                    },
+                    {
+                        "max": 12,
+                        "min": 12,
+                        "par": 0,
+                        "prop": "ltng-max"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 193,
+                "y": 260,
+                "w": 164,
+                "h": 43
+            },
+            "name": "ARACHNID MESH",
+            "quality": "unique",
+            "type": "belt",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Spiderweb Sash",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 12,
+                        "min": 12,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 62,
+                        "min": 55,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "belt",
+                "uniques": ["arachnid_mesh"]
+            },
+            "item":
+            {
+                "base": "spiderweb_sash",
+                "display_name": "Arachnid Mesh",
+                "props": [
+                    {
+                        "max": 120,
+                        "min": 90,
+                        "par": 0,
+                        "prop": "ac%"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "cast2"
+                    },
+                    {
+                        "max": 3,
+                        "min": 11,
+                        "par": "Venom",
+                        "prop": "charged"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "allskills"
+                    },
+                    {
+                        "max": 10,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "slow"
+                    },
+                    {
+                        "max": 5,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "mana%"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 468,
+                "y": 217,
+                "w": 180,
+                "h": 43
+            },
+            "name": "NIGHTWING'S VEIL",
+            "quality": "unique",
+            "type": "helm",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Spired Helm",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 3,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 40,
+                        "min": 40,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 159,
+                        "min": 114,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["ondals_almighty"],
+                "type": "helm",
+                "uniques": ["veil_of_steel", "nightwings_veil"]
+            },
+            "item":
+            {
+                "base": "spired_helm",
+                "display_name": "Nightwing's Veil",
+                "props": [
+                    {
+                        "max": 120,
+                        "min": 90,
+                        "par": 0,
+                        "prop": "ac%"
+                    },
+                    {
+                        "max": 2,
+                        "min": 2,
+                        "par": 0,
+                        "prop": "allskills"
+                    },
+                    {
+                        "max": 20,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "dex"
+                    },
+                    {
+                        "max": 9,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "abs-cold"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "half-freeze"
+                    },
+                    {
+                        "max": 15,
+                        "min": 8,
+                        "par": 0,
+                        "prop": "extra-cold"
+                    },
+                    {
+                        "max": -50,
+                        "min": -50,
+                        "par": 0,
+                        "prop": "ease"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 336,
+                "y": 131,
+                "w": 146,
+                "h": 43
+            },
+            "name": "ORMUS' ROBES",
+            "quality": "unique",
+            "type": "armor",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Dusk Shroud",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 467,
+                        "min": 361,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["dark_adherent"],
+                "type": "armor",
+                "uniques": ["ormus_robes"]
+            },
+            "item":
+            {
+                "base": "dusk_shroud",
+                "display_name": "Ormus' Robes",
+                "props": [
+                    {
+                        "max": 20,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "ac"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "cast2"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "extra-fire"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "extra-cold"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "extra-ltng"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "regen-mana"
+                    },
+                    {
+                        "max": 60,
+                        "min": 36,
+                        "par": "Unsummon",
+                        "prop": "skill-rand"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 220,
+                "y": 88,
+                "w": 202,
+                "h": 43
+            },
+            "name": "DEATH'S FATHOM",
+            "quality": "unique",
+            "type": "orb",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Dimensional Shard",
+                "hands": "one",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 50,
+                        "min": 50,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 53,
+                        "min": 30,
+                        "par": null,
+                        "prop": "damage_1hand"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "orb",
+                "uniques": ["deaths_fathom"]
+            },
+            "item":
+            {
+                "base": "dimensional_shard",
+                "display_name": "Death's Fathom",
+                "props": [
+                    {
+                        "max": 3,
+                        "min": 3,
+                        "par": 0,
+                        "prop": "sor"
+                    },
+                    {
+                        "max": 30,
+                        "min": 15,
+                        "par": 0,
+                        "prop": "extra-cold"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "cast2"
+                    },
+                    {
+                        "max": 40,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "res-fire"
+                    },
+                    {
+                        "max": 40,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "res-ltng"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 718,
+                "y": 20,
+                "w": 209,
+                "h": 45
+            },
+            "name": "THE STONE OF JORDAN",
+            "quality": "unique",
+            "type": "ring",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Ring",
+                "sets": ["angelic_halo", "cathans_seal"],
+                "type": "ring",
+                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+            },
+            "item":
+            {
+                "base": "ring",
+                "display_name": "The Stone of Jordan",
+                "props": [
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "mana"
+                    },
+                    {
+                        "max": 25,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "mana%"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "ltng-min"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "allskills"
+                    },
+                    {
+                        "max": 12,
+                        "min": 12,
+                        "par": 0,
+                        "prop": "ltng-max"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 575,
+                "y": 20,
+                "w": 132,
+                "h": 45
+            },
+            "name": "WAR TRAVELER",
+            "quality": "unique",
+            "type": "boots",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Battle Boots",
+                "item_class": "exceptional",
+                "props": [
+                    {
+                        "max": 18,
+                        "min": 18,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 47,
+                        "min": 39,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["aldurs_advance"],
+                "type": "boots",
+                "uniques": ["war_traveler"]
+            },
+            "item":
+            {
+                "base": "battle_boots",
+                "display_name": "War Traveler",
+                "props": [
+                    {
+                        "max": 10,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "vit"
+                    },
+                    {
+                        "max": 10,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "str"
+                    },
+                    {
+                        "max": 50,
+                        "min": 30,
+                        "par": 0,
+                        "prop": "mag%"
+                    },
+                    {
+                        "max": 30,
+                        "min": 30,
+                        "par": 0,
+                        "prop": "dur"
+                    },
+                    {
+                        "max": 25,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "move2"
+                    },
+                    {
+                        "max": 190,
+                        "min": 150,
+                        "par": 0,
+                        "prop": "ac%"
+                    },
+                    {
+                        "max": 25,
+                        "min": 15,
+                        "par": 0,
+                        "prop": "dmg-norm"
+                    },
+                    {
+                        "max": 10,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "thorns"
+                    },
+                    {
+                        "max": 40,
+                        "min": 40,
+                        "par": 0,
+                        "prop": "stamdrain"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 410,
+                "y": 20,
+                "w": 154,
+                "h": 46
+            },
+            "name": "HELLFIRE TORCH",
+            "quality": "unique",
+            "type": "medium_charm",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Large Charm",
+                "sets": [],
+                "type": "medium_charm",
+                "uniques": ["hellfire_torch"]
+            },
+            "item":
+            {
+                "base": "large_charm",
+                "display_name": "Hellfire Torch",
+                "props": [
+                    {
+                        "max": 6,
+                        "min": null,
+                        "par": 0,
+                        "prop": "randclassskill"
+                    },
+                    {
+                        "max": 20,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "all-stats"
+                    },
+                    {
+                        "max": 20,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "res-all"
+                    },
+                    {
+                        "max": 8,
+                        "min": 8,
+                        "par": 0,
+                        "prop": "light"
+                    },
+                    {
+                        "max": 10,
+                        "min": 5,
+                        "par": "DiabWall",
+                        "prop": "hit-skill"
+                    },
+                    {
+                        "max": 30,
+                        "min": 10,
+                        "par": "Hydra",
+                        "prop": "charged"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 320,
+                "y": 394,
+                "w": 101,
+                "h": 21
+            },
+            "name": "BER RUNE",
+            "quality": "rune",
+            "type": "rune",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Ber Rune",
+                "sets": [],
+                "type": "rune",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Ber Rune",
+                "sets": [],
+                "type": "rune",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 437,
+                "y": 384,
+                "w": 180,
+                "h": 42
+            },
+            "name": "CHAINS OF HONOR",
+            "quality": "runeword",
+            "type": "armor",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Archon Plate",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 60,
+                        "min": 60,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 524,
+                        "min": 410,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "armor",
+                "uniques": []
+            },
+            "item": {},
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 241,
+                "y": 303,
+                "w": 150,
+                "h": 42
+            },
+            "name": "FORTITUDE",
+            "quality": "runeword",
+            "type": "armor",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Archon Plate",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 60,
+                        "min": 60,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 524,
+                        "min": 410,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "armor",
+                "uniques": []
+            },
+            "item": {},
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 267,
+                "y": 174,
+                "w": 132,
+                "h": 42
+            },
+            "name": "PHOENIX",
+            "quality": "runeword",
+            "type": "polearm",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Cryptic Axe",
+                "hands": "two",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 5,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 65,
+                        "min": 65,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 150,
+                        "min": 33,
+                        "par": null,
+                        "prop": "damage_2hand"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "polearm",
+                "uniques": ["tomb_reaver"]
+            },
+            "item": {},
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 922,
+                "y": 22,
+                "w": 101,
+                "h": 43
+            },
+            "name": "SPIRIT",
+            "quality": "runeword",
+            "type": "shield",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Monarch",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 86,
+                        "min": 86,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 148,
+                        "min": 133,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "shield",
+                "uniques": ["stormshield"]
+            },
+            "item": {},
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        }
+    ]
+}

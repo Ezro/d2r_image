@@ -1,0 +1,376 @@
+{
+    "items": [
+        {
+            "boundingBox":
+            {
+                "x": 576,
+                "y": 372,
+                "w": 159,
+                "h": 21
+            },
+            "name": "HUNTER'S GUISE",
+            "quality": "set",
+            "type": "pelt",
+            "identified": false,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Hunter's Guise",
+                "item_class": "exceptional",
+                "props": [
+                    {
+                        "max": 3,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 81,
+                        "min": 67,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["aldurs_stony_gaze"],
+                "type": "pelt",
+                "uniques": []
+            },
+            "item":
+            {
+                "base": "hunters_guise",
+                "display_name": "Aldur's Stony Gaze",
+                "props": [
+                    {
+                        "max": 90,
+                        "min": 90,
+                        "par": 0,
+                        "prop": "ac"
+                    },
+                    {
+                        "max": 17,
+                        "min": 17,
+                        "par": 0,
+                        "prop": "regen-mana"
+                    },
+                    {
+                        "max": 5,
+                        "min": 5,
+                        "par": 0,
+                        "prop": "light"
+                    },
+                    {
+                        "max": 25,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "balance3"
+                    },
+                    {
+                        "max": 50,
+                        "min": 40,
+                        "par": 0,
+                        "prop": "res-cold"
+                    },
+                    {
+                        "max": 2,
+                        "min": 2,
+                        "par": 0,
+                        "prop": "sock"
+                    }
+                ],
+                "set": "Aldur's Watchtower"
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 615,
+                "y": 336,
+                "w": 89,
+                "h": 21
+            },
+            "name": "BUCKLER",
+            "quality": "set",
+            "type": "shield",
+            "identified": false,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Buckler",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 12,
+                        "min": 12,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 6,
+                        "min": 4,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["hsarus_iron_fist"],
+                "type": "shield",
+                "uniques": ["pelta_lunata"]
+            },
+            "item":
+            {
+                "base": "buckler",
+                "display_name": "Hsarus' Iron Fist",
+                "props": [
+                    {
+                        "max": 2,
+                        "min": 2,
+                        "par": 0,
+                        "prop": "red-dmg"
+                    },
+                    {
+                        "max": 10,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "str"
+                    }
+                ],
+                "set": "Hsarus' Defense"
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 515,
+                "y": 313,
+                "w": 136,
+                "h": 22
+            },
+            "name": "BLOOD SPIRIT",
+            "quality": "unique",
+            "type": "pelt",
+            "identified": false,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Blood Spirit",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 3,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 145,
+                        "min": 101,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "pelt",
+                "uniques": ["cerebus_bite"]
+            },
+            "item":
+            {
+                "base": "blood_spirit",
+                "display_name": "Cerebus' Bite",
+                "props": [
+                    {
+                        "max": 140,
+                        "min": 130,
+                        "par": 0,
+                        "prop": "ac%"
+                    },
+                    {
+                        "max": 4,
+                        "min": 2,
+                        "par": "Shape Shifting Skills",
+                        "prop": "skilltab"
+                    },
+                    {
+                        "max": 10,
+                        "min": 7,
+                        "par": 0,
+                        "prop": "lifesteal"
+                    },
+                    {
+                        "max": 120,
+                        "min": 60,
+                        "par": 0,
+                        "prop": "att%"
+                    },
+                    {
+                        "max": 33,
+                        "min": 33,
+                        "par": 0,
+                        "prop": "openwounds"
+                    },
+                    {
+                        "max": 2,
+                        "min": 1,
+                        "par": "feral rage",
+                        "prop": "skill"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 570,
+                "y": 292,
+                "w": 102,
+                "h": 21
+            },
+            "name": "MONARCH",
+            "quality": "unique",
+            "type": "shield",
+            "identified": false,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Monarch",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 86,
+                        "min": 86,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 148,
+                        "min": 133,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "shield",
+                "uniques": ["stormshield"]
+            },
+            "item":
+            {
+                "base": "monarch",
+                "display_name": "Stormshield",
+                "props": [
+                    {
+                        "max": null,
+                        "min": null,
+                        "par": 30,
+                        "prop": "ac/lvl"
+                    },
+                    {
+                        "max": 35,
+                        "min": 35,
+                        "par": 0,
+                        "prop": "red-dmg%"
+                    },
+                    {
+                        "max": 30,
+                        "min": 30,
+                        "par": 0,
+                        "prop": "str"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "indestruct"
+                    },
+                    {
+                        "max": 35,
+                        "min": 35,
+                        "par": 0,
+                        "prop": "block2"
+                    },
+                    {
+                        "max": 25,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "res-ltng"
+                    },
+                    {
+                        "max": 25,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "block"
+                    },
+                    {
+                        "max": 60,
+                        "min": 60,
+                        "par": 0,
+                        "prop": "res-cold"
+                    },
+                    {
+                        "max": 10,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "light-thorns"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        }
+    ]
+}

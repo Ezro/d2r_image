@@ -1,0 +1,617 @@
+{
+    "items": [
+        {
+            "boundingBox":
+            {
+                "x": 431,
+                "y": 272,
+                "w": 303,
+                "h": 43
+            },
+            "name": "BUL-KATHOS' TRIBAL GUARDIAN",
+            "quality": "set",
+            "type": "sword",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Mythical Sword",
+                "hands": "one",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 3,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 44,
+                        "min": 44,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 50,
+                        "min": 40,
+                        "par": null,
+                        "prop": "damage_1hand"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["bulkathos_tribal_guardian"],
+                "type": "sword",
+                "uniques": []
+            },
+            "item":
+            {
+                "base": "mythical_sword",
+                "display_name": "Bul-Kathos' Tribal Guardian",
+                "props": [
+                    {
+                        "max": 50,
+                        "min": 50,
+                        "par": 0,
+                        "prop": "res-fire"
+                    },
+                    {
+                        "max": 50,
+                        "min": 50,
+                        "par": 2,
+                        "prop": "dmg-pois"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "swing2"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "str"
+                    },
+                    {
+                        "max": 200,
+                        "min": 200,
+                        "par": 0,
+                        "prop": "dmg%"
+                    }
+                ],
+                "set": "Bul-Kathos' Children"
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 499,
+                "y": 250,
+                "w": 89,
+                "h": 21
+            },
+            "name": "BUCKLER",
+            "quality": "set",
+            "type": "shield",
+            "identified": false,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Buckler",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 12,
+                        "min": 12,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 6,
+                        "min": 4,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["hsarus_iron_fist"],
+                "type": "shield",
+                "uniques": ["pelta_lunata"]
+            },
+            "item":
+            {
+                "base": "buckler",
+                "display_name": "Hsarus' Iron Fist",
+                "props": [
+                    {
+                        "max": 2,
+                        "min": 2,
+                        "par": 0,
+                        "prop": "red-dmg"
+                    },
+                    {
+                        "max": 10,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "str"
+                    }
+                ],
+                "set": "Hsarus' Defense"
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 632,
+                "y": 207,
+                "w": 133,
+                "h": 21
+            },
+            "name": "CHAIN BOOTS",
+            "quality": "set",
+            "type": "boots",
+            "identified": false,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chain Boots",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 16,
+                        "min": 16,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 9,
+                        "min": 8,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["hsarus_iron_heel"],
+                "type": "boots",
+                "uniques": ["treads_of_cthon"]
+            },
+            "item":
+            {
+                "base": "chain_boots",
+                "display_name": "Hsarus' Iron Heel",
+                "props": [
+                    {
+                        "max": 25,
+                        "min": 25,
+                        "par": 0,
+                        "prop": "res-fire"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "move2"
+                    }
+                ],
+                "set": "Hsarus' Defense"
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 555,
+                "y": 121,
+                "w": 56,
+                "h": 21
+            },
+            "name": "BELT",
+            "quality": "set",
+            "type": "belt",
+            "identified": false,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Belt",
+                "item_class": "normal",
+                "props": [
+                    {
+                        "max": 16,
+                        "min": 16,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 5,
+                        "min": 5,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["hsarus_iron_stay", "hwanins_blessing"],
+                "type": "belt",
+                "uniques": ["nightsmoke"]
+            },
+            "item": null,
+            "uniqueItems": null,
+            "setItems": [
+                {
+                    "base": "belt",
+                    "display_name": "Hsarus' Iron Stay",
+                    "props": [
+                        {
+                            "max": 20,
+                            "min": 20,
+                            "par": 0,
+                            "prop": "res-cold"
+                        },
+                        {
+                            "max": 20,
+                            "min": 20,
+                            "par": 0,
+                            "prop": "hp"
+                        }
+                    ],
+                    "set": "Hsarus' Defense"
+                },
+                {
+                    "base": "belt",
+                    "display_name": "Hwanin's Blessing",
+                    "props": [
+                        {
+                            "max": 33,
+                            "min": 3,
+                            "par": 0,
+                            "prop": "dmg-ltng"
+                        },
+                        {
+                            "max": 1,
+                            "min": 1,
+                            "par": 0,
+                            "prop": "noheal"
+                        },
+                        {
+                            "max": null,
+                            "min": null,
+                            "par": 12,
+                            "prop": "ac/lvl"
+                        },
+                        {
+                            "max": 12,
+                            "min": 12,
+                            "par": 0,
+                            "prop": "dmg-to-mana"
+                        }
+                    ],
+                    "set": "Hwanin's Majesty"
+                }
+            ],
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 518,
+                "y": 56,
+                "w": 283,
+                "h": 43
+            },
+            "name": "BUL-KATHOS' SACRED CHARGE",
+            "quality": "set",
+            "type": "sword",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Colossus Blade",
+                "hands": "both",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 6,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 50,
+                        "min": 50,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 65,
+                        "min": 25,
+                        "par": null,
+                        "prop": "damage_1hand"
+                    },
+                    {
+                        "max": 115,
+                        "min": 58,
+                        "par": null,
+                        "prop": "damage_2hand"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["bulkathos_sacred_charge"],
+                "type": "sword",
+                "uniques": ["the_grandfather"]
+            },
+            "item":
+            {
+                "base": "colossus_blade",
+                "display_name": "Bul-Kathos' Sacred Charge",
+                "props": [
+                    {
+                        "max": 35,
+                        "min": 35,
+                        "par": 0,
+                        "prop": "crush"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "res-all"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "swing2"
+                    },
+                    {
+                        "max": 1,
+                        "min": 1,
+                        "par": 0,
+                        "prop": "knock"
+                    },
+                    {
+                        "max": 200,
+                        "min": 200,
+                        "par": 0,
+                        "prop": "dmg%"
+                    }
+                ],
+                "set": "Bul-Kathos' Children"
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 588,
+                "y": 315,
+                "w": 142,
+                "h": 43
+            },
+            "name": "CEREBUS' BITE",
+            "quality": "unique",
+            "type": "pelt",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Blood Spirit",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 3,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 145,
+                        "min": 101,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": [],
+                "type": "pelt",
+                "uniques": ["cerebus_bite"]
+            },
+            "item":
+            {
+                "base": "blood_spirit",
+                "display_name": "Cerebus' Bite",
+                "props": [
+                    {
+                        "max": 140,
+                        "min": 130,
+                        "par": 0,
+                        "prop": "ac%"
+                    },
+                    {
+                        "max": 4,
+                        "min": 2,
+                        "par": "Shape Shifting Skills",
+                        "prop": "skilltab"
+                    },
+                    {
+                        "max": 10,
+                        "min": 7,
+                        "par": 0,
+                        "prop": "lifesteal"
+                    },
+                    {
+                        "max": 120,
+                        "min": 60,
+                        "par": 0,
+                        "prop": "att%"
+                    },
+                    {
+                        "max": 33,
+                        "min": 33,
+                        "par": 0,
+                        "prop": "openwounds"
+                    },
+                    {
+                        "max": 2,
+                        "min": 1,
+                        "par": "feral rage",
+                        "prop": "skill"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 547,
+                "y": 143,
+                "w": 146,
+                "h": 43
+            },
+            "name": "ORMUS' ROBES",
+            "quality": "unique",
+            "type": "armor",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Dusk Shroud",
+                "item_class": "elite",
+                "props": [
+                    {
+                        "max": 4,
+                        "min": 0,
+                        "par": null,
+                        "prop": "sock"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": null,
+                        "prop": "durability"
+                    },
+                    {
+                        "max": 467,
+                        "min": 361,
+                        "par": null,
+                        "prop": "defense"
+                    },
+                    {
+                        "max": 1,
+                        "min": 0,
+                        "par": null,
+                        "prop": "ethereal"
+                    }
+                ],
+                "sets": ["dark_adherent"],
+                "type": "armor",
+                "uniques": ["ormus_robes"]
+            },
+            "item":
+            {
+                "base": "dusk_shroud",
+                "display_name": "Ormus' Robes",
+                "props": [
+                    {
+                        "max": 20,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "ac"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "cast2"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "extra-fire"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "extra-cold"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "extra-ltng"
+                    },
+                    {
+                        "max": 15,
+                        "min": 10,
+                        "par": 0,
+                        "prop": "regen-mana"
+                    },
+                    {
+                        "max": 60,
+                        "min": 36,
+                        "par": "Unsummon",
+                        "prop": "skill-rand"
+                    }
+                ]
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        }
+    ]
+}
