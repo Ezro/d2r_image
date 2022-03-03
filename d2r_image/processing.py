@@ -1,16 +1,16 @@
-from typing import Tuple
+from typing import Tuple, Union
 import cv2
 import numpy as np
-from d2r_image.data_models import ItemText
+from d2r_image.data_models import D2Item, ItemText
 from d2r_image.utils.misc import color_filter, cut_roi
 from d2r_image.utils.template_finder import TemplateFinder
 from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import BOX_EXPECTED_WIDTH_RANGE, BOX_EXPECTED_HEIGHT_RANGE, COLORS, UI_ROI
-from d2r_image.processing_helpers import crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items
+from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items
 import numpy as np
 
 
-def get_ground_loot(image: np.ndarray):
+def get_ground_loot(image: np.ndarray) -> Union[list[D2Item], None]:
     crop_result = crop_text_clusters(image)
     if crop_result_is_loading_screen(crop_result):
         return None
@@ -18,7 +18,7 @@ def get_ground_loot(image: np.ndarray):
     consolidate_clusters(items_by_quality)
     items_removed = find_base_and_remove_items_without_a_base(items_by_quality)
     set_set_and_unique_base_items(items_by_quality)
-    return items_by_quality, items_removed
+    return build_d2_items(items_by_quality)
 
 
 def get_hovered_item(image: np.ndarray, all_results: bool = False, inventory_side: str = "right") -> ItemText:

@@ -1,15 +1,16 @@
 import pkgutil
+from typing import Union
 import cv2
 import io
 import numpy as np
 from PIL import Image
 import re
 import time
-from d2r_image.data_models import ItemQuality, ItemQualityKeyword, ItemText
+from d2r_image.data_models import D2Item, ItemQuality, ItemQualityKeyword, ItemText
 from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import Runeword
 import d2r_image.d2data_lookup as d2data_lookup
-from d2r_image.processing_data import BOX_EXPECTED_WIDTH_RANGE, BOX_EXPECTED_HEIGHT_RANGE, COLORS, EXPECTED_HEIGHT_RANGE, EXPECTED_WIDTH_RANGE, GAUS_FILTER, ITEM_COLORS, QUALITY_COLOR_MAP, UI_ROI, Runeword
+from d2r_image.processing_data import COLORS, EXPECTED_HEIGHT_RANGE, EXPECTED_WIDTH_RANGE, GAUS_FILTER, ITEM_COLORS, QUALITY_COLOR_MAP, UI_ROI, Runeword
 from d2r_image.utils.misc import color_filter, erode_to_black
 
 
@@ -181,8 +182,8 @@ def consolidate_overlapping_names(items_by_quality):
             if overlapping_item:
                 first_item = item if item['x'] < overlapping_item['x'] else overlapping_item
                 second_item = item if first_item == overlapping_item else overlapping_item
-                first_item_text = first_item['text'].strip().replace('\'', '')
-                second_item_text = second_item['text'].strip().replace('\'', '')
+                first_item_text = first_item['text'].strip().replace('\'', '').replace(' ', '')
+                second_item_text = second_item['text'].strip().replace('\'', '').replace(' ', '')
                 new_text = f"{first_item_text}\' {second_item_text}"
                 if quality == ItemQuality.Set.value:
                     if not d2data_lookup.find_set_item_by_name(new_text):
@@ -230,6 +231,8 @@ def consolidate_rares(items_by_quality):
             item['w'] = item['w'] if closest_base['w'] < item['w'] else closest_base['w']
             item['h'] = item['h'] + closest_base['h']
             item['base'] = d2data_base
+            item['item'] = d2data_base
+            item['identified'] = True
             items_by_quality[ItemQuality.Rare.value].remove(closest_base)
 
 
@@ -262,12 +265,13 @@ def consolidate_quality(quality_items, potential_bases):
             item['h'] = item['h'] + closest_base['h']
             item['item'] = result
             item['base'] = d2data_lookup.get_base(closest_base['text'])
+            item['identified'] = True
             bases_to_remove.append(closest_base)
     for base_to_remove in bases_to_remove:
         potential_bases.remove(base_to_remove)
 
 
-def find_base_and_remove_items_without_a_base(items_by_quality) -> bool:
+def find_base_and_remove_items_without_a_base(items_by_quality) -> dict:
     items_to_remove = {}
     gray_normal_magic_removed = {}
     items_to_add = {}
@@ -284,6 +288,8 @@ def find_base_and_remove_items_without_a_base(items_by_quality) -> bool:
                 elif quality == ItemQuality.Rune.value:
                     if d2data_lookup.is_rune(item['text']):
                         item['base'] = d2data_lookup.get_rune(item['text'])
+                        item['item'] = d2data_lookup.get_rune(item['text'])
+                        item['identified'] = True
                 elif d2data_lookup.is_base(item['text']):
                     item['base'] = d2data_lookup.get_base(item['text'])
                 else:
@@ -320,6 +326,7 @@ def find_base_and_remove_items_without_a_base(items_by_quality) -> bool:
                             unique_item['h'] += item['h']
                             unique_item['text'] = closest_unique_name
                             unique_item['item'] = d2data_lookup.find_unique_item_by_name(closest_unique_name)
+                            unique_item['identified'] = True
             elif quality == ItemQuality.Runeword.value:
                 if 'item' not in item:
                     closest_dist = 99999
@@ -341,6 +348,8 @@ def find_base_and_remove_items_without_a_base(items_by_quality) -> bool:
                         closest_base['y'] = item['y']
                         closest_base['w'] = item['w'] if item['w'] > closest_base['w'] else closest_base['w']
                         closest_base['h'] += item['h']
+                        closest_base['item'] = {}
+                        closest_base['identified'] = True
                         if quality not in items_to_add:
                             items_to_add[quality] = []
                         items_to_add[quality].append(closest_base)
@@ -393,6 +402,8 @@ def set_gray_and_normal_and_magic_base_items(items_by_quality):
                 result = d2data_lookup.get_base(normalized_text)
                 if result:
                     item['base'] = result
+                    item['item'] = result
+                    item['identified'] = True
                     if quality_keyword:
                         item['qualityKeyword'] = quality_keyword
                 else:
@@ -413,6 +424,9 @@ def set_gray_and_normal_and_magic_base_items(items_by_quality):
                 base = d2data_lookup.find_base_item_from_magic_item_text(item['text'])
                 if base:
                     item['base'] = base
+                    if len(item['text'].lower().replace(base['display_name'].lower(), '').replace(' ', '')) > 0:
+                        item['item'] = base
+                        item['identified'] = True
                 else:
                     if quality not in items_to_remove:
                         items_to_remove[quality] = []
@@ -426,12 +440,55 @@ def set_gray_and_normal_and_magic_base_items(items_by_quality):
 def set_set_and_unique_base_items(items_by_quality):
     for quality in items_by_quality:
         for item in items_by_quality[quality]:
-            if quality == ItemQuality.Unique.value and len(item['base']['uniques']) == 1:
-                unique_name = item['base']['uniques'][0].replace('_', ' ').upper()
-                item['item'] = d2data_lookup.find_unique_item_by_name(unique_name)
-            elif quality == ItemQuality.Set.value and len(item['base']['sets']) == 1:
-                set_name = item['base']['sets'][0].replace('_', ' ').upper()
-                item['item'] = d2data_lookup.find_set_item_by_name(set_name, ItemQuality.Set)
+            if 'item' in item:
+                continue
+            item['identified'] = False
+            if quality == ItemQuality.Unique.value:
+                if len(item['base']['uniques']) == 1:
+                    unique_name = item['base']['uniques'][0].replace('_', ' ').upper()
+                    item['item'] = d2data_lookup.find_unique_item_by_name(unique_name, True)
+                else:
+                    item['uniqueItems'] = []
+                    for unique_item in item['base']['uniques']:
+                        unique_name = unique_item.replace('_', ' ').upper()
+                        item['uniqueItems'].append(d2data_lookup.find_unique_item_by_name(unique_name, True))
+            elif quality == ItemQuality.Set.value:
+                if len(item['base']['sets']) == 1:
+                    set_name = item['base']['sets'][0].replace('_', ' ').upper()
+                    item['item'] = d2data_lookup.find_set_item_by_name(set_name, ItemQuality.Set)
+                else:
+                    item['setItems'] = []
+                    for unique_item in item['base']['sets']:
+                        unique_name = unique_item.replace('_', ' ').upper()
+                        item['setItems'].append(d2data_lookup.find_set_item_by_name(unique_name, True))
+
+
+def build_d2_items(items_by_quality: dict) -> Union[list[D2Item], None]:
+    d2_items = None
+    for quality in items_by_quality:
+        for item in items_by_quality[quality]:
+            new_item = D2Item(
+                boundingBox= {
+                    'x': item['x'],
+                    'y': item['y'],
+                    'w': item['w'],
+                    'h': item['h'],
+                },
+                name=item['name'] if 'name' in item else item['text'],
+                quality=item['quality'].value,
+                type=item['base']['type'],
+                identified=item['identified'],
+                amount=item['amount'] if item['base']['type'] == 'gold' else None,
+                baseItem=item['base'],
+                item=item['item'] if 'item' in item else None,
+                uniqueItems=item['uniqueItems'] if 'uniqueItems' in item else None,
+                setItems=item['setItems'] if 'setItems' in item else None,
+                itemModifiers=None
+            )
+            if d2_items is None:
+                d2_items = []
+            d2_items.append(new_item)
+    return d2_items
 
 
 def calculate_distance(x1, y1, x2, y2):
