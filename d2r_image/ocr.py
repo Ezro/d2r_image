@@ -13,7 +13,8 @@ import pkgutil
 from d2r_image.ocr_data import TRAINED_DATA_SETS, OCR_WORKING_DIR, ERROR_RESOLUTION_MAP, I_1, II_U, One_I, OneOne_U, WORD_LIST, OCR_CONFIG
 
 
-shutil.rmtree(OCR_WORKING_DIR)
+if os.path.exists(OCR_WORKING_DIR):
+    shutil.rmtree(OCR_WORKING_DIR)
 os.mkdir(OCR_WORKING_DIR)
 for trained_data_base_name in TRAINED_DATA_SETS:
     trained_data_path = os.path.join(OCR_WORKING_DIR, f'{trained_data_base_name}.traineddata')

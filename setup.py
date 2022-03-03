@@ -5,7 +5,7 @@ with open('README.md', 'r') as readme:
 
 setup(
     name='d2r-image',
-    version='0.1.4',
+    version='0.1.5',
     description='A package for parsing items on the ground and hovered tooltips from Diablo II: Resurrected',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -24,7 +24,9 @@ setup(
         'pyparsing',
         'psutil',
         'mss',
-        'tesserocr'
+        'tesserocr',
+        'dataclasses-json',
+        'pypiwin32'
     ],
     dependency_links = [
         'https://github.com/simonflueckiger/tesserocr-windows_build/releases/download/tesserocr-v2.5.2-tesseract-4.1.1/tesserocr-2.5.2-cp39-cp39-win_amd64.whl'
