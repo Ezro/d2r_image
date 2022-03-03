@@ -13,7 +13,7 @@ jobs:
     - name: Install conda and tesserocr
       uses: s-weigand/setup-conda@v1
       with:
-        activate-conda: false
+        activate-conda: true
     - run: conda install -c conda-forge tesserocr
     - name: Install Pytest
       run: >-
