@@ -5,7 +5,8 @@ import keyboard
 import io
 from PIL import Image
 import os
-from d2r_image.processing import get_ground_loot, get_hovered_item, get_health
+import d2r_image.processing as processing
+from d2r_image.processing import get_hovered_item, get_health, get_mana
 from d2r_image.data_models import ItemQuality
 from pkg_resources import resource_listdir
 import numpy as np
@@ -23,7 +24,7 @@ debug_line_map[ItemQuality.Rune.value] = (0, 160, 219)
 debug_line_map[ItemQuality.Runeword.value] = (126, 170, 184)
 
 
-def demo_ground_images():
+def get_ground_loot():
     print('Loading demo ground images. This may take a few seconds...\n')
     all_image_data = []
     all_images = []
@@ -40,17 +41,7 @@ def demo_ground_images():
             image = Image.open(io.BytesIO(image_bytes))
             image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
             start = time.time()
-            items, unrecognized_items = get_ground_loot(image_data)
-            if unrecognized_items:
-                for quality in unrecognized_items:
-                    for item in unrecognized_items[quality]:
-                        cv2.rectangle(
-                        image_data,
-                        (item['x'], item['y']),
-                        (item['x'] + item['w'], item['y'] + item['h']),
-                        (0, 0, 255),
-                        1
-                    )
+            items = processing.get_ground_loot(image_data)
             end = time.time()
             elapsed = round(end-start, 2)
             # print(f'Processed {image} in {elapsed} seconds')
@@ -112,7 +103,7 @@ def demo_hovered_items():
     cv2.destroyAllWindows()
 
 
-def demo_get_health():
+def get_health_mana():
     print('Loading demo hover images. This may take a few seconds...\n')
     resource_paths = ['get_health']
     for resource_path in resource_paths:
@@ -125,20 +116,21 @@ def demo_get_health():
             image = Image.open(io.BytesIO(image_bytes))
             image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
             health = get_health(image_data)
-            print(health)
-            cv2.imshow(f'{image_name}', image_data)
+            mana = get_mana(image_data)
+            desc = f'HP: {health}    MP: {mana}'
+            print(desc)
+            cv2.imshow('get_health_mana', image_data)
             cv2.waitKey()
     cv2.destroyAllWindows()
 
 
 def draw_items_on_image_data(items, image):
-    for quality in items:
-        if len(items[quality]) == 0:
-            continue
-        for item in items[quality]:
-            cv2.rectangle(
-                image,
-                (item['x'], item['y']),
-                (item['x'] + item['w'], item['y'] + item['h']),
-                debug_line_map[quality],
-                1)
+    for item in items:
+        x, y, w, h = item.boundingBox.values()
+        cv2.rectangle(
+            image,
+            (x, y),
+            (x + w, y + h),
+            debug_line_map[item.quality],
+            1
+        )

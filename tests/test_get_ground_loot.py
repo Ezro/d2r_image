@@ -53,4 +53,4 @@ def generate_ground_loot_json(image_filename):
     print(ground_expected_json)
 
 
-generate_ground_loot_json('ground3.png')
+# generate_ground_loot_json('ground2.png')

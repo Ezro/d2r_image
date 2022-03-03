@@ -182,8 +182,8 @@ def consolidate_overlapping_names(items_by_quality):
             if overlapping_item:
                 first_item = item if item['x'] < overlapping_item['x'] else overlapping_item
                 second_item = item if first_item == overlapping_item else overlapping_item
-                first_item_text = first_item['text'].strip().replace('\'', '').replace(' ', '')
-                second_item_text = second_item['text'].strip().replace('\'', '').replace(' ', '')
+                first_item_text = first_item['text'].strip().replace('\'', '')
+                second_item_text = second_item['text'].strip().replace('\'', '').lstrip()
                 new_text = f"{first_item_text}\' {second_item_text}"
                 if quality == ItemQuality.Set.value:
                     if not d2data_lookup.find_set_item_by_name(new_text):

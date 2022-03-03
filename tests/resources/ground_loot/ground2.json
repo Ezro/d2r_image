@@ -93,15 +93,15 @@
         {
             "boundingBox":
             {
-                "x": 499,
-                "y": 250,
-                "w": 89,
-                "h": 21
+                "x": 451,
+                "y": 229,
+                "w": 186,
+                "h": 42
             },
-            "name": "BUCKLER",
+            "name": "HSARUS' IRON FIST",
             "quality": "set",
             "type": "shield",
-            "identified": false,
+            "identified": true,
             "amount": null,
             "baseItem":
             {
@@ -164,15 +164,15 @@
         {
             "boundingBox":
             {
-                "x": 632,
-                "y": 207,
-                "w": 133,
-                "h": 21
+                "x": 603,
+                "y": 186,
+                "w": 190,
+                "h": 42
             },
-            "name": "CHAIN BOOTS",
+            "name": "HSARUS' IRON HEEL",
             "quality": "set",
             "type": "boots",
-            "identified": false,
+            "identified": true,
             "amount": null,
             "baseItem":
             {
@@ -229,15 +229,15 @@
         {
             "boundingBox":
             {
-                "x": 555,
-                "y": 121,
-                "w": 56,
-                "h": 21
+                "x": 487,
+                "y": 99,
+                "w": 191,
+                "h": 42
             },
-            "name": "BELT",
+            "name": "HSARUS' IRON STAY",
             "quality": "set",
             "type": "belt",
-            "identified": false,
+            "identified": true,
             "amount": null,
             "baseItem":
             {
@@ -267,60 +267,28 @@
                 "type": "belt",
                 "uniques": ["nightsmoke"]
             },
-            "item": null,
+            "item":
+            {
+                "base": "belt",
+                "display_name": "Hsarus' Iron Stay",
+                "props": [
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "res-cold"
+                    },
+                    {
+                        "max": 20,
+                        "min": 20,
+                        "par": 0,
+                        "prop": "hp"
+                    }
+                ],
+                "set": "Hsarus' Defense"
+            },
             "uniqueItems": null,
-            "setItems": [
-                {
-                    "base": "belt",
-                    "display_name": "Hsarus' Iron Stay",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "res-cold"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        }
-                    ],
-                    "set": "Hsarus' Defense"
-                },
-                {
-                    "base": "belt",
-                    "display_name": "Hwanin's Blessing",
-                    "props": [
-                        {
-                            "max": 33,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "dmg-ltng"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "noheal"
-                        },
-                        {
-                            "max": null,
-                            "min": null,
-                            "par": 12,
-                            "prop": "ac/lvl"
-                        },
-                        {
-                            "max": 12,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "dmg-to-mana"
-                        }
-                    ],
-                    "set": "Hwanin's Majesty"
-                }
-            ],
+            "setItems": null,
             "itemModifiers": null
         },
         {
