@@ -24,7 +24,7 @@ def test_get_health_mana(filename, expected_health, expected_mana):
 
 
 @pytest.mark.parametrize("filename, expected_health", [
-    ('full_health.png', 100),
+    ('100.png', 100),
     ('90.png', 90),
     ('80.png', 80),
     ('62.5.png', 62.5),
