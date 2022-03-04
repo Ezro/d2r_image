@@ -24,6 +24,7 @@ jobs:
     - name: Pytest
       run: pytest tests
   build-n-publish:
+    needs: unit-test
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
     runs-on: ubunutu-latest
     steps:
