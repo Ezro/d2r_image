@@ -1,4 +1,4 @@
-name: Unit Test then Publish Python 🐍 distributions 📦 to PyPI and TestPyPI
+name: Unit Test, Build, then Publish
 on: push
 jobs:
   unit-test:
@@ -6,10 +6,6 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@master
-    # - name: Set up Python 3.9
-    #   uses: actions/setup-python@v1
-    #   with:
-    #     python-version: 3.9
     - name: Install conda and tesserocr
       uses: s-weigand/setup-conda@v1
       with:
@@ -25,8 +21,8 @@ jobs:
       run: pytest tests
   build-n-publish:
     needs: unit-test
-    name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
-    runs-on: ubunutu-latest
+    name: Build and Publish
+    runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
     - name: Set up Python 3.9
