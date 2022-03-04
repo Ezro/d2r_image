@@ -103,7 +103,6 @@ class ScreenObject:
     roi: list[float] = None
     time_out: float = 30
     threshold: float = 0.68
-    normalize_monitor: bool = False
     best_match: bool = False
     use_grayscale: bool = False
 

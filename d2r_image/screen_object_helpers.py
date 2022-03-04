@@ -1,14 +1,23 @@
 import concurrent.futures
 import cv2
+from dataclasses import dataclass
 import io
 import numpy as np
 from PIL import Image
 from pkg_resources import resource_listdir
 import pkgutil
 from d2r_image.data_models import ScreenObject
-from d2r_image.template_finder import TemplateFinder, TemplateMatch
 from d2r_image.utils.misc import roi_center, alpha_to_mask
 from d2r_image.utils.screen import convert_screen_to_monitor
+
+
+@dataclass
+class TemplateMatch:
+    name: str = None
+    score: float = -1.0
+    center: tuple[float, float] = None
+    region: list[float] = None
+    valid: bool = False
 
 
 executor = concurrent.futures.ThreadPoolExecutor()
@@ -47,7 +56,6 @@ def search(
     image: np.ndarray,
     threshold: float = 0.68,
     roi: list[float] = None,
-    normalize_monitor: bool = False,
     best_match: bool = False,
     use_grayscale: bool = False,
 ) -> TemplateMatch:
@@ -98,7 +106,6 @@ def search(
             masks[count],
             threshold,
             scales[count],
-            normalize_monitor,
             rx,
             ry)
         future_list.append(future)
@@ -152,7 +159,6 @@ def match_template(
         mask,
         threshold,
         scale,
-        normalize_monitor,
         rx,
         ry):
     if image.shape[0] > template.shape[0] and image.shape[1] > template.shape[1]:
@@ -170,10 +176,5 @@ def match_template(
             rec = [int((max_pos[0] + rx) // scale), int((max_pos[1] + ry) // scale),
                     int(template.shape[1] // scale), int(template.shape[0] // scale)]
             ref_point = roi_center(rec)
-            if normalize_monitor:
-                ref_point = convert_screen_to_monitor(
-                    ref_point)
-                rec[0], rec[1] = convert_screen_to_monitor(
-                    (rec[0], rec[1]))
             return [max_val, ref_point, rec]
     return None

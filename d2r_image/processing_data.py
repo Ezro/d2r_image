@@ -52,6 +52,11 @@ class UI_ROI:
     mercHealthSlice = (15, 14, 40, 1)
 
 
+class UI_POS:
+    mercHealthTop=14
+    mercHealthLeft=15
+    mercHealthWidth=40
+
 # UI_ROI = {
 #     "chat_line_1": (12, 537, 391, 25),
 #     "save_and_exit": (500, 233, 273, 173),
