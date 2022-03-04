@@ -20,14 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
     - name: Install d2r-image package... manually
-      run: >-
-        pip install opencv-python
-        pip install keyboard
-        pip install pyparsing
-        pip install psutil
-        pip install mss
-        pip install tesserocr
-        pip install dataclasses-json
+      run: pip install -e .
     - name: Pytest
       run: pytest tests
     - name: Install pypa/build

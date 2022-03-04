@@ -26,7 +26,6 @@ setup(
         'mss',
         'tesserocr',
         'dataclasses-json',
-        'pypiwin32'
     ],
     dependency_links = [
         'https://github.com/simonflueckiger/tesserocr-windows_build/releases/download/tesserocr-v2.5.2-tesseract-4.1.1/tesserocr-2.5.2-cp39-cp39-win_amd64.whl'
