@@ -8,7 +8,6 @@ from pkg_resources import resource_listdir
 import pkgutil
 from d2r_image.data_models import ScreenObject
 from d2r_image.utils.misc import roi_center, alpha_to_mask
-from d2r_image.utils.screen import convert_screen_to_monitor
 
 
 @dataclass
