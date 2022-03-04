@@ -3,7 +3,7 @@ on: push
 jobs:
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
-    runs-on: windows-2022
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@master
     - name: Set up Python 3.9
@@ -21,7 +21,7 @@ jobs:
         pip install pytest
     - name: Install d2r-image package... manually
       run: pip install -e .
-      name: Pytest
+    - name: Pytest
       run: pytest tests
     - name: Install pypa/build
       run: >-
