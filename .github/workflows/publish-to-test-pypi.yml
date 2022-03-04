@@ -28,7 +28,6 @@ jobs:
         pip install mss
         pip install tesserocr
         pip install dataclasses-json
-        pip install pypiwin32
     - name: Pytest
       run: pytest tests
     - name: Install pypa/build
