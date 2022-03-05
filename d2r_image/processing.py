@@ -1,4 +1,3 @@
-from turtle import Screen
 from typing import Tuple, Union
 import cv2
 import numpy as np
@@ -7,7 +6,7 @@ from d2r_image.utils.misc import color_filter, cut_roi
 # from d2r_image.template_finder import TemplateFinder
 from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import BOX_EXPECTED_WIDTH_RANGE, BOX_EXPECTED_HEIGHT_RANGE, COLORS, UI_ROI
-from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items
+from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items, cut_potion_img, potion_type
 from d2r_image.screen_object_helpers import detect_screen_object
 import numpy as np
 
@@ -111,9 +110,17 @@ def get_experience(image: np.ndarray) -> float:
     return 0
 
 
-def get_merc_health(img: np.ndarray) -> float:
-    merc_health_img = cut_roi(img, UI_ROI.mercHealthSlice)
+def get_merc_health(image: np.ndarray) -> float:
+    merc_health_img = cut_roi(image, UI_ROI.mercHealthSlice)
     merc_health_img = cv2.cvtColor(merc_health_img, cv2.COLOR_BGR2GRAY)
     _, thresh = cv2.threshold(merc_health_img, 5, 255, cv2.THRESH_BINARY)
     merc_health_percentage = (float(np.sum(thresh)) / thresh.size) * (1/255.0) * 100
     return round(merc_health_percentage, 2)
+
+
+def get_belt(image: np.ndarray):
+    belt = []
+    for row in range(4):
+        for column in range(4):
+            belt.append(potion_type(cut_potion_img(image, column, row)))
+    return belt

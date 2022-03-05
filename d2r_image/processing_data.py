@@ -9,7 +9,9 @@ EXPECTED_WIDTH_RANGE = [round(num) for num in [x / 1.5 for x in [60, 1280]]]
 BOX_EXPECTED_WIDTH_RANGE = [200, 900]
 BOX_EXPECTED_HEIGHT_RANGE = [24, 710]
 
+
 ITEM_COLORS = ['white', 'gray', 'blue', 'green', 'yellow', 'gold', 'orange']
+
 
 COLORS = {
     "black": "0, 0, 0, 180, 255, 15",
@@ -26,17 +28,20 @@ COLORS = {
     "health_potion": "170, 100, 76, 190, 255, 255",
     "mana_potion": "105, 20, 76, 135, 255, 255",
     "rejuv_potion": "140, 50, 40, 160, 255, 255",
+    "empty_belt_slot": "0, 0, 55, 179, 45, 86",
     "skill_charges": "70, 30, 25, 150, 163, 255",
     "health_globe_red": "178, 110, 20, 183, 255, 255",
     "health_globe_green": "47, 90, 20, 54, 255, 255",
     "mana_globe": "117, 120, 20, 121, 255, 255",
 }
 
+
 # min and max hsv range (opencv format: h: [0-180], s: [0-255], v: [0, 255])
 # h_min, s_min, v_min, h_max, s_max, v_max
 for key in COLORS:
     COLORS[key] = np.split(np.array([int(x)
                            for x in COLORS[key].split(",")]), 2)
+
 
 # all rois are in  [left, top, width, height] format
 class UI_ROI:
@@ -56,6 +61,11 @@ class UI_POS:
     mercHealthTop=14
     mercHealthLeft=15
     mercHealthWidth=40
+    potion1X=742
+    potion1Y=695
+    potionWidth=30
+    potionHeight=30
+    potionNext=41
 
 # UI_ROI = {
 #     "chat_line_1": (12, 537, 391, 25),
