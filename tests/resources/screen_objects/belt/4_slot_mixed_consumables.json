@@ -1,0 +1,500 @@
+{
+    "items": [
+        {
+            "boundingBox":
+            {
+                "x": 725,
+                "y": 678,
+                "w": 36,
+                "h": 32
+            },
+            "name": "SCROLL OF TOWN PORTAL",
+            "quality": "normal",
+            "type": "scroll",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Scroll of Town Portal",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Scroll of Town Portal",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 767,
+                "y": 678,
+                "w": 35,
+                "h": 32
+            },
+            "name": "THAWING POTION",
+            "quality": "normal",
+            "type": "thawing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Thawing Potion",
+                "sets": [],
+                "type": "thawing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Thawing Potion",
+                "sets": [],
+                "type": "thawing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 808,
+                "y": 678,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MINOR HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Minor Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Minor Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 849,
+                "y": 678,
+                "w": 35,
+                "h": 32
+            },
+            "name": "FULL REJUVENATION POTION",
+            "quality": "normal",
+            "type": "rejuv_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Full Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Full Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 725,
+                "y": 641,
+                "w": 36,
+                "h": 32
+            },
+            "name": "SCROLL OF TOWN PORTAL",
+            "quality": "normal",
+            "type": "scroll",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Scroll of Town Portal",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Scroll of Town Portal",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 766,
+                "y": 641,
+                "w": 36,
+                "h": 32
+            },
+            "name": "ANTIDOTE POTION",
+            "quality": "normal",
+            "type": "antidote_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Antidote Potion",
+                "sets": [],
+                "type": "antidote_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Antidote Potion",
+                "sets": [],
+                "type": "antidote_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 808,
+                "y": 641,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MINOR HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Minor Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Minor Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 849,
+                "y": 641,
+                "w": 36,
+                "h": 33
+            },
+            "name": "SUPER MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Super Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Super Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 725,
+                "y": 604,
+                "w": 36,
+                "h": 32
+            },
+            "name": "SCROLL OF IDENTIFY",
+            "quality": "normal",
+            "type": "scroll",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Scroll of Identify",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Scroll of Identify",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 767,
+                "y": 604,
+                "w": 35,
+                "h": 32
+            },
+            "name": "THAWING POTION",
+            "quality": "normal",
+            "type": "thawing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Thawing Potion",
+                "sets": [],
+                "type": "thawing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Thawing Potion",
+                "sets": [],
+                "type": "thawing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 808,
+                "y": 604,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MINOR MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Minor Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Minor Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 849,
+                "y": 604,
+                "w": 35,
+                "h": 32
+            },
+            "name": "FULL REJUVENATION POTION",
+            "quality": "normal",
+            "type": "rejuv_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Full Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Full Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 725,
+                "y": 567,
+                "w": 36,
+                "h": 32
+            },
+            "name": "SCROLL OF IDENTIFY",
+            "quality": "normal",
+            "type": "scroll",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Scroll of Identify",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Scroll of Identify",
+                "sets": [],
+                "type": "scroll",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 767,
+                "y": 567,
+                "w": 35,
+                "h": 32
+            },
+            "name": "STAMINA POTION",
+            "quality": "normal",
+            "type": "stamina_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Stamina Potion",
+                "sets": [],
+                "type": "stamina_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Stamina Potion",
+                "sets": [],
+                "type": "stamina_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 808,
+                "y": 567,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MINOR MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Minor Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Minor Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 849,
+                "y": 567,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        }
+    ]
+}

@@ -45,27 +45,16 @@ for key in COLORS:
 
 # all rois are in  [left, top, width, height] format
 class UI_ROI:
-    playButton = (426, 616, 320, 71)
+    playButton = (432, 621, 203, 49)
     healthSlice = (309, 610, 7, 106)
     manaSlice = (961, 610, 7, 101)
     leftInventory = (35, 92, 378, 378)
     rightInventory = (866, 348, 379, 152)
     difficultySelect = (536, 236, 210, 320)
     loadingLeftBlack = (0, 0, 350, 720)
-    exitGameLogo = (1140, 590, 110, 60)
+    exitGameLogo = (1140, 580, 110, 80)
     offlineOnline = (1030, 16, 232, 31)
     mercHealthSlice = (15, 14, 40, 1)
-
-
-class UI_POS:
-    mercHealthTop=14
-    mercHealthLeft=15
-    mercHealthWidth=40
-    potion1X=742
-    potion1Y=695
-    potionWidth=30
-    potionHeight=30
-    potionNext=41
 
 # UI_ROI = {
 #     "chat_line_1": (12, 537, 391, 25),

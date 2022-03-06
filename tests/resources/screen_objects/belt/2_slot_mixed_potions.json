@@ -1,0 +1,239 @@
+{
+    "items": [
+        {
+            "boundingBox":
+            {
+                "x": 726,
+                "y": 678,
+                "w": 36,
+                "h": 33
+            },
+            "name": "GREATER HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Greater Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Greater Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 767,
+                "y": 678,
+                "w": 35,
+                "h": 32
+            },
+            "name": "HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 808,
+                "y": 678,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 849,
+                "y": 678,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 726,
+                "y": 641,
+                "w": 36,
+                "h": 33
+            },
+            "name": "SUPER HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Super Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Super Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 767,
+                "y": 641,
+                "w": 36,
+                "h": 32
+            },
+            "name": "LIGHT HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Light Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Light Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 814,
+                "y": 646,
+                "w": 25,
+                "h": 24
+            },
+            "name": "EMPTY BELT SLOT",
+            "quality": null,
+            "type": null,
+            "identified": true,
+            "amount": null,
+            "baseItem": null,
+            "item": null,
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 849,
+                "y": 641,
+                "w": 36,
+                "h": 32
+            },
+            "name": "MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        }, null, null, null, null, null, null, null, null]
+}

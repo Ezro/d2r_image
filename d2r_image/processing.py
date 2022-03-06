@@ -1,12 +1,13 @@
 from typing import Tuple, Union
 import cv2
 import numpy as np
-from d2r_image.data_models import D2Item, ItemText, ScreenObject
+from d2r_image import d2data_lookup
+from d2r_image.data_models import D2Item, D2ItemList, ItemQuality, ItemText, ScreenObject
 from d2r_image.utils.misc import color_filter, cut_roi
 # from d2r_image.template_finder import TemplateFinder
 from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import BOX_EXPECTED_WIDTH_RANGE, BOX_EXPECTED_HEIGHT_RANGE, COLORS, UI_ROI
-from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items, cut_potion_img, potion_type
+from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items
 from d2r_image.screen_object_helpers import detect_screen_object
 import numpy as np
 
@@ -118,9 +119,83 @@ def get_merc_health(image: np.ndarray) -> float:
     return round(merc_health_percentage, 2)
 
 
-def get_belt(image: np.ndarray):
-    belt = []
-    for row in range(4):
-        for column in range(4):
-            belt.append(potion_type(cut_potion_img(image, column, row)))
+def get_belt(image: np.ndarray) -> list[Union[D2Item, None]]:
+    consumables = {
+        'MINOR HEALING POTION': ['MINOR_HEALING_POTION'],
+        'LIGHT HEALING POTION': ['LIGHT_HEALING_POTION'],
+        'HEALING POTION': ['HEALING_POTION'],
+        'GREATER HEALING POTION': ['GREATER_HEALING_POTION'],
+        'SUPER HEALING POTION': ['SUPER_HEALING_POTION'],
+        #
+        'MINOR MANA POTION': ['MINOR_MANA_POTION'],
+        'LIGHT MANA POTION': ['LIGHT_MANA_POTION'],
+        'MANA POTION': ['MANA_POTION'],
+        'GREATER MANA POTION': ['GREATER_MANA_POTION'],
+        'SUPER MANA POTION': ['SUPER_MANA_POTION'],
+        #
+        'REJUVENATION POTION': ['REJUV_POTION'],
+        'FULL REJUVENATION POTION': ['FULL_REJUV_POTION'],
+        #
+        'ANTIDOTE POTION': ['ANTIDOTE'],
+        'STAMINA POTION': ['STAMINA_POTION'],
+        'THAWING POTION': ['THAWING_POTION'],
+        #
+        'SCROLL OF IDENTIFY': ['ID_SCROLL'],
+        'SCROLL OF TOWN PORTAL': ['TP_SCROLL'],
+        #
+        'EMPTY BELT SLOT': ['BELT_EMPTY_SLOT'],
+    }
+    belt = D2ItemList([
+            None, None, None, None,
+            None, None, None, None,
+            None, None, None, None,
+            None, None, None, None
+    ])
+    for consumable in consumables:
+        belt_roi = [722, 560, 166, 156]
+        rects = detect_screen_object(ScreenObject(refs=consumables[consumable], threshold=0.9, roi=belt_roi), image)
+        if rects:
+            for rect in rects:
+                column = int((rect[0]-belt_roi[0]) / 40)
+                row = abs(3-round((rect[1]-belt_roi[1]) / 40))
+                slot_index = row * 4 + column
+                if consumable == 'EMPTY BELT SLOT':
+                    belt.items[slot_index] = D2Item(
+                        boundingBox= {
+                            'x': rect[0],
+                            'y': rect[1],
+                            'w': rect[2],
+                            'h': rect[3],
+                        },
+                        name=consumable,
+                        quality=None,
+                        type=None,
+                        identified=True,
+                        baseItem=None,
+                        item=None,
+                        amount=None,
+                        uniqueItems=None,
+                        setItems=None,
+                        itemModifiers=None
+                )
+                else:
+                    base_item = d2data_lookup.get_consumable(consumable)
+                    belt.items[slot_index] = D2Item(
+                        boundingBox= {
+                            'x': rect[0],
+                            'y': rect[1],
+                            'w': rect[2],
+                            'h': rect[3],
+                        },
+                        name=consumable,
+                        quality=ItemQuality.Normal.value,
+                        type=base_item['type'],
+                        identified=True,
+                        baseItem=base_item,
+                        item=base_item,
+                        amount=None,
+                        uniqueItems=None,
+                        setItems=None,
+                        itemModifiers=None
+                )
     return belt

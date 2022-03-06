@@ -1,14 +1,18 @@
+import math
 import pkgutil
 from typing import Union
+from unicodedata import name
 import cv2
 import io
 import numpy as np
 from PIL import Image
 import re
 import time
+
+from pyparsing import col
 from d2r_image.data_models import D2Item, ItemQuality, ItemQualityKeyword, ItemText, ScreenObject
 from d2r_image.ocr import image_to_text
-from d2r_image.processing_data import UI_POS, Runeword
+from d2r_image.processing_data import Runeword
 import d2r_image.d2data_lookup as d2data_lookup
 from d2r_image.processing_data import COLORS, EXPECTED_HEIGHT_RANGE, EXPECTED_WIDTH_RANGE, GAUS_FILTER, ITEM_COLORS, QUALITY_COLOR_MAP, UI_ROI, Runeword
 from d2r_image.screen_object_helpers import detect_screen_object
@@ -494,54 +498,3 @@ def build_d2_items(items_by_quality: dict) -> Union[list[D2Item], None]:
 
 def calculate_distance(x1, y1, x2, y2):
     return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** .5
-
-
-def potion_type(image: np.ndarray) -> str:
-    """
-    Based on cut out image from belt, determines what type of potion it is.
-    :param img: Cut out image of a belt slot
-    :return: Any of ["empty", "rejuv", "health", "mana"]
-    """
-    h, w, _ = image.shape
-    # roi = [int(w * 0.4), int(h * 0.3), int(w * 0.4), int(h * 0.7)]
-    # img = cut_roi(image, roi)
-    consumables = ['GREATER_HEALING_POTION2', 'SUPER_HEALING_POTION2']
-    for consumable in consumables:
-        matches = detect_screen_object(ScreenObject(refs=[consumable]), image).valid
-        print(matches)
-
-
-    # avg_brightness = np.average(img)
-    # if avg_brightness < 47:
-    #     return None
-    # score_list = []
-    # # rejuv
-    # mask, _ = color_filter(img, COLORS["rejuv_potion"])
-    # score_list.append((float(np.sum(mask)) / mask.size) * (1/255.0))
-    # # health
-    # mask, _ = color_filter(img, COLORS["health_potion"])
-    # score_list.append((float(np.sum(mask)) / mask.size) * (1/255.0))
-    # # mana
-    # mask, _ = color_filter(img, COLORS["mana_potion"])
-    # score_list.append((float(np.sum(mask)) / mask.size) * (1/255.0))
-    # # empty
-    # mask, _ = color_filter(img, COLORS["empty_belt_slot"])
-    # score_list.append((float(np.sum(mask)) / mask.size) * (1/255.0))
-    # # find max score
-    # max_val = np.max(score_list)
-    # if max_val > 0.28:
-    #     idx = np.argmax(score_list)
-    #     types = ["rejuv", "health", "mana", "empty"]
-    #     return types[idx]
-    # else:
-    #     return None
-
-
-def cut_potion_img(img: np.ndarray, column: int, row: int) -> np.ndarray:
-    roi = [
-        UI_POS.potion1X - (UI_POS.potionWidth // 2) + column * UI_POS.potionNext,
-        UI_POS.potion1Y - (UI_POS.potionHeight // 2) - int(row * UI_POS.potionNext * 0.92),
-        UI_POS.potionWidth,
-        UI_POS.potionHeight
-    ]
-    return cut_roi(img, roi)

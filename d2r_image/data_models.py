@@ -60,11 +60,11 @@ class ItemQualityKeyword(Enum):
 class D2Item:
     boundingBox: dict
     name: str
-    quality: str
-    type: str
+    quality: Union[str, None]
+    type: Union[str, None]
     identified: bool
     amount: Union[int, None]
-    baseItem: dict
+    baseItem: Union[dict, None]
     item: Union[dict, None]
     uniqueItems: Union[list[dict], None]
     setItems: Union[list[dict], None]
@@ -81,6 +81,12 @@ class D2Item:
             self.uniqueItems == other.uniqueItems and\
             self.setItems == other.setItems and\
             self.itemModifiers == other.itemModifiers
+
+
+@dataclass_json
+@dataclass
+class D2ItemList:
+    items: list[Union[D2Item, None]]
 
 
 @dataclass_json
