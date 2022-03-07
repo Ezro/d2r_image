@@ -60,6 +60,8 @@ def detect_screen_object(
         refs,
         screen_object.use_grayscale)
     future_list = []
+    # cv2.imshow('cropped', cropped_image)
+    # cv2.waitKey()
     for count, template in enumerate(templates):
         future = executor.submit(
             match_template,
@@ -142,8 +144,10 @@ def consolidate_overlapping_rects(rects):
                 x + w > n_x and\
                     y < n_y + n_h and\
                         y + h > n_y:
-                        if n_x not in rects_to_remove:
-                            rects_to_remove.append(rects[j])
+                        if rects[j] not in rects_to_remove:
+                            if (x < n_x and x + w - n_x > 3) or\
+                                (x > n_x and n_x + n_w - x > 3):
+                                rects_to_remove.append(rects[j])
     for rect in rects_to_remove:
         rects_to_return.remove(rect)
     return rects_to_return
