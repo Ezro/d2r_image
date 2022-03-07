@@ -92,7 +92,7 @@ def load_lookup():
 #     end = time.time()
 #     print(f"Time elapsed to load parsers: {end - start}")
 
-def find_item_by_display_name_and_quality(name, quality: ItemQuality, fuzzy = False):
+def find_set_or_unique_item_by_name(name, quality: ItemQuality, fuzzy = False):
     if quality.value == ItemQuality.Unique.value:
         return find_unique_item_by_name(name, fuzzy)
     elif quality.value == ItemQuality.Set.value:
@@ -159,6 +159,16 @@ def get_rune(name: str):
     if name in runes_by_name:
         return runes_by_name[name]
     return None
+
+def get_by_name(name: str):
+    if is_base(name):
+        return get_base(name)
+    elif is_consumable(name):
+        return get_consumable(name)
+    elif is_gem(name):
+        return get_gem(name)
+    elif is_rune(name):
+        return get_rune(name)
 
 def find_modifier_pattern_match(modifier_line):
     match = None
