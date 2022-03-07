@@ -55,6 +55,7 @@ class UI_ROI:
     exitGameLogo = (1140, 580, 110, 80)
     offlineOnline = (1030, 16, 232, 31)
     mercHealthSlice = (15, 14, 40, 1)
+    belt = (722, 560, 166, 156)
 
 # UI_ROI = {
 #     "chat_line_1": (12, 537, 391, 25),

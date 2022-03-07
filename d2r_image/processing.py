@@ -1,4 +1,5 @@
 from typing import Tuple, Union
+from charset_normalizer import detect
 import cv2
 import numpy as np
 from d2r_image import d2data_lookup
@@ -9,6 +10,7 @@ from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import BOX_EXPECTED_WIDTH_RANGE, BOX_EXPECTED_HEIGHT_RANGE, COLORS, UI_ROI
 from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items
 from d2r_image.screen_object_helpers import detect_screen_object
+from d2r_image.d2data_ref_lookup import BELT_MAP, LEFT_INVENTORY_MAP, RIGHT_INVENTORY_MAP
 import numpy as np
 
 
@@ -119,39 +121,41 @@ def get_merc_health(image: np.ndarray) -> float:
     return round(merc_health_percentage, 2)
 
 
-def get_belt(image: np.ndarray) -> list[Union[D2Item, None]]:
-    consumables = {
-        'MINOR HEALING POTION': ['MINOR_HEALING_POTION'],
-        'LIGHT HEALING POTION': ['LIGHT_HEALING_POTION'],
-        'HEALING POTION': ['HEALING_POTION'],
-        'GREATER HEALING POTION': ['GREATER_HEALING_POTION'],
-        'SUPER HEALING POTION': ['SUPER_HEALING_POTION'],
-        #
-        'MINOR MANA POTION': ['MINOR_MANA_POTION'],
-        'LIGHT MANA POTION': ['LIGHT_MANA_POTION'],
-        'MANA POTION': ['MANA_POTION'],
-        'GREATER MANA POTION': ['GREATER_MANA_POTION'],
-        'SUPER MANA POTION': ['SUPER_MANA_POTION'],
-        #
-        'REJUVENATION POTION': ['REJUV_POTION'],
-        'FULL REJUVENATION POTION': ['FULL_REJUV_POTION'],
-        #
-        'ANTIDOTE POTION': ['ANTIDOTE'],
-        'STAMINA POTION': ['STAMINA_POTION'],
-        'THAWING POTION': ['THAWING_POTION'],
-        #
-        'SCROLL OF IDENTIFY': ['ID_SCROLL'],
-        'SCROLL OF TOWN PORTAL': ['TP_SCROLL'],
-        #
-        'EMPTY BELT SLOT': ['BELT_EMPTY_SLOT'],
-    }
+consumables = {
+    'MINOR HEALING POTION': ['MINOR_HEALING_POTION'],
+    'LIGHT HEALING POTION': ['LIGHT_HEALING_POTION'],
+    'HEALING POTION': ['HEALING_POTION'],
+    'GREATER HEALING POTION': ['GREATER_HEALING_POTION'],
+    'SUPER HEALING POTION': ['SUPER_HEALING_POTION'],
+    #
+    'MINOR MANA POTION': ['MINOR_MANA_POTION'],
+    'LIGHT MANA POTION': ['LIGHT_MANA_POTION'],
+    'MANA POTION': ['MANA_POTION'],
+    'GREATER MANA POTION': ['GREATER_MANA_POTION'],
+    'SUPER MANA POTION': ['SUPER_MANA_POTION'],
+    #
+    'REJUVENATION POTION': ['REJUV_POTION'],
+    'FULL REJUVENATION POTION': ['FULL_REJUV_POTION'],
+    #
+    'ANTIDOTE POTION': ['ANTIDOTE'],
+    'STAMINA POTION': ['STAMINA_POTION'],
+    'THAWING POTION': ['THAWING_POTION'],
+    #
+    'SCROLL OF IDENTIFY': ['ID_SCROLL'],
+    'SCROLL OF TOWN PORTAL': ['TP_SCROLL'],
+    #
+    'EMPTY BELT SLOT': ['BELT_EMPTY_SLOT'],
+}
+
+
+def get_belt(image: np.ndarray) -> D2ItemList:
     belt = D2ItemList([
             None, None, None, None,
             None, None, None, None,
             None, None, None, None,
             None, None, None, None
     ])
-    for consumable in consumables:
+    for consumable in BELT_MAP:
         belt_roi = [722, 560, 166, 156]
         rects = detect_screen_object(ScreenObject(refs=consumables[consumable], threshold=0.9, roi=belt_roi), image)
         if rects:
@@ -159,43 +163,162 @@ def get_belt(image: np.ndarray) -> list[Union[D2Item, None]]:
                 column = int((rect[0]-belt_roi[0]) / 40)
                 row = abs(3-round((rect[1]-belt_roi[1]) / 40))
                 slot_index = row * 4 + column
-                if consumable == 'EMPTY BELT SLOT':
-                    belt.items[slot_index] = D2Item(
-                        boundingBox= {
-                            'x': rect[0],
-                            'y': rect[1],
-                            'w': rect[2],
-                            'h': rect[3],
-                        },
-                        name=consumable,
-                        quality=None,
-                        type=None,
-                        identified=True,
-                        baseItem=None,
-                        item=None,
-                        amount=None,
-                        uniqueItems=None,
-                        setItems=None,
-                        itemModifiers=None
-                )
-                else:
+                quality = None
+                type = None
+                base_item = None
+                item = None
+                if consumable != 'EMPTY BELT SLOT':
+                    quality=ItemQuality.Normal.value,
                     base_item = d2data_lookup.get_consumable(consumable)
-                    belt.items[slot_index] = D2Item(
-                        boundingBox= {
-                            'x': rect[0],
-                            'y': rect[1],
-                            'w': rect[2],
-                            'h': rect[3],
-                        },
-                        name=consumable,
-                        quality=ItemQuality.Normal.value,
-                        type=base_item['type'],
-                        identified=True,
-                        baseItem=base_item,
-                        item=base_item,
-                        amount=None,
-                        uniqueItems=None,
-                        setItems=None,
-                        itemModifiers=None
+                    type=base_item['type'],
+                    item=base_item,
+                belt.items[slot_index] = D2Item(
+                    boundingBox= {
+                        'x': rect[0],
+                        'y': rect[1],
+                        'w': rect[2],
+                        'h': rect[3],
+                    },
+                    name=consumable,
+                    quality=quality,
+                    type=type,
+                    identified=True,
+                    baseItem=base_item,
+                    item=item,
+                    amount=None,
+                    uniqueItems=None,
+                    setItems=None,
+                    itemModifiers=None
                 )
     return belt
+
+
+charms = {
+    'GRAND CHARM': ['GC1', 'GC2'],
+    'SMALL CHARM': ['SC1', 'SC2', 'SC3']
+}
+
+gems = {
+    'FLAWLESS AMETHYST': ['FLAWLESS_AMETHYST'],
+    'PERFECT AMETHYST': ['PERFECT_AMETHYST'],
+    'FLAWLESS TOPAZ': ['FLAWLESS_TOPAZ'],
+    'PERFECT TOPAZ': ['PERFECT_TOPAZ'],
+    'FLAWLESS DIAMOND': ['FLAWLESS_DIAMOND'],
+    'PERFECT DIAMOND': ['PERFECT_DIAMOND'],
+    'FLAWLESS EMERALD': ['FLAWLESS_EMERALD'],
+    'PERFECT EMERALD': ['PERFECT_EMERALD'],
+    'FLAWLESS RUBY': ['INVENTORY_RUBY_FLAWLESS'],
+    'PERFECT RUBY': ['PERFECT_RUBY'],
+    'FLAWLESS SAPPHIRE': ['FLAWLESS_SAPPHIRE'],
+    'PERFECT SAPPHIRE': ['PERFECT_SAPPHIRE'],
+    'FLAWLESS SKULL': ['FLAWLESS_SKULL'],
+    'PERFECT SKULL': ['PERFECT_SKULL'],
+}
+
+
+def get_inventory(image: np.ndarray) -> D2ItemList:
+    d2_item_list = D2ItemList([])
+    for item in LEFT_INVENTORY_MAP:
+        rects = detect_screen_object(ScreenObject(refs=LEFT_INVENTORY_MAP[item], threshold=0.9, roi=UI_ROI.leftInventory), image)
+        if rects:
+            for rect in rects:
+                x, y, w, h = rect
+                cv2.rectangle(image,
+                    (x, y),
+                    (x+w, y+h),
+                    (0, 0, 255),
+                    1)
+                print(item)
+                quality=ItemQuality.Normal.value
+                base_item = d2data_lookup.get_by_name(item)
+                type=base_item['type']
+                d2_item_list.items.append(D2Item(
+                    boundingBox= {
+                        'x': rect[0],
+                        'y': rect[1],
+                        'w': rect[2],
+                        'h': rect[3],
+                    },
+                    name=item,
+                    quality=quality,
+                    type=type,
+                    identified=True,
+                    baseItem=base_item,
+                    item=base_item,
+                    amount=None,
+                    uniqueItems=None,
+                    setItems=None,
+                    itemModifiers=None
+                ))
+    for item in RIGHT_INVENTORY_MAP:
+        rects = detect_screen_object(ScreenObject(refs=RIGHT_INVENTORY_MAP[item], threshold=0.9, roi=UI_ROI.rightInventory), image)
+        if rects:
+            for rect in rects:
+                x, y, w, h = rect
+                cv2.rectangle(image,
+                    (x, y),
+                    (x+w, y+h),
+                    (0, 0, 255),
+                    1)
+                print(item)
+                quality=ItemQuality.Normal.value
+                base_item = d2data_lookup.get_by_name(item)
+                type=base_item['type']
+                d2_item_list.items.append(D2Item(
+                    boundingBox= {
+                        'x': rect[0],
+                        'y': rect[1],
+                        'w': rect[2],
+                        'h': rect[3],
+                    },
+                    name=item,
+                    quality=quality,
+                    type=type,
+                    identified=True,
+                    baseItem=base_item,
+                    item=base_item,
+                    amount=None,
+                    uniqueItems=None,
+                    setItems=None,
+                    itemModifiers=None
+                ))
+    for item in BELT_MAP:
+        rects = detect_screen_object(ScreenObject(refs=BELT_MAP[item], threshold=0.9, roi=UI_ROI.belt), image)
+        if rects:
+            for rect in rects:
+                x, y, w, h = rect
+                cv2.rectangle(image,
+                    (x, y),
+                    (x+w, y+h),
+                    (0, 0, 255),
+                    1)
+                print(item)
+                quality = None
+                type = None
+                base_item = None
+                if item != 'EMPTY BELT SLOT':
+                    quality=ItemQuality.Normal.value
+                    base_item = d2data_lookup.get_by_name(item)
+                    type=base_item['type']
+                d2_item_list.items.append(D2Item(
+                    boundingBox= {
+                        'x': rect[0],
+                        'y': rect[1],
+                        'w': rect[2],
+                        'h': rect[3],
+                    },
+                    name=item,
+                    quality=quality,
+                    type=type,
+                    identified=True,
+                    baseItem=base_item,
+                    item=base_item,
+                    amount=None,
+                    uniqueItems=None,
+                    setItems=None,
+                    itemModifiers=None
+                ))
+    print(d2_item_list)
+    cv2.imshow('inventory', image)
+    cv2.waitKey()
+    pass
