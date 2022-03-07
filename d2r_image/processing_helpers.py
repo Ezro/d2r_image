@@ -246,7 +246,7 @@ def consolidate_quality(quality_items, potential_bases):
     for item in quality_items:
         if not d2data_lookup.is_base(item['text']):
             # result = d2data_lookup.find_item_by_display_name(item['text'])
-            result = d2data_lookup.find_item_by_display_name_and_quality(item['text'], item['quality'])
+            result = d2data_lookup.find_set_or_unique_item_by_name(item['text'], item['quality'])
             if not result:
                 continue
             closest_dist = 99999
