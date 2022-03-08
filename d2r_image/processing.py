@@ -173,7 +173,8 @@ def get_inventory(image: np.ndarray) -> D2ItemList:
         map = d2data_maps[i]
         roi = UI_ROI.leftInventory if i == 1 else UI_ROI.rightInventory
         for item in map:
-            rects = detect_screen_object(ScreenObject(refs=map[item], threshold=0.95, roi=roi), image)
+            threshold = 0.95 if item not in ['PERFECT AMETHYST', 'PERFECT SAPPHIRE'] else 0.99
+            rects = detect_screen_object(ScreenObject(refs=map[item], threshold=threshold, roi=roi), image)
             if rects:
                 for rect in rects:
                     quality=ItemQuality.Normal.value
