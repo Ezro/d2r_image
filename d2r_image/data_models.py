@@ -71,6 +71,8 @@ class D2Item:
     itemModifiers: Union[dict, None]
 
     def __eq__(self, other):
+        if self and not other:
+            return False
         return self.boundingBox == other.boundingBox and\
             self.name == other.name and\
             self.type == other.type and\

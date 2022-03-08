@@ -145,8 +145,8 @@ def consolidate_overlapping_rects(rects):
                     y < n_y + n_h and\
                         y + h > n_y:
                         if rects[j] not in rects_to_remove:
-                            if (x < n_x and x + w - n_x > 3) or\
-                                (x > n_x and n_x + n_w - x > 3):
+                            if (x <= n_x and x + w - n_x > 3) or\
+                                (x >= n_x and n_x + n_w - x > 3):
                                 rects_to_remove.append(rects[j])
     for rect in rects_to_remove:
         rects_to_return.remove(rect)

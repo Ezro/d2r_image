@@ -3,10 +3,10 @@
         {
             "boundingBox":
             {
-                "x": 726,
-                "y": 678,
-                "w": 36,
-                "h": 33
+                "x": 735,
+                "y": 680,
+                "w": 20,
+                "h": 29
             },
             "name": "GREATER HEALING POTION",
             "quality": "normal",
@@ -34,10 +34,10 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 678,
-                "w": 35,
-                "h": 32
+                "x": 776,
+                "y": 680,
+                "w": 21,
+                "h": 28
             },
             "name": "HEALING POTION",
             "quality": "normal",
@@ -65,10 +65,10 @@
         {
             "boundingBox":
             {
-                "x": 808,
-                "y": 678,
-                "w": 36,
-                "h": 32
+                "x": 817,
+                "y": 680,
+                "w": 21,
+                "h": 27
             },
             "name": "MANA POTION",
             "quality": "normal",
@@ -96,10 +96,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 678,
-                "w": 36,
-                "h": 32
+                "x": 858,
+                "y": 680,
+                "w": 21,
+                "h": 27
             },
             "name": "MANA POTION",
             "quality": "normal",
@@ -127,10 +127,10 @@
         {
             "boundingBox":
             {
-                "x": 726,
-                "y": 641,
-                "w": 36,
-                "h": 33
+                "x": 731,
+                "y": 642,
+                "w": 22,
+                "h": 30
             },
             "name": "SUPER HEALING POTION",
             "quality": "normal",
@@ -158,26 +158,26 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 641,
-                "w": 36,
-                "h": 32
+                "x": 776,
+                "y": 643,
+                "w": 21,
+                "h": 28
             },
-            "name": "LIGHT HEALING POTION",
+            "name": "HEALING POTION",
             "quality": "normal",
             "type": "healing_potion",
             "identified": true,
             "amount": null,
             "baseItem":
             {
-                "display_name": "Light Healing Potion",
+                "display_name": "Healing Potion",
                 "sets": [],
                 "type": "healing_potion",
                 "uniques": []
             },
             "item":
             {
-                "display_name": "Light Healing Potion",
+                "display_name": "Healing Potion",
                 "sets": [],
                 "type": "healing_potion",
                 "uniques": []
@@ -189,10 +189,10 @@
         {
             "boundingBox":
             {
-                "x": 814,
-                "y": 646,
-                "w": 25,
-                "h": 24
+                "x": 813,
+                "y": 647,
+                "w": 26,
+                "h": 22
             },
             "name": "EMPTY BELT SLOT",
             "quality": null,
@@ -208,10 +208,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 641,
-                "w": 36,
-                "h": 32
+                "x": 858,
+                "y": 643,
+                "w": 21,
+                "h": 27
             },
             "name": "MANA POTION",
             "quality": "normal",

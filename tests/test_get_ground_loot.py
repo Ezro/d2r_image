@@ -1,10 +1,9 @@
-from dataclasses import dataclass
-from dataclasses_json import dataclass_json
 import cv2
 import os
 import pytest
 from d2r_image import processing
-from d2r_image.data_models import D2Item, D2ItemList
+from d2r_image.data_models import D2ItemList
+
 
 @pytest.mark.parametrize("filename, expected_items_file", [
     ("ground1.png", 'ground1.json'),

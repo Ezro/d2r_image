@@ -15,8 +15,9 @@ class MainMenuScreenObjects:
     PlayBtn=ScreenObject(
         refs=["PLAY_BTN", "PLAY_BTN_GRAY"],
         roi=UI_ROI.playButton,
+        threshold=0.9,
         best_match=True,
-        use_grayscale=True
+        use_grayscale=True,
     )
     Normal=ScreenObject(
         refs=["NORMAL_BTN"],

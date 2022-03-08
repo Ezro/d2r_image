@@ -3,10 +3,10 @@
         {
             "boundingBox":
             {
-                "x": 725,
-                "y": 678,
-                "w": 36,
-                "h": 32
+                "x": 734,
+                "y": 680,
+                "w": 20,
+                "h": 28
             },
             "name": "SCROLL OF TOWN PORTAL",
             "quality": "normal",
@@ -34,10 +34,10 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 678,
-                "w": 35,
-                "h": 32
+                "x": 781,
+                "y": 680,
+                "w": 7,
+                "h": 27
             },
             "name": "THAWING POTION",
             "quality": "normal",
@@ -65,10 +65,10 @@
         {
             "boundingBox":
             {
-                "x": 808,
-                "y": 678,
-                "w": 36,
-                "h": 32
+                "x": 820,
+                "y": 683,
+                "w": 16,
+                "h": 25
             },
             "name": "MINOR HEALING POTION",
             "quality": "normal",
@@ -96,10 +96,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 678,
-                "w": 35,
-                "h": 32
+                "x": 853,
+                "y": 679,
+                "w": 26,
+                "h": 30
             },
             "name": "FULL REJUVENATION POTION",
             "quality": "normal",
@@ -127,28 +127,28 @@
         {
             "boundingBox":
             {
-                "x": 725,
-                "y": 641,
-                "w": 36,
-                "h": 32
+                "x": 735,
+                "y": 643,
+                "w": 21,
+                "h": 28
             },
-            "name": "SCROLL OF TOWN PORTAL",
+            "name": "HEALING POTION",
             "quality": "normal",
-            "type": "scroll",
+            "type": "healing_potion",
             "identified": true,
             "amount": null,
             "baseItem":
             {
-                "display_name": "Scroll of Town Portal",
+                "display_name": "Healing Potion",
                 "sets": [],
-                "type": "scroll",
+                "type": "healing_potion",
                 "uniques": []
             },
             "item":
             {
-                "display_name": "Scroll of Town Portal",
+                "display_name": "Healing Potion",
                 "sets": [],
-                "type": "scroll",
+                "type": "healing_potion",
                 "uniques": []
             },
             "uniqueItems": null,
@@ -158,10 +158,10 @@
         {
             "boundingBox":
             {
-                "x": 766,
-                "y": 641,
-                "w": 36,
-                "h": 32
+                "x": 778,
+                "y": 644,
+                "w": 13,
+                "h": 26
             },
             "name": "ANTIDOTE POTION",
             "quality": "normal",
@@ -189,26 +189,26 @@
         {
             "boundingBox":
             {
-                "x": 808,
-                "y": 641,
-                "w": 36,
-                "h": 32
+                "x": 817,
+                "y": 645,
+                "w": 21,
+                "h": 26
             },
-            "name": "MINOR HEALING POTION",
+            "name": "LIGHT HEALING POTION",
             "quality": "normal",
             "type": "healing_potion",
             "identified": true,
             "amount": null,
             "baseItem":
             {
-                "display_name": "Minor Healing Potion",
+                "display_name": "Light Healing Potion",
                 "sets": [],
                 "type": "healing_potion",
                 "uniques": []
             },
             "item":
             {
-                "display_name": "Minor Healing Potion",
+                "display_name": "Light Healing Potion",
                 "sets": [],
                 "type": "healing_potion",
                 "uniques": []
@@ -220,28 +220,28 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 641,
-                "w": 36,
-                "h": 33
+                "x": 858,
+                "y": 643,
+                "w": 20,
+                "h": 29
             },
-            "name": "SUPER MANA POTION",
+            "name": "GREATER HEALING POTION",
             "quality": "normal",
-            "type": "mana_potion",
+            "type": "healing_potion",
             "identified": true,
             "amount": null,
             "baseItem":
             {
-                "display_name": "Super Mana Potion",
+                "display_name": "Greater Healing Potion",
                 "sets": [],
-                "type": "mana_potion",
+                "type": "healing_potion",
                 "uniques": []
             },
             "item":
             {
-                "display_name": "Super Mana Potion",
+                "display_name": "Greater Healing Potion",
                 "sets": [],
-                "type": "mana_potion",
+                "type": "healing_potion",
                 "uniques": []
             },
             "uniqueItems": null,
@@ -251,10 +251,10 @@
         {
             "boundingBox":
             {
-                "x": 725,
-                "y": 604,
-                "w": 36,
-                "h": 32
+                "x": 733,
+                "y": 606,
+                "w": 22,
+                "h": 28
             },
             "name": "SCROLL OF IDENTIFY",
             "quality": "normal",
@@ -282,10 +282,10 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 604,
-                "w": 35,
-                "h": 32
+                "x": 781,
+                "y": 606,
+                "w": 7,
+                "h": 27
             },
             "name": "THAWING POTION",
             "quality": "normal",
@@ -313,10 +313,10 @@
         {
             "boundingBox":
             {
-                "x": 808,
-                "y": 604,
-                "w": 36,
-                "h": 32
+                "x": 820,
+                "y": 609,
+                "w": 16,
+                "h": 25
             },
             "name": "MINOR MANA POTION",
             "quality": "normal",
@@ -344,26 +344,57 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 604,
-                "w": 35,
-                "h": 32
+                "x": 858,
+                "y": 605,
+                "w": 20,
+                "h": 30
             },
-            "name": "FULL REJUVENATION POTION",
+            "name": "GREATER MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Greater Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Greater Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 734,
+                "y": 569,
+                "w": 22,
+                "h": 28
+            },
+            "name": "REJUVENATION POTION",
             "quality": "normal",
             "type": "rejuv_potion",
             "identified": true,
             "amount": null,
             "baseItem":
             {
-                "display_name": "Full Rejuvenation Potion",
+                "display_name": "Rejuvenation Potion",
                 "sets": [],
                 "type": "rejuv_potion",
                 "uniques": []
             },
             "item":
             {
-                "display_name": "Full Rejuvenation Potion",
+                "display_name": "Rejuvenation Potion",
                 "sets": [],
                 "type": "rejuv_potion",
                 "uniques": []
@@ -375,41 +406,10 @@
         {
             "boundingBox":
             {
-                "x": 725,
-                "y": 567,
-                "w": 36,
-                "h": 32
-            },
-            "name": "SCROLL OF IDENTIFY",
-            "quality": "normal",
-            "type": "scroll",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Scroll of Identify",
-                "sets": [],
-                "type": "scroll",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Scroll of Identify",
-                "sets": [],
-                "type": "scroll",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 767,
-                "y": 567,
-                "w": 35,
-                "h": 32
+                "x": 781,
+                "y": 569,
+                "w": 7,
+                "h": 28
             },
             "name": "STAMINA POTION",
             "quality": "normal",
@@ -437,26 +437,26 @@
         {
             "boundingBox":
             {
-                "x": 808,
-                "y": 567,
-                "w": 36,
-                "h": 32
+                "x": 817,
+                "y": 571,
+                "w": 21,
+                "h": 26
             },
-            "name": "MINOR MANA POTION",
+            "name": "LIGHT MANA POTION",
             "quality": "normal",
             "type": "mana_potion",
             "identified": true,
             "amount": null,
             "baseItem":
             {
-                "display_name": "Minor Mana Potion",
+                "display_name": "Light Mana Potion",
                 "sets": [],
                 "type": "mana_potion",
                 "uniques": []
             },
             "item":
             {
-                "display_name": "Minor Mana Potion",
+                "display_name": "Light Mana Potion",
                 "sets": [],
                 "type": "mana_potion",
                 "uniques": []
@@ -468,10 +468,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 567,
-                "w": 36,
-                "h": 32
+                "x": 858,
+                "y": 569,
+                "w": 21,
+                "h": 27
             },
             "name": "MANA POTION",
             "quality": "normal",

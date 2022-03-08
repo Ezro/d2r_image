@@ -1,0 +1,35 @@
+{
+    "items": [
+        {
+            "boundingBox":
+            {
+                "x": 735,
+                "y": 680,
+                "w": 20,
+                "h": 29
+            },
+            "name": "GREATER HEALING POTION",
+            "quality": ["normal"],
+            "type": ["healing_potion"],
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Greater Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item": [
+                {
+                    "display_name": "Greater Healing Potion",
+                    "sets": [],
+                    "type": "healing_potion",
+                    "uniques": []
+                }
+            ],
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        }]
+}

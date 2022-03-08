@@ -3,10 +3,10 @@
         {
             "boundingBox":
             {
-                "x": 726,
-                "y": 678,
-                "w": 36,
-                "h": 33
+                "x": 731,
+                "y": 679,
+                "w": 22,
+                "h": 30
             },
             "name": "SUPER HEALING POTION",
             "quality": "normal",
@@ -34,10 +34,10 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 678,
-                "w": 36,
-                "h": 33
+                "x": 776,
+                "y": 680,
+                "w": 20,
+                "h": 29
             },
             "name": "GREATER HEALING POTION",
             "quality": "normal",
@@ -65,10 +65,10 @@
         {
             "boundingBox":
             {
-                "x": 808,
-                "y": 678,
-                "w": 36,
-                "h": 32
+                "x": 817,
+                "y": 679,
+                "w": 20,
+                "h": 30
             },
             "name": "GREATER MANA POTION",
             "quality": "normal",
@@ -96,10 +96,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 678,
-                "w": 36,
-                "h": 33
+                "x": 854,
+                "y": 679,
+                "w": 22,
+                "h": 30
             },
             "name": "SUPER MANA POTION",
             "quality": "normal",
@@ -127,10 +127,10 @@
         {
             "boundingBox":
             {
-                "x": 726,
-                "y": 641,
-                "w": 36,
-                "h": 33
+                "x": 731,
+                "y": 642,
+                "w": 22,
+                "h": 30
             },
             "name": "SUPER HEALING POTION",
             "quality": "normal",
@@ -158,10 +158,10 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 641,
-                "w": 36,
-                "h": 33
+                "x": 776,
+                "y": 643,
+                "w": 20,
+                "h": 29
             },
             "name": "GREATER HEALING POTION",
             "quality": "normal",
@@ -189,10 +189,10 @@
         {
             "boundingBox":
             {
-                "x": 808,
-                "y": 641,
-                "w": 36,
-                "h": 32
+                "x": 817,
+                "y": 642,
+                "w": 20,
+                "h": 30
             },
             "name": "GREATER MANA POTION",
             "quality": "normal",
@@ -220,10 +220,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 641,
-                "w": 36,
-                "h": 32
+                "x": 858,
+                "y": 642,
+                "w": 20,
+                "h": 30
             },
             "name": "GREATER MANA POTION",
             "quality": "normal",
@@ -251,10 +251,10 @@
         {
             "boundingBox":
             {
-                "x": 726,
-                "y": 604,
-                "w": 36,
-                "h": 33
+                "x": 735,
+                "y": 606,
+                "w": 20,
+                "h": 29
             },
             "name": "GREATER HEALING POTION",
             "quality": "normal",
@@ -282,10 +282,10 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 604,
-                "w": 36,
-                "h": 33
+                "x": 776,
+                "y": 606,
+                "w": 20,
+                "h": 29
             },
             "name": "GREATER HEALING POTION",
             "quality": "normal",
@@ -313,10 +313,10 @@
         {
             "boundingBox":
             {
-                "x": 814,
-                "y": 609,
-                "w": 25,
-                "h": 24
+                "x": 813,
+                "y": 610,
+                "w": 26,
+                "h": 22
             },
             "name": "EMPTY BELT SLOT",
             "quality": null,
@@ -332,10 +332,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 604,
-                "w": 36,
-                "h": 32
+                "x": 858,
+                "y": 605,
+                "w": 20,
+                "h": 30
             },
             "name": "GREATER MANA POTION",
             "quality": "normal",
@@ -363,10 +363,10 @@
         {
             "boundingBox":
             {
-                "x": 726,
-                "y": 567,
-                "w": 36,
-                "h": 33
+                "x": 735,
+                "y": 569,
+                "w": 20,
+                "h": 29
             },
             "name": "GREATER HEALING POTION",
             "quality": "normal",
@@ -394,10 +394,10 @@
         {
             "boundingBox":
             {
-                "x": 767,
-                "y": 567,
-                "w": 36,
-                "h": 33
+                "x": 772,
+                "y": 568,
+                "w": 22,
+                "h": 30
             },
             "name": "SUPER HEALING POTION",
             "quality": "normal",
@@ -425,10 +425,10 @@
         {
             "boundingBox":
             {
-                "x": 814,
-                "y": 572,
-                "w": 25,
-                "h": 24
+                "x": 813,
+                "y": 573,
+                "w": 26,
+                "h": 22
             },
             "name": "EMPTY BELT SLOT",
             "quality": null,
@@ -444,10 +444,10 @@
         {
             "boundingBox":
             {
-                "x": 849,
-                "y": 567,
-                "w": 36,
-                "h": 32
+                "x": 858,
+                "y": 568,
+                "w": 20,
+                "h": 30
             },
             "name": "GREATER MANA POTION",
             "quality": "normal",
