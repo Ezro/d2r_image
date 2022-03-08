@@ -148,3 +148,11 @@ from d2r_image import demo
 demo.get_ground_loot()
 demo.get_health_mana()
 ```
+## Screenshots
+---
+![random_items](screenshots/random_items.PNG)
+![sets_and_uniques](screenshots/sets_and_uniques.PNG)
+![consumables](screenshots/all_consumables.PNG)
+![baal](screenshots/baal.PNG)
+![get_belt](screenshots/get_belt.PNG)
+![trav](screenshots/baal.PNG)
