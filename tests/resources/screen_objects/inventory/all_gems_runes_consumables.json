@@ -2359,6 +2359,37 @@
         {
             "boundingBox":
             {
+                "x": 155,
+                "y": 211,
+                "w": 26,
+                "h": 26
+            },
+            "name": "FLAWLESS RUBY",
+            "quality": "normal",
+            "type": "ruby",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawless Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawless Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
                 "x": 195,
                 "y": 210,
                 "w": 21,
