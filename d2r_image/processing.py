@@ -81,10 +81,6 @@ def get_npc_coords(image: np.ndarray, npc: ScreenObject) -> Tuple[int, int]:
     return match
 
 
-def find_items_by_name(image: np.ndarray, name: str) -> list[Tuple[int, int]]:
-    return (0, 0)
-
-
 def get_health(image: np.ndarray) -> float:
     health_img = cut_roi(image, UI_ROI.healthSlice)
     mask, _ = color_filter(health_img, COLORS["health_globe_red"])
