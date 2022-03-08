@@ -23,17 +23,6 @@ def test_inventory(filename: str, expected_file: str):
         'inventory',
         expected_file)
     inventory = processing.get_inventory(image)
-    for item in inventory.items:
-        x = item.boundingBox['x']
-        y = item.boundingBox['y']
-        w = item.boundingBox['w']
-        h = item.boundingBox['h']
-        cv2.rectangle(
-            image,
-            (x, y),
-            (x+w, y+h),
-            (0, 0, 255),
-            1)
     inventory_expected = D2ItemList.from_json(open(expected_items_path).read())
     assert len(inventory.items) == len(inventory_expected.items)
     for item in inventory_expected.items:
