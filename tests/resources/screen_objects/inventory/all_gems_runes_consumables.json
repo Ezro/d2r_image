@@ -3,1494 +3,6 @@
         {
             "boundingBox":
             {
-                "x": 47,
-                "y": 363,
-                "w": 19,
-                "h": 29
-            },
-            "name": "MINOR HEALING POTION",
-            "quality": "normal",
-            "type": "healing_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Minor Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Minor Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 81,
-                "y": 362,
-                "w": 26,
-                "h": 30
-            },
-            "name": "LIGHT HEALING POTION",
-            "quality": "normal",
-            "type": "healing_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Light Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Light Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 120,
-                "y": 360,
-                "w": 25,
-                "h": 31
-            },
-            "name": "HEALING POTION",
-            "quality": "normal",
-            "type": "healing_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 158,
-                "y": 359,
-                "w": 22,
-                "h": 33
-            },
-            "name": "GREATER HEALING POTION",
-            "quality": "normal",
-            "type": "healing_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Greater Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Greater Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 191,
-                "y": 358,
-                "w": 26,
-                "h": 35
-            },
-            "name": "SUPER HEALING POTION",
-            "quality": "normal",
-            "type": "healing_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Super Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Super Healing Potion",
-                "sets": [],
-                "type": "healing_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 236,
-                "y": 363,
-                "w": 19,
-                "h": 29
-            },
-            "name": "MINOR MANA POTION",
-            "quality": "normal",
-            "type": "mana_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Minor Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Minor Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 232,
-                "y": 324,
-                "w": 26,
-                "h": 30
-            },
-            "name": "LIGHT MANA POTION",
-            "quality": "normal",
-            "type": "mana_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Light Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Light Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 233,
-                "y": 284,
-                "w": 24,
-                "h": 31
-            },
-            "name": "MANA POTION",
-            "quality": "normal",
-            "type": "mana_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 234,
-                "y": 246,
-                "w": 22,
-                "h": 33
-            },
-            "name": "GREATER MANA POTION",
-            "quality": "normal",
-            "type": "mana_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Greater Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Greater Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 228,
-                "y": 207,
-                "w": 26,
-                "h": 35
-            },
-            "name": "SUPER MANA POTION",
-            "quality": "normal",
-            "type": "mana_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Super Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Super Mana Potion",
-                "sets": [],
-                "type": "mana_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 232,
-                "y": 171,
-                "w": 25,
-                "h": 32
-            },
-            "name": "REJUVENATION POTION",
-            "quality": "normal",
-            "type": "rejuv_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Rejuvenation Potion",
-                "sets": [],
-                "type": "rejuv_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Rejuvenation Potion",
-                "sets": [],
-                "type": "rejuv_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 227,
-                "y": 131,
-                "w": 31,
-                "h": 35
-            },
-            "name": "FULL REJUVENATION POTION",
-            "quality": "normal",
-            "type": "rejuv_potion",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Full Rejuvenation Potion",
-                "sets": [],
-                "type": "rejuv_potion",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Full Rejuvenation Potion",
-                "sets": [],
-                "type": "rejuv_potion",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 382,
-                "y": 96,
-                "w": 28,
-                "h": 105
-            },
-            "name": "ARROWS",
-            "quality": "normal",
-            "type": "bow_quiver",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Arrows",
-                "sets": [],
-                "type": "bow_quiver",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Arrows",
-                "sets": [],
-                "type": "bow_quiver",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 345,
-                "y": 104,
-                "w": 24,
-                "h": 89
-            },
-            "name": "BOLTS",
-            "quality": "normal",
-            "type": "crossbow_quiver",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Bolts",
-                "sets": [],
-                "type": "crossbow_quiver",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Bolts",
-                "sets": [],
-                "type": "crossbow_quiver",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 47,
-                "y": 103,
-                "w": 14,
-                "h": 15
-            },
-            "name": "CHIPPED AMETHYST",
-            "quality": "normal",
-            "type": "amethyst",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Chipped Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Chipped Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 84,
-                "y": 101,
-                "w": 15,
-                "h": 17
-            },
-            "name": "FLAWED AMETHYST",
-            "quality": "normal",
-            "type": "amethyst",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawed Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawed Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 121,
-                "y": 100,
-                "w": 18,
-                "h": 20
-            },
-            "name": "AMETHYST",
-            "quality": "normal",
-            "type": "amethyst",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 156,
-                "y": 98,
-                "w": 24,
-                "h": 24
-            },
-            "name": "FLAWLESS AMETHYST",
-            "quality": "normal",
-            "type": "amethyst",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawless Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawless Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 194,
-                "y": 96,
-                "w": 24,
-                "h": 28
-            },
-            "name": "PERFECT AMETHYST",
-            "quality": "normal",
-            "type": "amethyst",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Perfect Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Perfect Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 194,
-                "y": 248,
-                "w": 24,
-                "h": 28
-            },
-            "name": "PERFECT AMETHYST",
-            "quality": "normal",
-            "type": "amethyst",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Perfect Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Perfect Amethyst",
-                "sets": [],
-                "type": "amethyst",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 47,
-                "y": 293,
-                "w": 14,
-                "h": 14
-            },
-            "name": "CHIPPED TOPAZ",
-            "quality": "normal",
-            "type": "topaz",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Chipped Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Chipped Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 83,
-                "y": 290,
-                "w": 17,
-                "h": 18
-            },
-            "name": "FLAWED TOPAZ",
-            "quality": "normal",
-            "type": "topaz",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawed Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawed Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 121,
-                "y": 289,
-                "w": 18,
-                "h": 20
-            },
-            "name": "TOPAZ",
-            "quality": "normal",
-            "type": "topaz",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 156,
-                "y": 287,
-                "w": 24,
-                "h": 24
-            },
-            "name": "FLAWLESS TOPAZ",
-            "quality": "normal",
-            "type": "topaz",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawless Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawless Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 194,
-                "y": 285,
-                "w": 24,
-                "h": 28
-            },
-            "name": "PERFECT TOPAZ",
-            "quality": "normal",
-            "type": "topaz",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Perfect Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Perfect Topaz",
-                "sets": [],
-                "type": "topaz",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 46,
-                "y": 142,
-                "w": 16,
-                "h": 13
-            },
-            "name": "CHIPPED DIAMOND",
-            "quality": "normal",
-            "type": "diamond",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Chipped Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Chipped Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 83,
-                "y": 140,
-                "w": 19,
-                "h": 18
-            },
-            "name": "FLAWED DIAMOND",
-            "quality": "normal",
-            "type": "diamond",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawed Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawed Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 119,
-                "y": 138,
-                "w": 22,
-                "h": 23
-            },
-            "name": "DIAMOND",
-            "quality": "normal",
-            "type": "diamond",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 155,
-                "y": 135,
-                "w": 25,
-                "h": 26
-            },
-            "name": "FLAWLESS DIAMOND",
-            "quality": "normal",
-            "type": "diamond",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawless Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawless Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 195,
-                "y": 134,
-                "w": 21,
-                "h": 28
-            },
-            "name": "PERFECT DIAMOND",
-            "quality": "normal",
-            "type": "diamond",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Perfect Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Perfect Diamond",
-                "sets": [],
-                "type": "diamond",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 46,
-                "y": 180,
-                "w": 16,
-                "h": 12
-            },
-            "name": "CHIPPED EMERALD",
-            "quality": "normal",
-            "type": "emerald",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Chipped Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Chipped Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 83,
-                "y": 178,
-                "w": 19,
-                "h": 18
-            },
-            "name": "FLAWED EMERALD",
-            "quality": "normal",
-            "type": "emerald",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawed Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawed Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 121,
-                "y": 176,
-                "w": 18,
-                "h": 20
-            },
-            "name": "EMERALD",
-            "quality": "normal",
-            "type": "emerald",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 155,
-                "y": 173,
-                "w": 26,
-                "h": 26
-            },
-            "name": "FLAWLESS EMERALD",
-            "quality": "normal",
-            "type": "emerald",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawless Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawless Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 195,
-                "y": 172,
-                "w": 21,
-                "h": 28
-            },
-            "name": "PERFECT EMERALD",
-            "quality": "normal",
-            "type": "emerald",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Perfect Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Perfect Emerald",
-                "sets": [],
-                "type": "emerald",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 46,
-                "y": 218,
-                "w": 16,
-                "h": 12
-            },
-            "name": "CHIPPED RUBY",
-            "quality": "normal",
-            "type": "ruby",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Chipped Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Chipped Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 83,
-                "y": 216,
-                "w": 19,
-                "h": 18
-            },
-            "name": "FLAWED RUBY",
-            "quality": "normal",
-            "type": "ruby",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawed Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawed Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 121,
-                "y": 214,
-                "w": 18,
-                "h": 20
-            },
-            "name": "RUBY",
-            "quality": "normal",
-            "type": "ruby",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 195,
-                "y": 210,
-                "w": 21,
-                "h": 27
-            },
-            "name": "PERFECT RUBY",
-            "quality": "normal",
-            "type": "ruby",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Perfect Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Perfect Ruby",
-                "sets": [],
-                "type": "ruby",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 47,
-                "y": 255,
-                "w": 14,
-                "h": 15
-            },
-            "name": "CHIPPED SAPPHIRE",
-            "quality": "normal",
-            "type": "sapphire",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Chipped Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Chipped Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 83,
-                "y": 253,
-                "w": 17,
-                "h": 18
-            },
-            "name": "FLAWED SAPPHIRE",
-            "quality": "normal",
-            "type": "sapphire",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawed Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawed Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 121,
-                "y": 252,
-                "w": 18,
-                "h": 20
-            },
-            "name": "SAPPHIRE",
-            "quality": "normal",
-            "type": "sapphire",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 156,
-                "y": 250,
-                "w": 24,
-                "h": 24
-            },
-            "name": "FLAWLESS SAPPHIRE",
-            "quality": "normal",
-            "type": "sapphire",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawless Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawless Sapphire",
-                "sets": [],
-                "type": "sapphire",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 43,
-                "y": 328,
-                "w": 24,
-                "h": 26
-            },
-            "name": "CHIPPED SKULL",
-            "quality": "normal",
-            "type": "skull",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Chipped Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Chipped Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 81,
-                "y": 321,
-                "w": 24,
-                "h": 33
-            },
-            "name": "FLAWED SKULL",
-            "quality": "normal",
-            "type": "skull",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawed Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawed Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 119,
-                "y": 321,
-                "w": 24,
-                "h": 34
-            },
-            "name": "SKULL",
-            "quality": "normal",
-            "type": "skull",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 156,
-                "y": 321,
-                "w": 25,
-                "h": 33
-            },
-            "name": "FLAWLESS SKULL",
-            "quality": "normal",
-            "type": "skull",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Flawless Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Flawless Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
-                "x": 194,
-                "y": 321,
-                "w": 25,
-                "h": 33
-            },
-            "name": "PERFECT SKULL",
-            "quality": "normal",
-            "type": "skull",
-            "identified": true,
-            "amount": null,
-            "baseItem":
-            {
-                "display_name": "Perfect Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "item":
-            {
-                "display_name": "Perfect Skull",
-                "sets": [],
-                "type": "skull",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
-        },
-        {
-            "boundingBox":
-            {
                 "x": 1182,
                 "y": 465,
                 "w": 14,
@@ -2691,6 +1203,1494 @@
                 "display_name": "Zod Rune",
                 "sets": [],
                 "type": "rune",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 47,
+                "y": 363,
+                "w": 19,
+                "h": 29
+            },
+            "name": "MINOR HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Minor Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Minor Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 81,
+                "y": 362,
+                "w": 26,
+                "h": 30
+            },
+            "name": "LIGHT HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Light Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Light Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 120,
+                "y": 360,
+                "w": 25,
+                "h": 31
+            },
+            "name": "HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 158,
+                "y": 359,
+                "w": 22,
+                "h": 33
+            },
+            "name": "GREATER HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Greater Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Greater Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 191,
+                "y": 358,
+                "w": 26,
+                "h": 35
+            },
+            "name": "SUPER HEALING POTION",
+            "quality": "normal",
+            "type": "healing_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Super Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Super Healing Potion",
+                "sets": [],
+                "type": "healing_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 236,
+                "y": 363,
+                "w": 19,
+                "h": 29
+            },
+            "name": "MINOR MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Minor Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Minor Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 232,
+                "y": 324,
+                "w": 26,
+                "h": 30
+            },
+            "name": "LIGHT MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Light Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Light Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 233,
+                "y": 284,
+                "w": 24,
+                "h": 31
+            },
+            "name": "MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 234,
+                "y": 246,
+                "w": 22,
+                "h": 33
+            },
+            "name": "GREATER MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Greater Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Greater Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 228,
+                "y": 207,
+                "w": 26,
+                "h": 35
+            },
+            "name": "SUPER MANA POTION",
+            "quality": "normal",
+            "type": "mana_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Super Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Super Mana Potion",
+                "sets": [],
+                "type": "mana_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 232,
+                "y": 171,
+                "w": 25,
+                "h": 32
+            },
+            "name": "REJUVENATION POTION",
+            "quality": "normal",
+            "type": "rejuv_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 227,
+                "y": 131,
+                "w": 31,
+                "h": 35
+            },
+            "name": "FULL REJUVENATION POTION",
+            "quality": "normal",
+            "type": "rejuv_potion",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Full Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Full Rejuvenation Potion",
+                "sets": [],
+                "type": "rejuv_potion",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 382,
+                "y": 96,
+                "w": 28,
+                "h": 105
+            },
+            "name": "ARROWS",
+            "quality": "normal",
+            "type": "bow_quiver",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Arrows",
+                "sets": [],
+                "type": "bow_quiver",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Arrows",
+                "sets": [],
+                "type": "bow_quiver",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 345,
+                "y": 104,
+                "w": 24,
+                "h": 89
+            },
+            "name": "BOLTS",
+            "quality": "normal",
+            "type": "crossbow_quiver",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Bolts",
+                "sets": [],
+                "type": "crossbow_quiver",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Bolts",
+                "sets": [],
+                "type": "crossbow_quiver",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 47,
+                "y": 103,
+                "w": 14,
+                "h": 15
+            },
+            "name": "CHIPPED AMETHYST",
+            "quality": "normal",
+            "type": "amethyst",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chipped Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Chipped Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 84,
+                "y": 101,
+                "w": 15,
+                "h": 17
+            },
+            "name": "FLAWED AMETHYST",
+            "quality": "normal",
+            "type": "amethyst",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawed Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawed Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 121,
+                "y": 100,
+                "w": 18,
+                "h": 20
+            },
+            "name": "AMETHYST",
+            "quality": "normal",
+            "type": "amethyst",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 156,
+                "y": 98,
+                "w": 24,
+                "h": 24
+            },
+            "name": "FLAWLESS AMETHYST",
+            "quality": "normal",
+            "type": "amethyst",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawless Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawless Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 194,
+                "y": 96,
+                "w": 24,
+                "h": 28
+            },
+            "name": "PERFECT AMETHYST",
+            "quality": "normal",
+            "type": "amethyst",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Perfect Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Perfect Amethyst",
+                "sets": [],
+                "type": "amethyst",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 47,
+                "y": 293,
+                "w": 14,
+                "h": 14
+            },
+            "name": "CHIPPED TOPAZ",
+            "quality": "normal",
+            "type": "topaz",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chipped Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Chipped Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 83,
+                "y": 290,
+                "w": 17,
+                "h": 18
+            },
+            "name": "FLAWED TOPAZ",
+            "quality": "normal",
+            "type": "topaz",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawed Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawed Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 121,
+                "y": 289,
+                "w": 18,
+                "h": 20
+            },
+            "name": "TOPAZ",
+            "quality": "normal",
+            "type": "topaz",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 156,
+                "y": 287,
+                "w": 24,
+                "h": 24
+            },
+            "name": "FLAWLESS TOPAZ",
+            "quality": "normal",
+            "type": "topaz",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawless Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawless Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 194,
+                "y": 285,
+                "w": 24,
+                "h": 28
+            },
+            "name": "PERFECT TOPAZ",
+            "quality": "normal",
+            "type": "topaz",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Perfect Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Perfect Topaz",
+                "sets": [],
+                "type": "topaz",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 46,
+                "y": 142,
+                "w": 16,
+                "h": 13
+            },
+            "name": "CHIPPED DIAMOND",
+            "quality": "normal",
+            "type": "diamond",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chipped Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Chipped Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 83,
+                "y": 140,
+                "w": 19,
+                "h": 18
+            },
+            "name": "FLAWED DIAMOND",
+            "quality": "normal",
+            "type": "diamond",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawed Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawed Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 119,
+                "y": 138,
+                "w": 22,
+                "h": 23
+            },
+            "name": "DIAMOND",
+            "quality": "normal",
+            "type": "diamond",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 155,
+                "y": 135,
+                "w": 25,
+                "h": 26
+            },
+            "name": "FLAWLESS DIAMOND",
+            "quality": "normal",
+            "type": "diamond",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawless Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawless Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 195,
+                "y": 134,
+                "w": 21,
+                "h": 28
+            },
+            "name": "PERFECT DIAMOND",
+            "quality": "normal",
+            "type": "diamond",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Perfect Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Perfect Diamond",
+                "sets": [],
+                "type": "diamond",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 46,
+                "y": 180,
+                "w": 16,
+                "h": 12
+            },
+            "name": "CHIPPED EMERALD",
+            "quality": "normal",
+            "type": "emerald",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chipped Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Chipped Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 83,
+                "y": 178,
+                "w": 19,
+                "h": 18
+            },
+            "name": "FLAWED EMERALD",
+            "quality": "normal",
+            "type": "emerald",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawed Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawed Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 121,
+                "y": 176,
+                "w": 18,
+                "h": 20
+            },
+            "name": "EMERALD",
+            "quality": "normal",
+            "type": "emerald",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 155,
+                "y": 173,
+                "w": 26,
+                "h": 26
+            },
+            "name": "FLAWLESS EMERALD",
+            "quality": "normal",
+            "type": "emerald",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawless Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawless Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 195,
+                "y": 172,
+                "w": 21,
+                "h": 28
+            },
+            "name": "PERFECT EMERALD",
+            "quality": "normal",
+            "type": "emerald",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Perfect Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Perfect Emerald",
+                "sets": [],
+                "type": "emerald",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 46,
+                "y": 218,
+                "w": 16,
+                "h": 12
+            },
+            "name": "CHIPPED RUBY",
+            "quality": "normal",
+            "type": "ruby",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chipped Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Chipped Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 83,
+                "y": 216,
+                "w": 19,
+                "h": 18
+            },
+            "name": "FLAWED RUBY",
+            "quality": "normal",
+            "type": "ruby",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawed Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawed Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 121,
+                "y": 214,
+                "w": 18,
+                "h": 20
+            },
+            "name": "RUBY",
+            "quality": "normal",
+            "type": "ruby",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 195,
+                "y": 210,
+                "w": 21,
+                "h": 27
+            },
+            "name": "PERFECT RUBY",
+            "quality": "normal",
+            "type": "ruby",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Perfect Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Perfect Ruby",
+                "sets": [],
+                "type": "ruby",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 47,
+                "y": 255,
+                "w": 14,
+                "h": 15
+            },
+            "name": "CHIPPED SAPPHIRE",
+            "quality": "normal",
+            "type": "sapphire",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chipped Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Chipped Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 83,
+                "y": 253,
+                "w": 17,
+                "h": 18
+            },
+            "name": "FLAWED SAPPHIRE",
+            "quality": "normal",
+            "type": "sapphire",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawed Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawed Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 121,
+                "y": 252,
+                "w": 18,
+                "h": 20
+            },
+            "name": "SAPPHIRE",
+            "quality": "normal",
+            "type": "sapphire",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 156,
+                "y": 250,
+                "w": 24,
+                "h": 24
+            },
+            "name": "FLAWLESS SAPPHIRE",
+            "quality": "normal",
+            "type": "sapphire",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawless Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawless Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 194,
+                "y": 248,
+                "w": 24,
+                "h": 29
+            },
+            "name": "PERFECT SAPPHIRE",
+            "quality": "normal",
+            "type": "sapphire",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Perfect Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Perfect Sapphire",
+                "sets": [],
+                "type": "sapphire",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 43,
+                "y": 328,
+                "w": 24,
+                "h": 26
+            },
+            "name": "CHIPPED SKULL",
+            "quality": "normal",
+            "type": "skull",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Chipped Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Chipped Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 81,
+                "y": 321,
+                "w": 24,
+                "h": 33
+            },
+            "name": "FLAWED SKULL",
+            "quality": "normal",
+            "type": "skull",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawed Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawed Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 119,
+                "y": 321,
+                "w": 24,
+                "h": 34
+            },
+            "name": "SKULL",
+            "quality": "normal",
+            "type": "skull",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 156,
+                "y": 321,
+                "w": 25,
+                "h": 33
+            },
+            "name": "FLAWLESS SKULL",
+            "quality": "normal",
+            "type": "skull",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Flawless Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Flawless Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "uniqueItems": null,
+            "setItems": null,
+            "itemModifiers": null
+        },
+        {
+            "boundingBox":
+            {
+                "x": 194,
+                "y": 321,
+                "w": 25,
+                "h": 33
+            },
+            "name": "PERFECT SKULL",
+            "quality": "normal",
+            "type": "skull",
+            "identified": true,
+            "amount": null,
+            "baseItem":
+            {
+                "display_name": "Perfect Skull",
+                "sets": [],
+                "type": "skull",
+                "uniques": []
+            },
+            "item":
+            {
+                "display_name": "Perfect Skull",
+                "sets": [],
+                "type": "skull",
                 "uniques": []
             },
             "uniqueItems": null,
