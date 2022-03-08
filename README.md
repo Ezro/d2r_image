@@ -1,5 +1,5 @@
 # D2R Image
-D2R Image is a package aimed to help in providing an API for answering common questions when looking at a D2R image:
+D2R Image is a package aimed to help in providing an API for answering common questions when looking at a Dablo II: Resurrected image:
 
 - get_ground_loot(image: np.ndarray) -> D2ItemList
 - get_health(image: np.ndarray) -> float
