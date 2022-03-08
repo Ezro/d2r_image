@@ -5,8 +5,8 @@ with open('README.md', 'r') as readme:
 
 setup(
     name='d2r-image',
-    version='0.1.8',
-    description='D2R Image is a package aimed to help in providing an API for answering common questions when looking at a D2R image',
+    version='0.1.9',
+    description='D2R Image is a package aimed to help in providing an API for answering common questions when looking at a Diablo II: Resurrected image',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Ezro/d2r_image",
