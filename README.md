@@ -39,6 +39,7 @@ class D2Item:
 class D2ItemList:
     items: list[Union[D2Item, None]]class D2ItemList:
 ```
+## HoveredItem
 ```py
 class HoveredItem:
     name: str # e.g., DAGGER, SPIRIT, CHILLING GRAND CHARM OF VITA
