@@ -9,6 +9,7 @@ D2R Image is a package aimed to help in providing an API for answering common qu
 - get_merc_health(image: np.ndarray) -> float
 - get_belt(image: np.ndarray) -> D2ItemList
 - get_inventory(image: np.ndarray) -> D2ItemList (WIP)
+- get_hovered_item(image: np.ndarray) -> HoveredItem
 <!-- - get_hovered_item(image: np.ndarray) -> D2Item | None 
 - get_npc_coords(npc: NPC) -> (x, y) | None 
 - find_items_by_name(name: str) -> list[(x, y)] | None 
@@ -24,7 +25,7 @@ D2Item is one of the core data models returned by the d2r-image library. It aims
 class D2Item:
     boundingBox: dict # x, y, w, h
     name: str # e.g., HAND AXE, 1015 GOLD, ORMUS' ROBES
-    quality: str # e.g., gray, normal, set, unique, runeword, rune
+    quality: str # e.g., gray, normal, magic, rare, set, unique, runeword, rune
     type: str # e.g., helm, mace, axe, shield
     identified: bool # whether the item is identified or not
     amount: int # e.g., 1015 (where name is 1015 GOLD)
@@ -37,6 +38,14 @@ class D2Item:
 ```py
 class D2ItemList:
     items: list[Union[D2Item, None]]class D2ItemList:
+```
+```py
+class HoveredItem:
+    name: str # e.g., DAGGER, SPIRIT, CHILLING GRAND CHARM OF VITA
+    quality: str # e.g., gray, normal, magic, rare, set, unique, runeword, rune
+    baseItem: dict # d2data base item
+    item: Union[dict, None] # d2data item (if the hovered item is identified)
+    itemModifiers: Union[dict, None] # d2data parsed modifiers
 ```
 ## Install
 ---
