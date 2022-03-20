@@ -1,7 +1,9 @@
 import os
 import sys
-from d2r_image.data_models import ItemQuality
+from parse import compile as compile_pattern
+from d2r_image.data_models import HoveredItem, ItemQuality
 from d2r_image.d2data_data import ITEM_ARMOR, ITEM_MISC, ITEM_SET_ITEMS, ITEM_TYPES, ITEM_UNIQUE_ITEMS, ITEM_WEAPONS, REF_PATTERNS
+from d2r_image.processing_data import Runeword
 
 
 item_lookup: dict = {
@@ -25,7 +27,6 @@ bases_by_name: dict = {}
 consumables_by_name: dict = {}
 gems_by_name: dict = {}
 runes_by_name: dict ={}
-patterns: dict
 
 if getattr(sys, 'frozen', False):
     application_path = os.path.dirname(sys.executable)
@@ -80,17 +81,12 @@ def load_lookup():
             runes_by_name[misc_item.upper()] = item_lookup_by_display_name['misc'][misc_item]
     pass
 
-# def load_parsers():
-#     start = time.time()
-#     with open(file_path, "r",encoding = 'utf-8') as f:
-#         patterns = json.load(f)
-#     for key, value in patterns.items():
-#         patterns[key] = {
-#             "compiled_pattern": compile_pattern(key),
-#             "identifiers": value
-#         }
-#     end = time.time()
-#     print(f"Time elapsed to load parsers: {end - start}")
+def load_parsers():
+    for key, value in REF_PATTERNS.items():
+        REF_PATTERNS[key] = {
+            "compiled_pattern": compile_pattern(key),
+            "identifiers": value
+        }
 
 def find_set_or_unique_item_by_name(name, quality: ItemQuality, fuzzy = False):
     if quality.value == ItemQuality.Unique.value:
@@ -118,9 +114,6 @@ def find_set_item_by_name(name, fuzzy=False):
         for item_key in item_lookup_by_quality_and_display_name[quality]:
             if lev(name, item_key) < 3:
                 return item_lookup_by_quality_and_display_name[quality][item_key]
-
-def find_base_item_from_unique_name(unique_name):
-    pass
 
 def find_base_item_from_magic_item_text(magic_item_text):
     for base_item_name in bases_by_name:
@@ -170,9 +163,81 @@ def get_by_name(name: str):
     elif is_rune(name):
         return get_rune(name)
 
+def parse_item(quality, item):
+    item_is_identified = True
+    for line in item:
+        if line == 'UNIDENTIFIED':
+            item_is_identified = False
+            break
+    # The first line is usually the item name
+    # parsed_item["display_name"] = item[0]
+    # The second line is usually the type. Map it to be sure, (for now just setting to base_type)
+    # parsed_item["base_item"] = item[1]
+    base_name = item[1] if item_is_identified and quality not in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Magic.value] else item[0]
+    base_item = None
+    if quality == ItemQuality.Magic.value:
+        base_item = find_base_item_from_magic_item_text(item[0])
+    else:
+        if not is_base(base_name):
+            raise Exception('Unable to find item base')
+        base_item = get_base(base_name)
+    # Add matches from item data
+    found_item = None
+    item_modifiers = None
+    if item_is_identified:
+        if quality == ItemQuality.Unique.value:
+            found_item = find_unique_item_by_name(item[0])
+        elif quality == ItemQuality.Set.value:
+            found_item = find_set_item_by_name(item[0])
+        elif quality in [ItemQuality.Gray.value, ItemQuality.Normal.value]:
+            found_item = base_item
+        if not found_item and quality != ItemQuality.Magic.value:
+            if quality == ItemQuality.Unique.value:
+                if not Runeword(item[0]):
+                    raise Exception('Unable to find item')
+                quality = ItemQuality.Runeword.value
+            else:
+                raise Exception('Unable to find item')
+        # parsed_item["item_data_matches"] = find_unique_item_by_name(parsed_item["display_name"]) | find_set_item_by_name(parsed_item["display_name"]) | get_base(parsed_item["base_item"])
+        # The next few lines help us determine
+        item_modifiers = {}
+        for line in item:
+            match = find_pattern_match(line)
+            if match:
+                # Store the property values
+                # if match["property_id"] not in parsed_item:
+                #     parsed_item[match["property_id"]] = []
+                # parsed_item[match["property_id"]].append(match["property_values"])
+                if match["property_id"] not in item_modifiers:
+                    item_modifiers[match["property_id"]] = []
+                item_modifiers[match["property_id"]].append(match["property_values"])
+    return HoveredItem(
+        name=item[0],
+        quality=quality,
+        baseItem=base_item,
+        item=found_item,
+        itemModifiers=item_modifiers
+    )
+
+def find_pattern_match(text):
+    match = None
+    for _, pattern in REF_PATTERNS.items():
+        result = pattern["compiled_pattern"].parse(text)
+        if result:
+            # If the captured data points is an array of one thing, flatten in.
+            data_points = result.fixed
+            if type(data_points) == tuple and len(data_points) == 1:
+                data_points = data_points[0]
+            match = {
+                "property_id": pattern["identifiers"][0],
+                "property_values": data_points
+            }
+            break
+    return match
+
 def find_modifier_pattern_match(modifier_line):
     match = None
-    for _, pattern in patterns.items():
+    for _, pattern in REF_PATTERNS.items():
         result = pattern["compiled_pattern"].parse(modifier_line)
         if result:
             data_points = result.fixed
@@ -197,4 +262,4 @@ def lev(x, y):
     return A[n][m]
 
 load_lookup()
-# load_parsers()
+load_parsers()

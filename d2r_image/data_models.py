@@ -87,6 +87,42 @@ class D2Item:
 
 @dataclass_json
 @dataclass
+class HoveredItem:
+    name: str
+    quality: str
+    baseItem: dict
+    item: Union[dict, None]
+    itemModifiers: Union[dict, None]
+
+    def __eq__(self, other):
+        if self and not other:
+            return False
+        return self.to_json() == other.to_json()
+
+
+@dataclass_json
+@dataclass
+class InventoryItem:
+    boundingBox: dict
+    type: Union[str, None]
+    item: Union[dict, None]
+    baseItems: Union[list[dict], None]
+    uniqueItems: Union[list[dict], None]
+    setItems: Union[list[dict], None]
+
+    def __eq__(self, other):
+        if self and not other:
+            return False
+        return self.boundingBox == other.boundingBox and\
+            self.type == other.type and\
+            self.item == other.item and\
+            self.baseItems == other.baseItems and\
+            self.uniqueItems == other.uniqueItems and\
+            self.setItems == other.setItems
+
+
+@dataclass_json
+@dataclass
 class D2ItemList:
     items: list[Union[D2Item, None]]
 

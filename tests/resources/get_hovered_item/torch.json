@@ -1,0 +1,63 @@
+{
+    "name": "HELLFIRE TORCH",
+    "quality": "unique",
+    "baseItem":
+    {
+        "display_name": "Large Charm",
+        "sets": [],
+        "type": "medium_charm",
+        "uniques": ["hellfire_torch"]
+    },
+    "item":
+    {
+        "base": "large_charm",
+        "display_name": "Hellfire Torch",
+        "props": [
+            {
+                "max": 6,
+                "min": null,
+                "par": 0,
+                "prop": "randclassskill"
+            },
+            {
+                "max": 20,
+                "min": 10,
+                "par": 0,
+                "prop": "all-stats"
+            },
+            {
+                "max": 20,
+                "min": 10,
+                "par": 0,
+                "prop": "res-all"
+            },
+            {
+                "max": 8,
+                "min": 8,
+                "par": 0,
+                "prop": "light"
+            },
+            {
+                "max": 10,
+                "min": 5,
+                "par": "DiabWall",
+                "prop": "hit-skill"
+            },
+            {
+                "max": 30,
+                "min": 10,
+                "par": "Hydra",
+                "prop": "charged"
+            }
+        ]
+    },
+    "itemModifiers":
+    {
+        "hit-skill": [[25, 10, "FIRESTORM"]],
+        "sor": [3],
+        "all-stats": [20],
+        "res-all": [20],
+        "light": [8],
+        "charged": [[30, "HYDRA", 9, 10]]
+    }
+}

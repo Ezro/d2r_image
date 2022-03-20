@@ -1,0 +1,60 @@
+{
+    "name": "SPIRIT",
+    "quality": "runeword",
+    "baseItem":
+    {
+        "display_name": "Monarch",
+        "item_class": "elite",
+        "props": [
+            {
+                "max": 4,
+                "min": 0,
+                "par": null,
+                "prop": "sock"
+            },
+            {
+                "max": 86,
+                "min": 86,
+                "par": null,
+                "prop": "durability"
+            },
+            {
+                "max": 148,
+                "min": 133,
+                "par": null,
+                "prop": "defense"
+            },
+            {
+                "max": 1,
+                "min": 0,
+                "par": null,
+                "prop": "ethereal"
+            }
+        ],
+        "sets": [],
+        "type": "shield",
+        "uniques": ["stormshield"]
+    },
+    "item": null,
+    "itemModifiers":
+    {
+        "defense": [170],
+        "durability": [[86, 98]],
+        "allskills": [2],
+        "cast1": [35],
+        "balance1": [55],
+        "block1": [15],
+        "block": [15],
+        "ac%": [15],
+        "ac-miss": [250],
+        "vit": [22],
+        "mana": [112],
+        "res-cold": [35],
+        "res-ltng": [35],
+        "res-pois": [35],
+        "abs-mag": [8],
+        "thorns": [14],
+        "dur%": [15],
+        "sock": [4]
+    }
+}

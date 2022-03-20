@@ -1,0 +1,34 @@
+{
+    "name": "CHAIN BOOTS",
+    "quality": "set",
+    "baseItem":
+    {
+        "display_name": "Chain Boots",
+        "item_class": "normal",
+        "props": [
+            {
+                "max": 16,
+                "min": 16,
+                "par": null,
+                "prop": "durability"
+            },
+            {
+                "max": 9,
+                "min": 8,
+                "par": null,
+                "prop": "defense"
+            },
+            {
+                "max": 1,
+                "min": 0,
+                "par": null,
+                "prop": "ethereal"
+            }
+        ],
+        "sets": ["hsarus_iron_heel"],
+        "type": "boots",
+        "uniques": ["treads_of_cthon"]
+    },
+    "item": null,
+    "itemModifiers": null
+}

@@ -117,6 +117,7 @@ def image_to_text(
         if check_wordlist and any([x <= 88 for x in word_confidences]):
             text = _check_wordlist(
                 text, word_list, word_confidences, word_match_threshold)
+            text = text.replace(' NEWLINEHERE ', '\n')
         results.append(OcrResult(
             original_text=original_text,
             text=text,

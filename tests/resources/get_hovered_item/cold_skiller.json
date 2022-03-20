@@ -1,0 +1,17 @@
+{
+    "name": "CHILLING GRAND CHARM OF VITA",
+    "quality": "magic",
+    "baseItem":
+    {
+        "display_name": "Grand Charm",
+        "sets": [],
+        "type": "large_charm",
+        "uniques": ["gheeds_fortune"]
+    },
+    "item": null,
+    "itemModifiers":
+    {
+        "oskill": [[1, "COLD SKILLS (SORCERESS ONLY)"]],
+        "hp": [40]
+    }
+}
