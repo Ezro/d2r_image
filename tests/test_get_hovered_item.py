@@ -12,6 +12,7 @@ from d2r_image.data_models import HoveredItem
     ('cold_skiller.png', 'cold_skiller.json'),
     ('torch.png', 'torch.json'),
     ('spirit.png', 'spirit.json'),
+    ('zod.png', 'zod.json'),
 ])
 def test_hovered_item(filename: str, expected_file: str):
     image_path = os.path.join(
@@ -28,11 +29,3 @@ def test_hovered_item(filename: str, expected_file: str):
     result = processing.get_hovered_item(image)
     expected = HoveredItem.from_json(open(expected_items_path).read())
     assert result == expected
-
-
-# test_hovered_item('cold_skiller.png', 'cold_skiller.json'),
-# test_hovered_item('spirit.png', 'spirit.json'),
-# test_hovered_item('torch.png', 'torch.json'),
-# test_hovered_item('war_travs.png', 'cold_skiller.json'),
-# test_hovered_item('unid_hsarus_iron_heel.png', 'cold_skiller.json'),
-# test_hovered_item('unid_rare_dagger.png', 'cold_skiller.json'),

@@ -173,23 +173,27 @@ def parse_item(quality, item):
     # parsed_item["display_name"] = item[0]
     # The second line is usually the type. Map it to be sure, (for now just setting to base_type)
     # parsed_item["base_item"] = item[1]
-    base_name = item[1] if item_is_identified and quality not in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Magic.value] else item[0]
+    base_name = item[1] if item_is_identified and quality not in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Magic.value, ItemQuality.Crafted.value] else item[0]
     base_item = None
     if quality == ItemQuality.Magic.value:
-        base_item = find_base_item_from_magic_item_text(item[0])
+        base_item = find_base_item_from_magic_item_text(base_name)
     else:
-        if not is_base(base_name):
-            raise Exception('Unable to find item base')
-        base_item = get_base(base_name)
+        if quality == ItemQuality.Crafted.value and is_rune(base_name):
+            base_item = get_rune(base_name)
+            quality = ItemQuality.Rune.value
+        else:
+            if not is_base(base_name):
+                raise Exception('Unable to find item base')
+            base_item = get_base(base_name)
     # Add matches from item data
     found_item = None
-    item_modifiers = None
+    item_modifiers = {}
     if item_is_identified:
         if quality == ItemQuality.Unique.value:
             found_item = find_unique_item_by_name(item[0])
         elif quality == ItemQuality.Set.value:
             found_item = find_set_item_by_name(item[0])
-        elif quality in [ItemQuality.Gray.value, ItemQuality.Normal.value]:
+        elif quality in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Rune.value]:
             found_item = base_item
         if not found_item and quality != ItemQuality.Magic.value:
             if quality == ItemQuality.Unique.value:
@@ -200,7 +204,6 @@ def parse_item(quality, item):
                 raise Exception('Unable to find item')
         # parsed_item["item_data_matches"] = find_unique_item_by_name(parsed_item["display_name"]) | find_set_item_by_name(parsed_item["display_name"]) | get_base(parsed_item["base_item"])
         # The next few lines help us determine
-        item_modifiers = {}
         for line in item:
             match = find_pattern_match(line)
             if match:
@@ -216,7 +219,7 @@ def parse_item(quality, item):
         quality=quality,
         baseItem=base_item,
         item=found_item,
-        itemModifiers=item_modifiers
+        itemModifiers=item_modifiers if item_modifiers else None
     )
 
 def find_pattern_match(text):

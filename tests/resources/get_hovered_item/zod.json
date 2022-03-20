@@ -1,0 +1,19 @@
+{
+    "name": "ZOD RUNE",
+    "quality": "rune",
+    "baseItem":
+    {
+        "display_name": "Zod Rune",
+        "sets": [],
+        "type": "rune",
+        "uniques": []
+    },
+    "item":
+    {
+        "display_name": "Zod Rune",
+        "sets": [],
+        "type": "rune",
+        "uniques": []
+    },
+    "itemModifiers": null
+}
