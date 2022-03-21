@@ -195,7 +195,7 @@ def parse_item(quality, item):
             found_item = find_set_item_by_name(item[0])
         elif quality in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Rune.value]:
             found_item = base_item
-        if not found_item and quality != ItemQuality.Magic.value:
+        if not found_item and quality not in [ItemQuality.Magic.value, ItemQuality.Rare.value]:
             if quality == ItemQuality.Unique.value:
                 if not Runeword(item[0]):
                     raise Exception('Unable to find item')

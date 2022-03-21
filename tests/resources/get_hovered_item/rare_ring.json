@@ -1,0 +1,21 @@
+{
+    "name": "RUNE LOOP",
+    "quality": "rare",
+    "baseItem":
+    {
+        "display_name": "Ring",
+        "sets": ["angelic_halo", "cathans_seal"],
+        "type": "ring",
+        "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+    },
+    "item": null,
+    "itemModifiers":
+    {
+        "maxdamage": [1],
+        "lifesteal": [3],
+        "str": [5],
+        "res-cold": [11],
+        "res-fire": [23],
+        "mag%": [9]
+    }
+}

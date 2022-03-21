@@ -55261,14 +55261,14 @@ REF_PATTERNS = {
     "itemcolddamagemaxperlevel"
   ],
   "{:d} to Maximum Damage": [
+    "maxdamage",
     "dmg/time",
     "item_maxdamage_bytime",
     "itemmaxdamagebytime",
     "damagebonus",
     "bonusdamage",
     "adddamage",
-    "itemmaxdamage",
-    "maxdamage"
+    "itemmaxdamage"
   ],
   "{:d} to Maximum Damage (Based on Character Level)": [
     "dmg/lvl",
