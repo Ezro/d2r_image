@@ -98,7 +98,7 @@ def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> ItemTe
                 else:
                     quality = ItemQuality.Normal.value
                 ocr_result = image_to_text(cropped_item, psm=6)[0]
-                return parse_item(quality, ocr_result.text.split('\n'))
+                return parse_item(quality, ocr_result.text)
     return None
 
 

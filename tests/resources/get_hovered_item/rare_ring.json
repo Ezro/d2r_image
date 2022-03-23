@@ -1,6 +1,7 @@
 {
     "name": "RUNE LOOP",
     "quality": "rare",
+    "text": "RUNE LOOP|RING|REQUIRED LEVEL: 15|+1 TO MAXIMUM DAMAGE|3% LIFE STOLEN PER HIT|+5 TO STRENGTH|COLD RESIST +11%|FIRE RESIST +23%|9% BETTER CHANCE OF GETTING MAGIC ITEMS",
     "d2data":
     {
         "BaseItem":

@@ -119,6 +119,7 @@ class D2Data:
 class HoveredItem:
     name: str
     quality: str
+    text: str
     d2data: D2Data
     nip: Union[Nip, None]
 

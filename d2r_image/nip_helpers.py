@@ -11,13 +11,19 @@ def parse_item(quality, item):
     item_is_identified = True
     item_is_ethereal = False
     item_modifiers = {}
-    for line in item:
+    lines = item.split('\n')
+    cleaned_lines = []
+    for line in lines:
+        if line:
+            cleaned_lines.append(line)
+    lines = cleaned_lines
+    for line in lines:
         if line == 'UNIDENTIFIED':
             item_is_identified = False
         if 'ETHEREAL' in line:
             item_is_ethereal = True
     if item_is_identified:
-        for line in item:
+        for line in lines:
             match = find_pattern_match(line)
             if match:
                 # Store the property values
@@ -31,7 +37,7 @@ def parse_item(quality, item):
     # parsed_item["display_name"] = item[0]
     # The second line is usually the type. Map it to be sure, (for now just setting to base_type)
     # parsed_item["base_item"] = item[1]
-    base_name = item[1] if item_is_identified and quality not in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Magic.value, ItemQuality.Crafted.value] else item[0]
+    base_name = lines[1] if item_is_identified and quality not in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Magic.value, ItemQuality.Crafted.value] else lines[0]
     base_name = base_name.upper().replace(' ', '')
     base_item = None
     if quality == ItemQuality.Magic.value:
@@ -50,21 +56,21 @@ def parse_item(quality, item):
     ntip_alias_stat = None
     if item_is_identified:
         if quality == ItemQuality.Unique.value:
-            found_item = find_unique_item_by_name(item[0])
+            found_item = find_unique_item_by_name(lines[0])
         elif quality == ItemQuality.Set.value:
-            found_item = find_set_item_by_name(item[0])
+            found_item = find_set_item_by_name(lines[0])
         elif quality in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Rune.value]:
             found_item = base_item
         if not found_item and quality not in [ItemQuality.Magic.value, ItemQuality.Rare.value]:
             if quality == ItemQuality.Unique.value:
-                if not Runeword(item[0]):
+                if not Runeword(lines[0]):
                     raise Exception('Unable to find item')
                 quality = ItemQuality.Runeword.value
             else:
                 raise Exception('Unable to find item')
         # parsed_item["item_data_matches"] = find_unique_item_by_name(parsed_item["display_name"]) | find_set_item_by_name(parsed_item["display_name"]) | get_base(parsed_item["base_item"])
         # The next few lines help us determine
-        ntip_alias_stat = find_nip_pattern_match(item)
+        ntip_alias_stat = find_nip_pattern_match(lines)
     else:
         if quality == ItemQuality.Set.value and len(base_item['sets']) == 1:
             found_item = find_set_item_by_name(base_item['sets'][0].replace('_', ' ').upper(), True)
@@ -97,8 +103,9 @@ def parse_item(quality, item):
         ItemModifiers=item_modifiers if item_modifiers else None
     )
     return HoveredItem(
-        name=item[0],
+        name=lines[0],
         quality=quality,
+        text='|'.join(lines),
         d2data=d2_data,
         nip=nip_item
     )
