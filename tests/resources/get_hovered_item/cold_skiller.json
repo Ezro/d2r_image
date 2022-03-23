@@ -1,17 +1,36 @@
 {
     "name": "CHILLING GRAND CHARM OF VITA",
     "quality": "magic",
-    "baseItem":
+    "d2data":
     {
-        "display_name": "Grand Charm",
-        "sets": [],
-        "type": "large_charm",
-        "uniques": ["gheeds_fortune"]
+        "BaseItem":
+        {
+            "display_name": "Grand Charm",
+            "sets": [],
+            "type": "large_charm",
+            "uniques": ["gheeds_fortune"]
+        },
+        "Item": null,
+        "ItemModifiers":
+        {
+            "oskill": [[1, "COLD SKILLS (SORCERESS ONLY)"]],
+            "hp": [40]
+        }
     },
-    "item": null,
-    "itemModifiers":
+    "nip":
     {
-        "oskill": [[1, "COLD SKILLS (SORCERESS ONLY)"]],
-        "hp": [40]
+        "NTIPAliasClassID": 605,
+        "NTIPAliasClass": null,
+        "NTIPAliasQuality": 4,
+        "NTIPAliasStat":
+        {
+            "7": 40,
+            "188,10": 1
+        },
+        "NTIPAliasFlag":
+        {
+            "0x10": true,
+            "0x4000000": false
+        }
     }
 }

@@ -1,21 +1,44 @@
 {
     "name": "RUNE LOOP",
     "quality": "rare",
-    "baseItem":
+    "d2data":
     {
-        "display_name": "Ring",
-        "sets": ["angelic_halo", "cathans_seal"],
-        "type": "ring",
-        "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+        "BaseItem":
+        {
+            "display_name": "Ring",
+            "sets": ["angelic_halo", "cathans_seal"],
+            "type": "ring",
+            "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+        },
+        "Item": null,
+        "ItemModifiers":
+        {
+            "maxdamage": [1],
+            "lifesteal": [3],
+            "str": [5],
+            "res-cold": [11],
+            "res-fire": [23],
+            "mag%": [9]
+        }
     },
-    "item": null,
-    "itemModifiers":
+    "nip":
     {
-        "maxdamage": [1],
-        "lifesteal": [3],
-        "str": [5],
-        "res-cold": [11],
-        "res-fire": [23],
-        "mag%": [9]
+        "NTIPAliasClassID": 522,
+        "NTIPAliasClass": null,
+        "NTIPAliasQuality": 6,
+        "NTIPAliasStat":
+        {
+            "43": 11,
+            "39": 23,
+            "80": 9,
+            "22": 1,
+            "0": 5,
+            "60": 3
+        },
+        "NTIPAliasFlag":
+        {
+            "0x10": true,
+            "0x4000000": false
+        }
     }
 }

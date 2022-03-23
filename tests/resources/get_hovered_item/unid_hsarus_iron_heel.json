@@ -1,34 +1,68 @@
 {
     "name": "CHAIN BOOTS",
     "quality": "set",
-    "baseItem":
+    "d2data":
     {
-        "display_name": "Chain Boots",
-        "item_class": "normal",
-        "props": [
-            {
-                "max": 16,
-                "min": 16,
-                "par": null,
-                "prop": "durability"
-            },
-            {
-                "max": 9,
-                "min": 8,
-                "par": null,
-                "prop": "defense"
-            },
-            {
-                "max": 1,
-                "min": 0,
-                "par": null,
-                "prop": "ethereal"
-            }
-        ],
-        "sets": ["hsarus_iron_heel"],
-        "type": "boots",
-        "uniques": ["treads_of_cthon"]
+        "BaseItem":
+        {
+            "display_name": "Chain Boots",
+            "item_class": "normal",
+            "props": [
+                {
+                    "max": 16,
+                    "min": 16,
+                    "par": null,
+                    "prop": "durability"
+                },
+                {
+                    "max": 9,
+                    "min": 8,
+                    "par": null,
+                    "prop": "defense"
+                },
+                {
+                    "max": 1,
+                    "min": 0,
+                    "par": null,
+                    "prop": "ethereal"
+                }
+            ],
+            "sets": ["hsarus_iron_heel"],
+            "type": "boots",
+            "uniques": ["treads_of_cthon"]
+        },
+        "Item":
+        {
+            "base": "chain_boots",
+            "display_name": "Hsarus' Iron Heel",
+            "props": [
+                {
+                    "max": 25,
+                    "min": 25,
+                    "par": 0,
+                    "prop": "res-fire"
+                },
+                {
+                    "max": 20,
+                    "min": 20,
+                    "par": 0,
+                    "prop": "move2"
+                }
+            ],
+            "set": "Hsarus' Defense"
+        },
+        "ItemModifiers": null
     },
-    "item": null,
-    "itemModifiers": null
+    "nip":
+    {
+        "NTIPAliasClassID": 341,
+        "NTIPAliasClass": 0,
+        "NTIPAliasQuality": 5,
+        "NTIPAliasStat": null,
+        "NTIPAliasFlag":
+        {
+            "0x10": false,
+            "0x4000000": false
+        }
+    }
 }

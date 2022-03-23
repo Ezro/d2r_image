@@ -1,41 +1,56 @@
 {
     "name": "DAGGER",
     "quality": "rare",
-    "baseItem":
+    "d2data":
     {
-        "display_name": "Dagger",
-        "hands": "one",
-        "item_class": "normal",
-        "props": [
-            {
-                "max": 1,
-                "min": 0,
-                "par": null,
-                "prop": "sock"
-            },
-            {
-                "max": 16,
-                "min": 16,
-                "par": null,
-                "prop": "durability"
-            },
-            {
-                "max": 4,
-                "min": 1,
-                "par": null,
-                "prop": "damage_1hand"
-            },
-            {
-                "max": 1,
-                "min": 0,
-                "par": null,
-                "prop": "ethereal"
-            }
-        ],
-        "sets": [],
-        "type": "knife",
-        "uniques": ["gull"]
+        "BaseItem":
+        {
+            "display_name": "Dagger",
+            "hands": "one",
+            "item_class": "normal",
+            "props": [
+                {
+                    "max": 1,
+                    "min": 0,
+                    "par": null,
+                    "prop": "sock"
+                },
+                {
+                    "max": 16,
+                    "min": 16,
+                    "par": null,
+                    "prop": "durability"
+                },
+                {
+                    "max": 4,
+                    "min": 1,
+                    "par": null,
+                    "prop": "damage_1hand"
+                },
+                {
+                    "max": 1,
+                    "min": 0,
+                    "par": null,
+                    "prop": "ethereal"
+                }
+            ],
+            "sets": [],
+            "type": "knife",
+            "uniques": ["gull"]
+        },
+        "Item": null,
+        "ItemModifiers": null
     },
-    "item": null,
-    "itemModifiers": null
+    "nip":
+    {
+        "NTIPAliasClassID": 39,
+        "NTIPAliasClass": 0,
+        "NTIPAliasQuality": 6,
+        "NTIPAliasStat": null,
+        "NTIPAliasFlag":
+        {
+            "0x10": false,
+            "0x4000000": true
+        }
+    }
 }

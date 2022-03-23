@@ -1,60 +1,96 @@
 {
     "name": "SPIRIT",
     "quality": "runeword",
-    "baseItem":
+    "d2data":
     {
-        "display_name": "Monarch",
-        "item_class": "elite",
-        "props": [
-            {
-                "max": 4,
-                "min": 0,
-                "par": null,
-                "prop": "sock"
-            },
-            {
-                "max": 86,
-                "min": 86,
-                "par": null,
-                "prop": "durability"
-            },
-            {
-                "max": 148,
-                "min": 133,
-                "par": null,
-                "prop": "defense"
-            },
-            {
-                "max": 1,
-                "min": 0,
-                "par": null,
-                "prop": "ethereal"
-            }
-        ],
-        "sets": [],
-        "type": "shield",
-        "uniques": ["stormshield"]
+        "BaseItem":
+        {
+            "display_name": "Monarch",
+            "item_class": "elite",
+            "props": [
+                {
+                    "max": 4,
+                    "min": 0,
+                    "par": null,
+                    "prop": "sock"
+                },
+                {
+                    "max": 86,
+                    "min": 86,
+                    "par": null,
+                    "prop": "durability"
+                },
+                {
+                    "max": 148,
+                    "min": 133,
+                    "par": null,
+                    "prop": "defense"
+                },
+                {
+                    "max": 1,
+                    "min": 0,
+                    "par": null,
+                    "prop": "ethereal"
+                }
+            ],
+            "sets": [],
+            "type": "shield",
+            "uniques": ["stormshield"]
+        },
+        "Item": null,
+        "ItemModifiers":
+        {
+            "defense": [170],
+            "durability": [[86, 98]],
+            "allskills": [2],
+            "cast1": [35],
+            "balance1": [55],
+            "block1": [15],
+            "block": [15],
+            "ac%": [15],
+            "ac-miss": [250],
+            "vit": [22],
+            "mana": [112],
+            "res-cold": [35],
+            "res-ltng": [35],
+            "res-pois": [35],
+            "abs-mag": [8],
+            "thorns": [14],
+            "dur%": [15],
+            "sock": [4]
+        }
     },
-    "item": null,
-    "itemModifiers":
+    "nip":
     {
-        "defense": [170],
-        "durability": [[86, 98]],
-        "allskills": [2],
-        "cast1": [35],
-        "balance1": [55],
-        "block1": [15],
-        "block": [15],
-        "ac%": [15],
-        "ac-miss": [250],
-        "vit": [22],
-        "mana": [112],
-        "res-cold": [35],
-        "res-ltng": [35],
-        "res-pois": [35],
-        "abs-mag": [8],
-        "thorns": [14],
-        "dur%": [15],
-        "sock": [4]
+        "NTIPAliasClassID": 447,
+        "NTIPAliasClass": 2,
+        "NTIPAliasQuality": 9,
+        "NTIPAliasStat":
+        {
+            "78": 14,
+            "43": 35,
+            "31": 170,
+            "72": 86,
+            "73": 98,
+            "75": 15,
+            "41": 35,
+            "45": 35,
+            "194": 4,
+            "32": 250,
+            "147": 8,
+            "127": 2,
+            "9": 112,
+            "3": 22,
+            "16": 15,
+            "102": 15,
+            "105": 35,
+            "99": 55,
+            "20": 15
+        },
+        "NTIPAliasFlag":
+        {
+            "0x10": true,
+            "0x4000000": false
+        }
     }
 }

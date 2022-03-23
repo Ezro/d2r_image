@@ -1,0 +1,11 @@
+import re
+from urllib import request
+
+
+NTIP_ALIAS_CLASS_ID_BY_BASE = {}
+class_id_regex = re.compile(r'NTIPAliasClassID\[\"([0-9a-zA-Z\']+)\"\] = ([0-9]+)')
+data = request.urlopen(url='https://raw.githubusercontent.com/blizzhackers/kolbot/master/d2bs/kolbot/libs/NTItemAlias.dbl').read().decode('utf-8')
+result = class_id_regex.findall(data)
+if result:
+    for class_id in result:
+        NTIP_ALIAS_CLASS_ID_BY_BASE[class_id[0]] = int(class_id[1])

@@ -51,9 +51,9 @@ def load_lookup():
             item = item_lookup_by_quality_and_display_name[item_quality.value][item['display_name'].upper()] = item_lookup_by_display_name[quality_key][quality_item]
     for quality_key in ['armor', 'weapons']:
         for quality_item in item_lookup_by_display_name[quality_key]:
-            bases_by_name[quality_item.upper()] = item_lookup_by_display_name[quality_key][quality_item]
+            bases_by_name[quality_item.upper().replace(' ', '')] = item_lookup_by_display_name[quality_key][quality_item]
     for extra_base in ['Amulet', 'Ring', 'Grand Charm', 'Large Charm', 'Small Charm']:
-        bases_by_name[extra_base.upper()] = item_lookup_by_display_name['misc'][extra_base]
+        bases_by_name[extra_base.upper().replace(' ', '')] = item_lookup_by_display_name['misc'][extra_base]
     for consumable in [
         'Key',
         'Scroll of Identify', 'Scroll of Town Portal',
@@ -65,7 +65,7 @@ def load_lookup():
         'Rejuvenation Potion', 'Full Rejuvenation Potion',
         'Gold'
         ]:
-        consumables_by_name[consumable.upper()] = item_lookup_by_display_name['misc'][consumable]
+        consumables_by_name[consumable.upper().replace(' ', '')] = item_lookup_by_display_name['misc'][consumable]
     for gem in [
         'Chipped Ruby', 'Flawed Ruby', 'Ruby', 'Flawless Ruby', 'Perfect Ruby',
         'Chipped Sapphire', 'Flawed Sapphire', 'Sapphire', 'Flawless Sapphire', 'Perfect Sapphire',
@@ -75,10 +75,10 @@ def load_lookup():
         'Chipped Amethyst', 'Flawed Amethyst', 'Amethyst', 'Flawless Amethyst', 'Perfect Amethyst',
         'Chipped Skull', 'Flawed Skull', 'Skull', 'Flawless Skull', 'Perfect Skull'
     ]:
-        gems_by_name[gem.upper()] = item_lookup_by_display_name['misc'][gem]
+        gems_by_name[gem.upper().replace(' ', '')] = item_lookup_by_display_name['misc'][gem]
     for misc_item in item_lookup_by_display_name['misc']:
         if 'Rune' in misc_item:
-            runes_by_name[misc_item.upper()] = item_lookup_by_display_name['misc'][misc_item]
+            runes_by_name[misc_item.upper().replace(' ', '')] = item_lookup_by_display_name['misc'][misc_item]
     pass
 
 def load_parsers():
@@ -116,52 +116,62 @@ def find_set_item_by_name(name, fuzzy=False):
                 return item_lookup_by_quality_and_display_name[quality][item_key]
 
 def find_base_item_from_magic_item_text(magic_item_text):
+    normalized_name = magic_item_text.upper().replace(' ', '')
     for base_item_name in bases_by_name:
-        if base_item_name in magic_item_text:
+        if base_item_name in normalized_name:
             return bases_by_name[base_item_name]
     return None
 
 def is_base(name: str) -> bool:
-    return name in bases_by_name
+    normalized_name = name.upper().replace(' ', '')
+    return normalized_name in bases_by_name
 
 def get_base(name):
-    if name in bases_by_name:
-        return bases_by_name[name]
+    normalized_name = name.upper().replace(' ', '')
+    if normalized_name in bases_by_name:
+        return bases_by_name[normalized_name]
     return None
 
 def is_consumable(name: str):
-    return name in consumables_by_name
+    normalized_name = name.upper().replace(' ', '')
+    return normalized_name in consumables_by_name
 
 def get_consumable(name: str):
-    if name in consumables_by_name:
-        return consumables_by_name[name]
+    normalized_name = name.upper().replace(' ', '')
+    if normalized_name in consumables_by_name:
+        return consumables_by_name[normalized_name]
     return None
 
 def is_gem(name: str):
-    return name in gems_by_name
+    normalized_name = name.upper().replace(' ', '')
+    return normalized_name in gems_by_name
 
 def get_gem(name: str):
-    if name in gems_by_name:
-        return gems_by_name[name]
+    normalized_name = name.upper().replace(' ', '')
+    if normalized_name in gems_by_name:
+        return gems_by_name[normalized_name]
     return None
 
 def is_rune(name: str):
-    return name in runes_by_name
+    normalized_name = name.upper().replace(' ', '')
+    return normalized_name in runes_by_name
 
 def get_rune(name: str):
-    if name in runes_by_name:
-        return runes_by_name[name]
+    normalized_name = name.upper().replace(' ', '')
+    if normalized_name in runes_by_name:
+        return runes_by_name[normalized_name]
     return None
 
 def get_by_name(name: str):
-    if is_base(name):
-        return get_base(name)
-    elif is_consumable(name):
-        return get_consumable(name)
-    elif is_gem(name):
-        return get_gem(name)
-    elif is_rune(name):
-        return get_rune(name)
+    normalized_name = name.upper().replace(' ', '')
+    if is_base(normalized_name):
+        return get_base(normalized_name)
+    elif is_consumable(normalized_name):
+        return get_consumable(normalized_name)
+    elif is_gem(normalized_name):
+        return get_gem(normalized_name)
+    elif is_rune(normalized_name):
+        return get_rune(normalized_name)
 
 def parse_item(quality, item):
     item_is_identified = True
@@ -174,6 +184,7 @@ def parse_item(quality, item):
     # The second line is usually the type. Map it to be sure, (for now just setting to base_type)
     # parsed_item["base_item"] = item[1]
     base_name = item[1] if item_is_identified and quality not in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Magic.value, ItemQuality.Crafted.value] else item[0]
+    base_name = base_name.upper().replace(' ', '')
     base_item = None
     if quality == ItemQuality.Magic.value:
         base_item = find_base_item_from_magic_item_text(base_name)

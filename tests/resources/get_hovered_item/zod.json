@@ -1,19 +1,34 @@
 {
     "name": "ZOD RUNE",
     "quality": "rune",
-    "baseItem":
+    "d2data":
     {
-        "display_name": "Zod Rune",
-        "sets": [],
-        "type": "rune",
-        "uniques": []
+        "BaseItem":
+        {
+            "display_name": "Zod Rune",
+            "sets": [],
+            "type": "rune",
+            "uniques": []
+        },
+        "Item":
+        {
+            "display_name": "Zod Rune",
+            "sets": [],
+            "type": "rune",
+            "uniques": []
+        },
+        "ItemModifiers": null
     },
-    "item":
+    "nip":
     {
-        "display_name": "Zod Rune",
-        "sets": [],
-        "type": "rune",
-        "uniques": []
-    },
-    "itemModifiers": null
+        "NTIPAliasClassID": 642,
+        "NTIPAliasClass": null,
+        "NTIPAliasQuality": 10,
+        "NTIPAliasStat": {},
+        "NTIPAliasFlag":
+        {
+            "0x10": true,
+            "0x4000000": false
+        }
+    }
 }

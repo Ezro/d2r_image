@@ -4,12 +4,12 @@ import cv2
 import numpy as np
 from d2r_image import d2data_lookup
 from d2r_image.data_models import D2Item, D2ItemList, ItemQuality, ItemText, ScreenObject
+from d2r_image.nip_helpers import parse_item
 from d2r_image.ocr import image_to_text
 from d2r_image.utils.misc import color_filter, cut_roi
 from d2r_image.processing_data import BOX_EXPECTED_HEIGHT_RANGE, BOX_EXPECTED_WIDTH_RANGE, COLORS, UI_ROI
 from d2r_image.processing_helpers import build_d2_items, crop_result_is_loading_screen, crop_text_clusters, get_items_by_quality, consolidate_clusters, find_base_and_remove_items_without_a_base, set_set_and_unique_base_items
 from d2r_image.screen_object_helpers import detect_screen_object
-from d2r_image.d2data_lookup import parse_item
 from d2r_image.d2data_ref_lookup import BELT_MAP, LEFT_INVENTORY_MAP, RIGHT_INVENTORY_MAP
 import numpy as np
 
