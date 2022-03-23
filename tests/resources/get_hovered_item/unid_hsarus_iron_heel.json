@@ -55,6 +55,7 @@
     },
     "nip":
     {
+        "NTIPAliasType": 15,
         "NTIPAliasClassID": 341,
         "NTIPAliasClass": 0,
         "NTIPAliasQuality": 5,

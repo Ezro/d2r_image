@@ -88,6 +88,7 @@ class D2Item:
 @dataclass_json
 @dataclass
 class Nip:
+    NTIPAliasType: int
     NTIPAliasClassID: int
     NTIPAliasClass: Union[int, None]
     NTIPAliasQuality: int

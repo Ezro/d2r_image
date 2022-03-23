@@ -4,7 +4,7 @@ from d2r_image.d2data_lookup import find_base_item_from_magic_item_text, find_pa
 from d2r_image.data_models import D2Data, HoveredItem, ItemQuality, Nip
 from d2r_image.nip_data import NIP_ALIAS_STAT_PATTERNS, NIP_PATTERNS, NIP_RE_PATTERNS
 from d2r_image.processing_data import Runeword
-from d2r_image.nip_lookup import NTIP_ALIAS_CLASS_ID_BY_BASE
+from d2r_image.nip_lookup import NTIP_ALIAS_CLASS_ID_BY_BASE, NTIP_TYPE_ID_BY_TYPE
 
 
 def parse_item(quality, item):
@@ -44,6 +44,7 @@ def parse_item(quality, item):
             if not is_base(base_name):
                 raise Exception('Unable to find item base')
             base_item = get_base(base_name)
+    ntip_alias_type = NTIP_TYPE_ID_BY_TYPE[base_item['type'].replace('_', '')]
     # Add matches from item data
     found_item = None
     ntip_alias_stat = None
@@ -80,6 +81,7 @@ def parse_item(quality, item):
         ItemQuality.Normal.value: 2
     }
     nip_item = Nip(
+        NTIPAliasType=ntip_alias_type,
         NTIPAliasClassID = NTIP_ALIAS_CLASS_ID_BY_BASE[base_item['display_name'].replace(' ', '').lower()],
         NTIPAliasClass = None if 'item_class' not in base_item else 2 if base_item['item_class'] == 'elite' else 1 if base_item['item_class'] == 'exceptional' else 0,
         NTIPAliasQuality=ntip_alias_quality_map[quality],

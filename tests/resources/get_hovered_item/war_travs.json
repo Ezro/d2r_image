@@ -108,6 +108,7 @@
     },
     "nip":
     {
+        "NTIPAliasType": 15,
         "NTIPAliasClassID": 388,
         "NTIPAliasClass": 1,
         "NTIPAliasQuality": 7,
