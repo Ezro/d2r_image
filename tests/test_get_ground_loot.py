@@ -2,7 +2,7 @@ import cv2
 import os
 import pytest
 from d2r_image import processing
-from d2r_image.data_models import D2ItemList
+from d2r_image.data_models import D2ItemList, GroundItemList
 
 
 @pytest.mark.parametrize("filename, expected_items_file", [
@@ -25,10 +25,10 @@ def test_ground_loot(filename, expected_items_file):
         'get_ground_loot',
         expected_items_file)
     d2_items = processing.get_ground_loot(image)
-    ground_expected = D2ItemList.from_json(open(expected_items_path).read())
-    assert len(d2_items) == len(ground_expected.items)
+    ground_expected = GroundItemList.from_json(open(expected_items_path).read())
+    assert len(d2_items.items) == len(ground_expected.items)
     for item in ground_expected.items:
-        assert item in d2_items
+        assert item in d2_items.items
     
 
 def generate_ground_loot_json(image_filename):
@@ -46,4 +46,5 @@ def generate_ground_loot_json(image_filename):
     print(ground_expected_json)
 
 
-# generate_ground_loot_json('ground13.png')
+# generate_ground_loot_json('ground7.png')
+# test_ground_loot('ground2.png', 'ground2.json')

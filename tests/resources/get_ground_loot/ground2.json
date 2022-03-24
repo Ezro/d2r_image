@@ -1,585 +1,725 @@
 {
     "items": [
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 431,
                 "y": 272,
                 "w": 303,
                 "h": 43
             },
-            "name": "BUL-KATHOS' TRIBAL GUARDIAN",
-            "quality": "set",
-            "type": "sword",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Bul-Kathos' Tribal Guardian",
+            "Quality": "set",
+            "Text": "BUL-KATHOS' TRIBAL GUARDIAN",
+            "BaseItem":
             {
-                "display_name": "Mythical Sword",
-                "hands": "one",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Mythical Sword",
+                "NTIPAliasClassID": 228,
+                "NTIPAliasType": 30,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 3,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 3
                     },
+                    "72": 44,
+                    "73": 44,
+                    "21": 40,
+                    "22": 50,
+                    "0x400000":
                     {
-                        "max": 44,
-                        "min": 44,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 50,
-                        "min": 40,
-                        "par": null,
-                        "prop": "damage_1hand"
-                    },
-                    {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["bulkathos_tribal_guardian"],
-                "type": "sword",
-                "uniques": []
+                },
+                "dimensions": [1, 3],
+                "sets": ["BULKATHOSTRIBALGUARDIAN"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "mythical_sword",
-                "display_name": "Bul-Kathos' Tribal Guardian",
-                "props": [
+                "DisplayName": "Bul-Kathos' Tribal Guardian",
+                "NTIPAliasClassID": 228,
+                "NTIPAliasType": 30,
+                "NTIPAliasStatProps":
+                {
+                    "39":
                     {
-                        "max": 50,
                         "min": 50,
-                        "par": 0,
-                        "prop": "res-fire"
+                        "max": 50
                     },
+                    "57": 50,
+                    "58": 50,
+                    "93":
                     {
-                        "max": 50,
-                        "min": 50,
-                        "par": 2,
-                        "prop": "dmg-pois"
-                    },
-                    {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "swing2"
+                        "max": 20
                     },
+                    "0":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "str"
+                        "max": 20
                     },
+                    "25":
                     {
-                        "max": 200,
                         "min": 200,
-                        "par": 0,
-                        "prop": "dmg%"
+                        "max": 200
                     }
-                ],
-                "set": "Bul-Kathos' Children"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 30,
+            "NTIPAliasClassID": 228,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 451,
                 "y": 229,
                 "w": 186,
                 "h": 42
             },
-            "name": "HSARUS' IRON FIST",
-            "quality": "set",
-            "type": "shield",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Hsarus' Iron Fist",
+            "Quality": "set",
+            "Text": "HSARUS' IRON FIST",
+            "BaseItem":
             {
-                "display_name": "Buckler",
-                "item_class": "normal",
-                "props": [
+                "DisplayName": "Buckler",
+                "NTIPAliasClassID": 328,
+                "NTIPAliasType": 2,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 1
                     },
+                    "72": 12,
+                    "73": 12,
+                    "31":
                     {
-                        "max": 12,
-                        "min": 12,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 6,
                         "min": 4,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 6
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["hsarus_iron_fist"],
-                "type": "shield",
-                "uniques": ["pelta_lunata"]
+                },
+                "dimensions": [2, 2],
+                "sets": ["HSARUSIRONFIST"],
+                "uniques": ["PELTALUNATA"],
+                "NTIPAliasClass": 0
             },
-            "item":
+            "Item":
             {
-                "base": "buckler",
-                "display_name": "Hsarus' Iron Fist",
-                "props": [
+                "DisplayName": "Hsarus' Iron Fist",
+                "NTIPAliasClassID": 328,
+                "NTIPAliasType": 2,
+                "NTIPAliasStatProps":
+                {
+                    "34":
                     {
-                        "max": 2,
                         "min": 2,
-                        "par": 0,
-                        "prop": "red-dmg"
+                        "max": 2
                     },
+                    "0":
                     {
-                        "max": 10,
                         "min": 10,
-                        "par": 0,
-                        "prop": "str"
+                        "max": 10
                     }
-                ],
-                "set": "Hsarus' Defense"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 2,
+            "NTIPAliasClassID": 328,
+            "NTIPAliasClass": 0,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 603,
                 "y": 186,
                 "w": 190,
                 "h": 42
             },
-            "name": "HSARUS' IRON HEEL",
-            "quality": "set",
-            "type": "boots",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Hsarus' Iron Heel",
+            "Quality": "set",
+            "Text": "HSARUS' IRON HEEL",
+            "BaseItem":
             {
-                "display_name": "Chain Boots",
-                "item_class": "normal",
-                "props": [
+                "DisplayName": "Chain Boots",
+                "NTIPAliasClassID": 341,
+                "NTIPAliasType": 15,
+                "NTIPAliasStatProps":
+                {
+                    "72": 16,
+                    "73": 16,
+                    "31":
                     {
-                        "max": 16,
-                        "min": 16,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 9,
                         "min": 8,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 9
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["hsarus_iron_heel"],
-                "type": "boots",
-                "uniques": ["treads_of_cthon"]
+                },
+                "dimensions": [2, 2],
+                "sets": ["HSARUSIRONHEEL"],
+                "uniques": ["TREADSOFCTHON"],
+                "NTIPAliasClass": 0
             },
-            "item":
+            "Item":
             {
-                "base": "chain_boots",
-                "display_name": "Hsarus' Iron Heel",
-                "props": [
+                "DisplayName": "Hsarus' Iron Heel",
+                "NTIPAliasClassID": 341,
+                "NTIPAliasType": 15,
+                "NTIPAliasStatProps":
+                {
+                    "39":
                     {
-                        "max": 25,
                         "min": 25,
-                        "par": 0,
-                        "prop": "res-fire"
+                        "max": 25
                     },
+                    "96":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "move2"
+                        "max": 20
                     }
-                ],
-                "set": "Hsarus' Defense"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 15,
+            "NTIPAliasClassID": 341,
+            "NTIPAliasClass": 0,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 487,
                 "y": 99,
                 "w": 191,
                 "h": 42
             },
-            "name": "HSARUS' IRON STAY",
-            "quality": "set",
-            "type": "belt",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Hsarus' Iron Stay",
+            "Quality": "set",
+            "Text": "HSARUS' IRON STAY",
+            "BaseItem":
             {
-                "display_name": "Belt",
-                "item_class": "normal",
-                "props": [
+                "DisplayName": "Belt",
+                "NTIPAliasClassID": 346,
+                "NTIPAliasType": 19,
+                "NTIPAliasStatProps":
+                {
+                    "72": 16,
+                    "73": 16,
+                    "31":
                     {
-                        "max": 16,
-                        "min": 16,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 5,
                         "min": 5,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 5
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["hsarus_iron_stay", "hwanins_blessing"],
-                "type": "belt",
-                "uniques": ["nightsmoke"]
+                },
+                "dimensions": [2, 1],
+                "sets": ["HSARUSIRONSTAY", "HWANINSBLESSING"],
+                "uniques": ["NIGHTSMOKE"],
+                "NTIPAliasClass": 0
             },
-            "item":
+            "Item":
             {
-                "base": "belt",
-                "display_name": "Hsarus' Iron Stay",
-                "props": [
+                "DisplayName": "Hsarus' Iron Stay",
+                "NTIPAliasClassID": 346,
+                "NTIPAliasType": 19,
+                "NTIPAliasStatProps":
+                {
+                    "43":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "res-cold"
+                        "max": 20
                     },
+                    "6":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "hp"
+                        "max": 20
                     }
-                ],
-                "set": "Hsarus' Defense"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 19,
+            "NTIPAliasClassID": 346,
+            "NTIPAliasClass": 0,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 518,
                 "y": 56,
                 "w": 283,
                 "h": 43
             },
-            "name": "BUL-KATHOS' SACRED CHARGE",
-            "quality": "set",
-            "type": "sword",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Bul-Kathos' Sacred Charge",
+            "Quality": "set",
+            "Text": "BUL-KATHOS' SACRED CHARGE",
+            "BaseItem":
             {
-                "display_name": "Colossus Blade",
-                "hands": "both",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Colossus Blade",
+                "NTIPAliasClassID": 234,
+                "NTIPAliasType": 30,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 6,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 6
                     },
+                    "72": 50,
+                    "73": 50,
+                    "21": 25,
+                    "22": 65,
+                    "23": 58,
+                    "24": 115,
+                    "0x400000":
                     {
-                        "max": 50,
-                        "min": 50,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 65,
-                        "min": 25,
-                        "par": null,
-                        "prop": "damage_1hand"
-                    },
-                    {
-                        "max": 115,
-                        "min": 58,
-                        "par": null,
-                        "prop": "damage_2hand"
-                    },
-                    {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["bulkathos_sacred_charge"],
-                "type": "sword",
-                "uniques": ["the_grandfather"]
+                },
+                "dimensions": [2, 4],
+                "sets": ["BULKATHOSSACREDCHARGE"],
+                "uniques": ["THEGRANDFATHER"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "colossus_blade",
-                "display_name": "Bul-Kathos' Sacred Charge",
-                "props": [
+                "DisplayName": "Bul-Kathos' Sacred Charge",
+                "NTIPAliasClassID": 234,
+                "NTIPAliasType": 30,
+                "NTIPAliasStatProps":
+                {
+                    "136":
                     {
-                        "max": 35,
                         "min": 35,
-                        "par": 0,
-                        "prop": "crush"
+                        "max": 35
                     },
+                    "39": 20,
+                    "43": 20,
+                    "41": 20,
+                    "45": 20,
+                    "93":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "res-all"
+                        "max": 20
                     },
+                    "81":
                     {
-                        "max": 20,
-                        "min": 20,
-                        "par": 0,
-                        "prop": "swing2"
-                    },
-                    {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "knock"
+                        "max": 1
                     },
+                    "25":
                     {
-                        "max": 200,
                         "min": 200,
-                        "par": 0,
-                        "prop": "dmg%"
+                        "max": 200
                     }
-                ],
-                "set": "Bul-Kathos' Children"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 30,
+            "NTIPAliasClassID": 234,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 588,
                 "y": 315,
                 "w": 142,
                 "h": 43
             },
-            "name": "CEREBUS' BITE",
-            "quality": "unique",
-            "type": "pelt",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Cerebus' Bite",
+            "Quality": "unique",
+            "Text": "CEREBUS' BITE",
+            "BaseItem":
             {
-                "display_name": "Blood Spirit",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Blood Spirit",
+                "NTIPAliasClassID": 488,
+                "NTIPAliasType": 72,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 3,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 3
                     },
+                    "72": 20,
+                    "73": 20,
+                    "31":
                     {
-                        "max": 20,
-                        "min": 20,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 145,
                         "min": 101,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 145
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "pelt",
-                "uniques": ["cerebus_bite"]
+                },
+                "dimensions": [2, 2],
+                "uniques": ["CEREBUSBITE"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "blood_spirit",
-                "display_name": "Cerebus' Bite",
-                "props": [
+                "DisplayName": "Cerebus' Bite",
+                "NTIPAliasClassID": 488,
+                "NTIPAliasType": 72,
+                "NTIPAliasStatProps":
+                {
+                    "16,0":
                     {
-                        "max": 140,
                         "min": 130,
-                        "par": 0,
-                        "prop": "ac%"
+                        "max": 140
                     },
+                    "188,41":
                     {
-                        "max": 4,
                         "min": 2,
-                        "par": "Shape Shifting Skills",
-                        "prop": "skilltab"
+                        "max": 4,
+                        "par": "Shape Shifting Skills"
                     },
+                    "60":
                     {
-                        "max": 10,
                         "min": 7,
-                        "par": 0,
-                        "prop": "lifesteal"
+                        "max": 10
                     },
+                    "119":
                     {
-                        "max": 120,
                         "min": 60,
-                        "par": 0,
-                        "prop": "att%"
+                        "max": 120
                     },
+                    "135":
                     {
-                        "max": 33,
                         "min": 33,
-                        "par": 0,
-                        "prop": "openwounds"
+                        "max": 33
                     },
+                    "107,232":
                     {
-                        "max": 2,
                         "min": 1,
-                        "par": "feral rage",
-                        "prop": "skill"
+                        "max": 2
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 72,
+            "NTIPAliasClassID": 488,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 547,
                 "y": 143,
                 "w": 146,
                 "h": 43
             },
-            "name": "ORMUS' ROBES",
-            "quality": "unique",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Ormus' Robes",
+            "Quality": "unique",
+            "Text": "ORMUS' ROBES",
+            "BaseItem":
             {
-                "display_name": "Dusk Shroud",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Dusk Shroud",
+                "NTIPAliasClassID": 429,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 20,
+                    "73": 20,
+                    "31":
                     {
-                        "max": 20,
-                        "min": 20,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 467,
                         "min": 361,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 467
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["dark_adherent"],
-                "type": "armor",
-                "uniques": ["ormus_robes"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["DARKADHERENT"],
+                "uniques": ["ORMUSROBES"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "dusk_shroud",
-                "display_name": "Ormus' Robes",
-                "props": [
+                "DisplayName": "Ormus' Robes",
+                "NTIPAliasClassID": 429,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "31":
                     {
-                        "max": 20,
                         "min": 10,
-                        "par": 0,
-                        "prop": "ac"
+                        "max": 20
                     },
+                    "105":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "cast2"
+                        "max": 20
                     },
+                    "329":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "extra-fire"
+                        "max": 15
                     },
+                    "331":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "extra-cold"
+                        "max": 15
                     },
+                    "330":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "extra-ltng"
+                        "max": 15
                     },
+                    "27":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "regen-mana"
+                        "max": 15
                     },
+                    "107,36":
                     {
-                        "max": 60,
                         "min": 36,
-                        "par": "Unsummon",
-                        "prop": "skill-rand"
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,37":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,38":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,39":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,40":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,41":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,42":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,43":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,44":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,45":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,46":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,47":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,48":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,49":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,50":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,51":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,52":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,53":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,54":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,55":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,56":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,57":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,58":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,59":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,60":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,61":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,62":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,63":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,64":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,65":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 429,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         }
     ]
 }

@@ -1,7 +1,7 @@
 import re
 from parse import compile as compile_pattern
 from d2r_image.d2data_lookup import find_base_item_from_magic_item_text, find_pattern_match, find_set_item_by_name, find_unique_item_by_name, get_base, get_rune, is_base, is_rune
-from d2r_image.data_models import D2Data, HoveredItem, ItemQuality, Nip
+from d2r_image.data_models import HoveredItem, ItemQuality
 from d2r_image.nip_data import NIP_ALIAS_STAT_PATTERNS, NIP_PATTERNS, NIP_RE_PATTERNS
 from d2r_image.processing_data import Runeword
 from d2r_image.nip_lookup import NTIP_ALIAS_CLASS_ID_BY_BASE, NTIP_TYPE_ID_BY_TYPE
@@ -50,15 +50,14 @@ def parse_item(quality, item):
             if not is_base(base_name):
                 raise Exception('Unable to find item base')
             base_item = get_base(base_name)
-    ntip_alias_type = NTIP_TYPE_ID_BY_TYPE[base_item['type'].replace('_', '')]
     # Add matches from item data
     found_item = None
     ntip_alias_stat = None
     if item_is_identified:
         if quality == ItemQuality.Unique.value:
-            found_item = find_unique_item_by_name(lines[0])
+            found_item = find_unique_item_by_name(lines[0].replace(' ', ''))
         elif quality == ItemQuality.Set.value:
-            found_item = find_set_item_by_name(lines[0])
+            found_item = find_set_item_by_name(lines[0].replace(' ', ''))
         elif quality in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Rune.value]:
             found_item = base_item
         if not found_item and quality not in [ItemQuality.Magic.value, ItemQuality.Rare.value]:
@@ -66,6 +65,9 @@ def parse_item(quality, item):
                 if not Runeword(lines[0]):
                     raise Exception('Unable to find item')
                 quality = ItemQuality.Runeword.value
+                found_item = {
+                    'DisplayName': lines[0]
+                }
             else:
                 raise Exception('Unable to find item')
         # parsed_item["item_data_matches"] = find_unique_item_by_name(parsed_item["display_name"]) | find_set_item_by_name(parsed_item["display_name"]) | get_base(parsed_item["base_item"])
@@ -86,9 +88,44 @@ def parse_item(quality, item):
         ItemQuality.Magic.value: 4,
         ItemQuality.Normal.value: 2
     }
-    nip_item = Nip(
-        NTIPAliasType=ntip_alias_type,
-        NTIPAliasClassID = NTIP_ALIAS_CLASS_ID_BY_BASE[base_item['display_name'].replace(' ', '').lower()],
+    # nip_item = Nip(
+    #     NTIPAliasType=base_item['NTIPAliasType'],
+    #     NTIPAliasClassID = base_item['NTIPAliasClassID'],
+    #     NTIPAliasClass = None if 'item_class' not in base_item else 2 if base_item['item_class'] == 'elite' else 1 if base_item['item_class'] == 'exceptional' else 0,
+    #     NTIPAliasQuality=ntip_alias_quality_map[quality],
+    #     NTIPAliasStat=ntip_alias_stat,
+    #     NTIPAliasFlag={
+    #         '0x10': item_is_identified,
+    #         '0x4000000': item_is_ethereal
+    #     }
+    # )
+    # d2_data = D2Data(
+    #     BaseItem=base_item,
+    #     Item=found_item,
+    #     ItemModifiers=item_modifiers if item_modifiers else None
+    # )
+    # return {
+    #     'name': lines[0],
+    #     'quality': quality,
+    #     'text': '|'.join(lines),
+    #     'baseItem': base_item,
+    #     'item': found_item,
+    #     'itemModifiers': ntip_alias_stat
+    # }
+    name = found_item['DisplayName'] if found_item else base_item['DisplayName']
+    if quality in [ItemQuality.Magic.value, ItemQuality.Rare.value]:
+        if item_is_identified:
+            name = lines[0]
+        else:
+            name = base_item['DisplayName']
+    return HoveredItem(
+        Name=name,
+        Quality=quality,
+        Text='|'.join(lines),
+        BaseItem=base_item,
+        Item=found_item,
+        NTIPAliasType=base_item['NTIPAliasType'],
+        NTIPAliasClassID=base_item['NTIPAliasClassID'],
         NTIPAliasClass = None if 'item_class' not in base_item else 2 if base_item['item_class'] == 'elite' else 1 if base_item['item_class'] == 'exceptional' else 0,
         NTIPAliasQuality=ntip_alias_quality_map[quality],
         NTIPAliasStat=ntip_alias_stat,
@@ -96,18 +133,6 @@ def parse_item(quality, item):
             '0x10': item_is_identified,
             '0x4000000': item_is_ethereal
         }
-    )
-    d2_data = D2Data(
-        BaseItem=base_item,
-        Item=found_item,
-        ItemModifiers=item_modifiers if item_modifiers else None
-    )
-    return HoveredItem(
-        name=lines[0],
-        quality=quality,
-        text='|'.join(lines),
-        d2data=d2_data,
-        nip=nip_item
     )
 
 

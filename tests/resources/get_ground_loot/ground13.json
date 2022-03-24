@@ -1,376 +1,358 @@
 {
     "items": [
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 576,
                 "y": 372,
                 "w": 159,
                 "h": 21
             },
-            "name": "HUNTER'S GUISE",
-            "quality": "set",
-            "type": "pelt",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Aldur's Stony Gaze",
+            "Quality": "set",
+            "Text": "HUNTER'S GUISE",
+            "BaseItem":
             {
-                "display_name": "Hunter's Guise",
-                "item_class": "exceptional",
-                "props": [
+                "DisplayName": "Hunter's Guise",
+                "NTIPAliasClassID": 470,
+                "NTIPAliasType": 72,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 3,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 3
                     },
+                    "72": 20,
+                    "73": 20,
+                    "31":
                     {
-                        "max": 20,
-                        "min": 20,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 81,
                         "min": 67,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 81
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["aldurs_stony_gaze"],
-                "type": "pelt",
-                "uniques": []
+                },
+                "dimensions": [2, 2],
+                "sets": ["ALDURSSTONYGAZE"],
+                "NTIPAliasClass": 1
             },
-            "item":
+            "Item":
             {
-                "base": "hunters_guise",
-                "display_name": "Aldur's Stony Gaze",
-                "props": [
+                "DisplayName": "Aldur's Stony Gaze",
+                "NTIPAliasClassID": 470,
+                "NTIPAliasType": 72,
+                "NTIPAliasStatProps":
+                {
+                    "31":
                     {
-                        "max": 90,
                         "min": 90,
-                        "par": 0,
-                        "prop": "ac"
+                        "max": 90
                     },
+                    "27":
                     {
-                        "max": 17,
                         "min": 17,
-                        "par": 0,
-                        "prop": "regen-mana"
+                        "max": 17
                     },
+                    "89":
                     {
-                        "max": 5,
                         "min": 5,
-                        "par": 0,
-                        "prop": "light"
+                        "max": 5
                     },
+                    "99":
                     {
-                        "max": 25,
                         "min": 25,
-                        "par": 0,
-                        "prop": "balance3"
+                        "max": 25
                     },
+                    "43":
                     {
-                        "max": 50,
                         "min": 40,
-                        "par": 0,
-                        "prop": "res-cold"
+                        "max": 50
                     },
+                    "194":
                     {
-                        "max": 2,
                         "min": 2,
-                        "par": 0,
-                        "prop": "sock"
+                        "max": 2
                     }
-                ],
-                "set": "Aldur's Watchtower"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 72,
+            "NTIPAliasClassID": 470,
+            "NTIPAliasClass": 1,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 615,
                 "y": 336,
                 "w": 89,
                 "h": 21
             },
-            "name": "BUCKLER",
-            "quality": "set",
-            "type": "shield",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Hsarus' Iron Fist",
+            "Quality": "set",
+            "Text": "BUCKLER",
+            "BaseItem":
             {
-                "display_name": "Buckler",
-                "item_class": "normal",
-                "props": [
+                "DisplayName": "Buckler",
+                "NTIPAliasClassID": 328,
+                "NTIPAliasType": 2,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 1
                     },
+                    "72": 12,
+                    "73": 12,
+                    "31":
                     {
-                        "max": 12,
-                        "min": 12,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 6,
                         "min": 4,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 6
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["hsarus_iron_fist"],
-                "type": "shield",
-                "uniques": ["pelta_lunata"]
+                },
+                "dimensions": [2, 2],
+                "sets": ["HSARUSIRONFIST"],
+                "uniques": ["PELTALUNATA"],
+                "NTIPAliasClass": 0
             },
-            "item":
+            "Item":
             {
-                "base": "buckler",
-                "display_name": "Hsarus' Iron Fist",
-                "props": [
+                "DisplayName": "Hsarus' Iron Fist",
+                "NTIPAliasClassID": 328,
+                "NTIPAliasType": 2,
+                "NTIPAliasStatProps":
+                {
+                    "34":
                     {
-                        "max": 2,
                         "min": 2,
-                        "par": 0,
-                        "prop": "red-dmg"
+                        "max": 2
                     },
+                    "0":
                     {
-                        "max": 10,
                         "min": 10,
-                        "par": 0,
-                        "prop": "str"
+                        "max": 10
                     }
-                ],
-                "set": "Hsarus' Defense"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 2,
+            "NTIPAliasClassID": 328,
+            "NTIPAliasClass": 0,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 515,
                 "y": 313,
                 "w": 136,
                 "h": 22
             },
-            "name": "BLOOD SPIRIT",
-            "quality": "unique",
-            "type": "pelt",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Cerebus' Bite",
+            "Quality": "unique",
+            "Text": "BLOOD SPIRIT",
+            "BaseItem":
             {
-                "display_name": "Blood Spirit",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Blood Spirit",
+                "NTIPAliasClassID": 488,
+                "NTIPAliasType": 72,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 3,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 3
                     },
+                    "72": 20,
+                    "73": 20,
+                    "31":
                     {
-                        "max": 20,
-                        "min": 20,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 145,
                         "min": 101,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 145
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "pelt",
-                "uniques": ["cerebus_bite"]
+                },
+                "dimensions": [2, 2],
+                "uniques": ["CEREBUSBITE"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "blood_spirit",
-                "display_name": "Cerebus' Bite",
-                "props": [
+                "DisplayName": "Cerebus' Bite",
+                "NTIPAliasClassID": 488,
+                "NTIPAliasType": 72,
+                "NTIPAliasStatProps":
+                {
+                    "16,0":
                     {
-                        "max": 140,
                         "min": 130,
-                        "par": 0,
-                        "prop": "ac%"
+                        "max": 140
                     },
+                    "188,41":
                     {
-                        "max": 4,
                         "min": 2,
-                        "par": "Shape Shifting Skills",
-                        "prop": "skilltab"
+                        "max": 4,
+                        "par": "Shape Shifting Skills"
                     },
+                    "60":
                     {
-                        "max": 10,
                         "min": 7,
-                        "par": 0,
-                        "prop": "lifesteal"
+                        "max": 10
                     },
+                    "119":
                     {
-                        "max": 120,
                         "min": 60,
-                        "par": 0,
-                        "prop": "att%"
+                        "max": 120
                     },
+                    "135":
                     {
-                        "max": 33,
                         "min": 33,
-                        "par": 0,
-                        "prop": "openwounds"
+                        "max": 33
                     },
+                    "107,232":
                     {
-                        "max": 2,
                         "min": 1,
-                        "par": "feral rage",
-                        "prop": "skill"
+                        "max": 2
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 72,
+            "NTIPAliasClassID": 488,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 570,
                 "y": 292,
                 "w": 102,
                 "h": 21
             },
-            "name": "MONARCH",
-            "quality": "unique",
-            "type": "shield",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Stormshield",
+            "Quality": "unique",
+            "Text": "MONARCH",
+            "BaseItem":
             {
-                "display_name": "Monarch",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Monarch",
+                "NTIPAliasClassID": 447,
+                "NTIPAliasType": 2,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 86,
+                    "73": 86,
+                    "31":
                     {
-                        "max": 86,
-                        "min": 86,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 148,
                         "min": 133,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 148
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "shield",
-                "uniques": ["stormshield"]
+                },
+                "dimensions": [2, 3],
+                "uniques": ["STORMSHIELD"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "monarch",
-                "display_name": "Stormshield",
-                "props": [
+                "DisplayName": "Stormshield",
+                "NTIPAliasClassID": 447,
+                "NTIPAliasType": 2,
+                "NTIPAliasStatProps":
+                {
+                    "214":
                     {
-                        "max": null,
                         "min": null,
-                        "par": 30,
-                        "prop": "ac/lvl"
+                        "max": null,
+                        "par": 30
                     },
+                    "36":
                     {
-                        "max": 35,
                         "min": 35,
-                        "par": 0,
-                        "prop": "red-dmg%"
+                        "max": 35
                     },
+                    "0":
                     {
-                        "max": 30,
                         "min": 30,
-                        "par": 0,
-                        "prop": "str"
+                        "max": 30
                     },
+                    "152":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "indestruct"
+                        "max": 1
                     },
+                    "102":
                     {
-                        "max": 35,
                         "min": 35,
-                        "par": 0,
-                        "prop": "block2"
+                        "max": 35
                     },
+                    "41":
                     {
-                        "max": 25,
                         "min": 25,
-                        "par": 0,
-                        "prop": "res-ltng"
+                        "max": 25
                     },
+                    "20":
                     {
-                        "max": 25,
                         "min": 25,
-                        "par": 0,
-                        "prop": "block"
+                        "max": 25
                     },
+                    "43":
                     {
-                        "max": 60,
                         "min": 60,
-                        "par": 0,
-                        "prop": "res-cold"
+                        "max": 60
                     },
+                    "128":
                     {
-                        "max": 10,
                         "min": 10,
-                        "par": 0,
-                        "prop": "light-thorns"
+                        "max": 10
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 2,
+            "NTIPAliasClassID": 447,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         }
     ]
 }

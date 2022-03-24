@@ -87,22 +87,6 @@ class D2Item:
 
 @dataclass_json
 @dataclass
-class Nip:
-    NTIPAliasType: int
-    NTIPAliasClassID: int
-    NTIPAliasClass: Union[int, None]
-    NTIPAliasQuality: int
-    NTIPAliasStat: Union[dict, None]
-    NTIPAliasFlag: dict
-
-    def __eq__(self, other):
-        if self and not other:
-            return False
-        return self.to_json() == other.to_json()
-
-
-@dataclass_json
-@dataclass
 class D2Data:
     BaseItem: dict
     Item: Union[dict, None]
@@ -116,12 +100,45 @@ class D2Data:
 
 @dataclass_json
 @dataclass
+class GroundItem:
+    BoundingBox: dict
+    Name: str
+    Quality: str
+    Text: str
+    BaseItem: dict
+    Item: Union[dict, None]
+    NTIPAliasType: int
+    NTIPAliasClassID: int
+    NTIPAliasClass: Union[int, None]
+    NTIPAliasQuality: int
+    NTIPAliasFlag: dict
+
+    def __eq__(self, other):
+        if self and not other:
+            return False
+        return self.to_json() == other.to_json()
+
+
+@dataclass_json
+@dataclass
+class GroundItemList:
+    items: list[Union[GroundItem, None]]
+
+
+@dataclass_json
+@dataclass
 class HoveredItem:
-    name: str
-    quality: str
-    text: str
-    d2data: D2Data
-    nip: Union[Nip, None]
+    Name: str
+    Quality: str
+    Text: str
+    BaseItem: dict
+    Item: Union[dict, None]
+    NTIPAliasType: int
+    NTIPAliasClassID: int
+    NTIPAliasClass: Union[int, None]
+    NTIPAliasQuality: int
+    NTIPAliasStat: Union[dict, None]
+    NTIPAliasFlag: dict
 
     def __eq__(self, other):
         if self and not other:

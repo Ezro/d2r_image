@@ -1,5 +1,24 @@
+from d2r_image.data_models import ItemQuality, ItemQualityKeyword
+
+
 NIP_RE_PATTERNS = {}
 NIP_PATTERNS = {}
+
+NTIP_ALIAS_QUALITY_MAP = {
+    ItemQualityKeyword.LowQuality.value: 1,
+    ItemQualityKeyword.Crude.value: 1,
+    ItemQualityKeyword.Cracked.value: 1,
+    ItemQuality.Gray.value: 2,
+    ItemQuality.Normal.value: 2,
+    ItemQualityKeyword.Superior.value: 3,
+    ItemQuality.Magic.value: 4,
+    ItemQuality.Set.value: 5,
+    ItemQuality.Rare.value: 6,
+    ItemQuality.Unique.value: 7,
+    ItemQuality.Crafted.value: 8,
+    ItemQuality.Runeword.value: 9,
+    ItemQuality.Rune.value: 10,
+}
 
 NIP_ALIAS_STAT_PATTERNS = {
     "Adds {:d}-{:d} cold damage": [

@@ -1,58 +1,42 @@
 {
-    "name": "DAGGER",
-    "quality": "rare",
-    "text": "DAGGER|ONE-HAND DAMAGE: 1 TO 6|DURABILITY: 9 OF 9|DAGGER CLASS - VERY FAST ATTACK SPEED|UNIDENTIFIED|ETHEREAL (CANNOT BE REPAIRED)",
-    "d2data":
+    "Name": "Dagger",
+    "Quality": "rare",
+    "Text": "DAGGER|ONE-HAND DAMAGE: 1 TO 6|DURABILITY: 9 OF 9|DAGGER CLASS - VERY FAST ATTACK SPEED|UNIDENTIFIED|ETHEREAL (CANNOT BE REPAIRED)",
+    "BaseItem":
     {
-        "BaseItem":
-        {
-            "display_name": "Dagger",
-            "hands": "one",
-            "item_class": "normal",
-            "props": [
-                {
-                    "max": 1,
-                    "min": 0,
-                    "par": null,
-                    "prop": "sock"
-                },
-                {
-                    "max": 16,
-                    "min": 16,
-                    "par": null,
-                    "prop": "durability"
-                },
-                {
-                    "max": 4,
-                    "min": 1,
-                    "par": null,
-                    "prop": "damage_1hand"
-                },
-                {
-                    "max": 1,
-                    "min": 0,
-                    "par": null,
-                    "prop": "ethereal"
-                }
-            ],
-            "sets": [],
-            "type": "knife",
-            "uniques": ["gull"]
-        },
-        "Item": null,
-        "ItemModifiers": null
-    },
-    "nip":
-    {
-        "NTIPAliasType": 32,
+        "DisplayName": "Dagger",
         "NTIPAliasClassID": 39,
-        "NTIPAliasClass": 0,
-        "NTIPAliasQuality": 6,
-        "NTIPAliasStat": null,
-        "NTIPAliasFlag":
+        "NTIPAliasType": 32,
+        "NTIPAliasStatProps":
         {
-            "0x10": false,
-            "0x4000000": true
-        }
+            "194":
+            {
+                "min": 0,
+                "max": 1
+            },
+            "72": 16,
+            "73": 16,
+            "21": 1,
+            "22": 4,
+            "0x400000":
+            {
+                "min": 0,
+                "max": 1
+            }
+        },
+        "dimensions": [1, 2],
+        "uniques": ["GULL"],
+        "NTIPAliasClass": 0
+    },
+    "Item": null,
+    "NTIPAliasType": 32,
+    "NTIPAliasClassID": 39,
+    "NTIPAliasClass": null,
+    "NTIPAliasQuality": 6,
+    "NTIPAliasStat": null,
+    "NTIPAliasFlag":
+    {
+        "0x10": false,
+        "0x4000000": true
     }
 }

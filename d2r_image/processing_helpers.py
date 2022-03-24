@@ -10,7 +10,9 @@ import re
 import time
 
 from pyparsing import col
-from d2r_image.data_models import D2Item, ItemQuality, ItemQualityKeyword, ItemText, ScreenObject
+from pytest import Item
+from d2r_image.data_models import D2Item, GroundItem, GroundItemList, ItemQuality, ItemQualityKeyword, ItemText, ScreenObject
+from d2r_image.nip_data import NTIP_ALIAS_QUALITY_MAP
 from d2r_image.ocr import image_to_text
 from d2r_image.processing_data import Runeword
 import d2r_image.d2data_lookup as d2data_lookup
@@ -269,6 +271,7 @@ def consolidate_quality(quality_items, potential_bases):
             item['w'] = item['w'] if closest_base['w'] < item['w'] else closest_base['w']
             item['h'] = item['h'] + closest_base['h']
             item['item'] = result
+            item['name'] = result['DisplayName']
             item['base'] = d2data_lookup.get_base(closest_base['text'])
             item['identified'] = True
             bases_to_remove.append(closest_base)
@@ -297,6 +300,7 @@ def find_base_and_remove_items_without_a_base(items_by_quality) -> dict:
                         item['identified'] = True
                 elif d2data_lookup.is_base(item['text']):
                     item['base'] = d2data_lookup.get_base(item['text'])
+                    item['name'] = item['base']['DisplayName']
                 else:
                     if quality not in items_to_remove:
                         items_to_remove[quality] = []
@@ -409,8 +413,9 @@ def set_gray_and_normal_and_magic_base_items(items_by_quality):
                     item['base'] = result
                     item['item'] = result
                     item['identified'] = True
+                    item['name'] = item['base']['DisplayName']
                     if quality_keyword:
-                        item['qualityKeyword'] = quality_keyword
+                        item['quality'] = quality_keyword
                 else:
                     gold_match = gold_regex.search(item['text'])
                     if gold_match:
@@ -418,8 +423,10 @@ def set_gray_and_normal_and_magic_base_items(items_by_quality):
                         item['amount'] = gold_match.group(1)
                     elif d2data_lookup.is_consumable(item['text']):
                         item['base'] = d2data_lookup.get_consumable(item['text'])
+                        item['name'] = item['base']['DisplayName']
                     elif d2data_lookup.is_gem(item['text']):
                         item['base'] = d2data_lookup.get_gem(item['text'])
+                        item['name'] = item['base']['DisplayName']
                     else:
                         if quality not in items_to_remove:
                             items_to_remove[quality] = []
@@ -429,9 +436,11 @@ def set_gray_and_normal_and_magic_base_items(items_by_quality):
                 base = d2data_lookup.find_base_item_from_magic_item_text(item['text'])
                 if base:
                     item['base'] = base
-                    if len(item['text'].lower().replace(base['display_name'].lower(), '').replace(' ', '')) > 0:
+                    if len(item['text'].lower().replace(base['DisplayName'].lower(), '').replace(' ', '')) > 0:
                         item['item'] = base
                         item['identified'] = True
+                    else:
+                        item['name'] = base['DisplayName']
                 else:
                     if quality not in items_to_remove:
                         items_to_remove[quality] = []
@@ -452,6 +461,7 @@ def set_set_and_unique_base_items(items_by_quality):
                 if len(item['base']['uniques']) == 1:
                     unique_name = item['base']['uniques'][0].replace('_', ' ').upper()
                     item['item'] = d2data_lookup.find_unique_item_by_name(unique_name, True)
+                    item['name'] = item['item']['DisplayName']
                 else:
                     item['uniqueItems'] = []
                     for unique_item in item['base']['uniques']:
@@ -459,8 +469,9 @@ def set_set_and_unique_base_items(items_by_quality):
                         item['uniqueItems'].append(d2data_lookup.find_unique_item_by_name(unique_name, True))
             elif quality == ItemQuality.Set.value:
                 if len(item['base']['sets']) == 1:
-                    set_name = item['base']['sets'][0].replace('_', ' ').upper()
+                    set_name = item['base']['sets'][0]
                     item['item'] = d2data_lookup.find_set_item_by_name(set_name, ItemQuality.Set)
+                    item['name'] = item['item']['DisplayName']
                 else:
                     item['setItems'] = []
                     for unique_item in item['base']['sets']:
@@ -468,32 +479,36 @@ def set_set_and_unique_base_items(items_by_quality):
                         item['setItems'].append(d2data_lookup.find_set_item_by_name(unique_name, True))
 
 
-def build_d2_items(items_by_quality: dict) -> Union[list[D2Item], None]:
-    d2_items = None
+def build_d2_items(items_by_quality: dict) -> Union[GroundItemList, None]:
+    ground_item_list = GroundItemList([])
+    d2_items = ground_item_list.items
     for quality in items_by_quality:
         for item in items_by_quality[quality]:
-            new_item = D2Item(
-                boundingBox= {
+            new_item = GroundItem(
+                BoundingBox={
                     'x': item['x'],
                     'y': item['y'],
                     'w': item['w'],
                     'h': item['h'],
                 },
-                name=item['name'] if 'name' in item else item['text'],
-                quality=item['quality'].value,
-                type=item['base']['type'],
-                identified=item['identified'],
-                amount=item['amount'] if item['base']['type'] == 'gold' else None,
-                baseItem=item['base'],
-                item=item['item'] if 'item' in item else None,
-                uniqueItems=item['uniqueItems'] if 'uniqueItems' in item else None,
-                setItems=item['setItems'] if 'setItems' in item else None,
-                itemModifiers=None
+                Name=item['name'] if 'name' in item else item['text'],
+                Quality=item['quality'].value,
+                Text=item['text'],
+                BaseItem=item['base'],
+                Item=item['item'] if 'item' in item and item['item'] != item['base'] else None,
+                NTIPAliasType=item['base']['NTIPAliasType'],
+                NTIPAliasClassID=item['base']['NTIPAliasClassID'],
+                NTIPAliasClass=item['base']['NTIPAliasClass'] if 'NTIPAliasClass' in item['base'] else None,
+                NTIPAliasQuality=NTIP_ALIAS_QUALITY_MAP[item['quality'].value],
+                NTIPAliasFlag={
+                    '0x10': item['identified'],
+                    '0x4000000': item['quality'] == ItemQuality.Runeword
+                }
             )
             if d2_items is None:
                 d2_items = []
             d2_items.append(new_item)
-    return d2_items
+    return ground_item_list
 
 
 def calculate_distance(x1, y1, x2, y2):

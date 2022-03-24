@@ -7,12 +7,16 @@ from PIL import Image
 import os
 import d2r_image.processing as processing
 from d2r_image.processing import get_hovered_item, get_health, get_mana
-from d2r_image.data_models import ItemQuality
+from d2r_image.data_models import ItemQuality, ItemQualityKeyword
 from pkg_resources import resource_listdir
 import numpy as np
 
 
 debug_line_map = {}
+debug_line_map[ItemQualityKeyword.LowQuality.value] = (123, 123, 123)
+debug_line_map[ItemQualityKeyword.Cracked.value] = (123, 123, 123)
+debug_line_map[ItemQualityKeyword.Crude.value] = (123, 123, 123)
+debug_line_map[ItemQualityKeyword.Superior.value] = (208, 208, 208)
 debug_line_map[ItemQuality.Gray.value] = (123, 123, 123)
 debug_line_map[ItemQuality.Normal.value] = (208, 208, 208)
 debug_line_map[ItemQuality.Magic.value] = (178, 95, 95)
@@ -41,13 +45,13 @@ def get_ground_loot():
             image = Image.open(io.BytesIO(image_bytes))
             image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
             start = time.time()
-            items = processing.get_ground_loot(image_data)
+            ground_loot_list = processing.get_ground_loot(image_data)
             end = time.time()
             elapsed = round(end-start, 2)
             # print(f'Processed {image} in {elapsed} seconds')
             total_elapsed_time += elapsed
-            if items:
-                draw_items_on_image_data(items, image_data)
+            if ground_loot_list.items:
+                draw_items_on_image_data(ground_loot_list.items, image_data)
             all_image_data.append(image_data)
             all_images.append(image)
             demo_image_count += 1
@@ -126,11 +130,11 @@ def get_health_mana():
 
 def draw_items_on_image_data(items, image):
     for item in items:
-        x, y, w, h = item.boundingBox.values()
+        x, y, w, h = item.BoundingBox.values()
         cv2.rectangle(
             image,
             (x, y),
             (x + w, y + h),
-            debug_line_map[item.quality],
+            debug_line_map[item.Quality],
             1
         )

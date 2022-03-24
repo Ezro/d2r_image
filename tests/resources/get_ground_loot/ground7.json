@@ -1,3574 +1,1264 @@
 {
     "items": [
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 364,
                 "y": 195,
                 "w": 246,
                 "h": 22
             },
-            "name": "SUPERIOR SACRED ARMOR",
-            "quality": "normal",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Sacred Armor",
+            "Quality": "SUPERIOR",
+            "Text": "SUPERIOR SACRED ARMOR",
+            "BaseItem":
             {
-                "display_name": "Sacred Armor",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Sacred Armor",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 600,
                         "min": 487,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 600
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["immortal_kings_soul_cage"],
-                "type": "armor",
-                "uniques": ["tyraels_might", "templars_might"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["IMMORTALKINGSSOULCAGE"],
+                "uniques": ["TYRAELSMIGHT", "TEMPLARSMIGHT"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 442,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 3,
+            "NTIPAliasFlag":
             {
-                "display_name": "Sacred Armor",
-                "item_class": "elite",
-                "props": [
-                    {
-                        "max": 4,
-                        "min": 0,
-                        "par": null,
-                        "prop": "sock"
-                    },
-                    {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 600,
-                        "min": 487,
-                        "par": null,
-                        "prop": "defense"
-                    },
-                    {
-                        "max": 1,
-                        "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
-                    }
-                ],
-                "sets": ["immortal_kings_soul_cage"],
-                "type": "armor",
-                "uniques": ["tyraels_might", "templars_might"]
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": true,
+                "0x4000000": false
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 707,
                 "y": 336,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "magic",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "magic",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 4,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 410,
                 "y": 326,
                 "w": 153,
                 "h": 22
             },
-            "name": "SACRED ARMOR",
-            "quality": "magic",
-            "type": "armor",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Sacred Armor",
+            "Quality": "magic",
+            "Text": "SACRED ARMOR",
+            "BaseItem":
             {
-                "display_name": "Sacred Armor",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Sacred Armor",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 600,
                         "min": 487,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 600
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["immortal_kings_soul_cage"],
-                "type": "armor",
-                "uniques": ["tyraels_might", "templars_might"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["IMMORTALKINGSSOULCAGE"],
+                "uniques": ["TYRAELSMIGHT", "TEMPLARSMIGHT"],
+                "NTIPAliasClass": 2
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 442,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 4,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 669,
                 "y": 266,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "magic",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "magic",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 4,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 592,
                 "y": 240,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "magic",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "magic",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 4,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 631,
                 "y": 218,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "magic",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "magic",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 4,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 439,
                 "y": 356,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "rare",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "rare",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 784,
                 "y": 336,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "rare",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "rare",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 650,
                 "y": 288,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "rare",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "rare",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 333,
                 "y": 287,
                 "w": 153,
                 "h": 22
             },
-            "name": "SACRED ARMOR",
-            "quality": "rare",
-            "type": "armor",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Sacred Armor",
+            "Quality": "rare",
+            "Text": "SACRED ARMOR",
+            "BaseItem":
             {
-                "display_name": "Sacred Armor",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Sacred Armor",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 600,
                         "min": 487,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 600
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["immortal_kings_soul_cage"],
-                "type": "armor",
-                "uniques": ["tyraels_might", "templars_might"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["IMMORTALKINGSSOULCAGE"],
+                "uniques": ["TYRAELSMIGHT", "TEMPLARSMIGHT"],
+                "NTIPAliasClass": 2
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 442,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 477,
                 "y": 235,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "rare",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "rare",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 554,
                 "y": 218,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "rare",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "rare",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 554,
                 "y": 174,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "rare",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "rare",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 400,
                 "y": 174,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "rare",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "rare",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 515,
                 "y": 356,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "set",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "set",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Angelic Halo",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        }
-                    ],
-                    "set": "Angelic Raiment"
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Cathan's Seal",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 2,
-                            "min": 2,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        }
-                    ],
-                    "set": "Cathan's Traps"
-                }
-            ],
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 515,
                 "y": 279,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "set",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "set",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Angelic Halo",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        }
-                    ],
-                    "set": "Angelic Raiment"
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Cathan's Seal",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 2,
-                            "min": 2,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        }
-                    ],
-                    "set": "Cathan's Traps"
-                }
-            ],
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 746,
                 "y": 276,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "set",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "set",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Angelic Halo",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        }
-                    ],
-                    "set": "Angelic Raiment"
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Cathan's Seal",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 2,
-                            "min": 2,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        }
-                    ],
-                    "set": "Cathan's Traps"
-                }
-            ],
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 371,
                 "y": 256,
                 "w": 153,
                 "h": 22
             },
-            "name": "SACRED ARMOR",
-            "quality": "set",
-            "type": "armor",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Immortal King's Soul Cage",
+            "Quality": "set",
+            "Text": "SACRED ARMOR",
+            "BaseItem":
             {
-                "display_name": "Sacred Armor",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Sacred Armor",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 600,
                         "min": 487,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 600
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["immortal_kings_soul_cage"],
-                "type": "armor",
-                "uniques": ["tyraels_might", "templars_might"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["IMMORTALKINGSSOULCAGE"],
+                "uniques": ["TYRAELSMIGHT", "TEMPLARSMIGHT"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "sacred_armor",
-                "display_name": "Immortal King's Soul Cage",
-                "props": [
+                "DisplayName": "Immortal King's Soul Cage",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "31":
                     {
-                        "max": 400,
                         "min": 400,
-                        "par": 0,
-                        "prop": "ac"
+                        "max": 400
                     },
+                    "201":
                     {
-                        "max": 5,
-                        "min": 5,
-                        "par": "Enchant",
-                        "prop": "gethit-skill"
+                        "chance": 5,
+                        "level": 5,
+                        "skill": "Enchant"
                     },
+                    "188,32":
                     {
-                        "max": 2,
                         "min": 2,
-                        "par": "Combat Skills",
-                        "prop": "skilltab"
+                        "max": 2,
+                        "par": "Combat Skills"
                     },
+                    "45":
                     {
-                        "max": 50,
                         "min": 50,
-                        "par": 0,
-                        "prop": "res-pois"
+                        "max": 50
                     }
-                ],
-                "set": "Immortal King"
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 442,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 669,
                 "y": 244,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "set",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "set",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Angelic Halo",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        }
-                    ],
-                    "set": "Angelic Raiment"
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Cathan's Seal",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 2,
-                            "min": 2,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        }
-                    ],
-                    "set": "Cathan's Traps"
-                }
-            ],
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 400,
                 "y": 235,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "set",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "set",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Angelic Halo",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        }
-                    ],
-                    "set": "Angelic Raiment"
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Cathan's Seal",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 2,
-                            "min": 2,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        }
-                    ],
-                    "set": "Cathan's Traps"
-                }
-            ],
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 641,
                 "y": 109,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "set",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "set",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Angelic Halo",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        }
-                    ],
-                    "set": "Angelic Raiment"
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Cathan's Seal",
-                    "props": [
-                        {
-                            "max": 6,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 2,
-                            "min": 2,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        }
-                    ],
-                    "set": "Cathan's Traps"
-                }
-            ],
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 5,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 784,
                 "y": 375,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "unique",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "unique",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Nagelring",
-                    "props": [
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "thorns"
-                        },
-                        {
-                            "max": 75,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "att"
-                        },
-                        {
-                            "max": 30,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "mag%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Manald Heal",
-                    "props": [
-                        {
-                            "max": 7,
-                            "min": 4,
-                            "par": 0,
-                            "prop": "manasteal"
-                        },
-                        {
-                            "max": 8,
-                            "min": 5,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "regen-mana"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "The Stone of Jordan",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 25,
-                            "min": 25,
-                            "par": 0,
-                            "prop": "mana%"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "ltng-min"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 12,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "ltng-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Constricting Ring",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "res-all"
-                        },
-                        {
-                            "max": -30,
-                            "min": -30,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "res-all-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Bul-Kathos' Wedding Band",
-                    "props": [
-                        {
-                            "max": null,
-                            "min": null,
-                            "par": 4,
-                            "prop": "hp/lvl"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 5,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 50,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "stam"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Dwarf Star",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "gold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "stam"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "regen-stam"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 15,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "abs-fire%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Raven Frost",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "nofreeze"
-                        },
-                        {
-                            "max": 45,
-                            "min": 15,
-                            "par": 4,
-                            "prop": "dmg-cold"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "abs-cold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 20,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "dex"
-                        },
-                        {
-                            "max": 250,
-                            "min": 150,
-                            "par": 0,
-                            "prop": "att"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Nature's Peace",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "noheal"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "rip"
-                        },
-                        {
-                            "max": 11,
-                            "min": 7,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        },
-                        {
-                            "max": 30,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 5,
-                            "min": 27,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Wisp Projector",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "abs-ltng%"
-                        },
-                        {
-                            "max": 16,
-                            "min": 10,
-                            "par": "Lightning",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 2,
-                            "min": 15,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 5,
-                            "min": 13,
-                            "par": "Heart of Wolverine",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 7,
-                            "min": 11,
-                            "par": "Spirit of Barbs",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Carrion Wind",
-                    "props": [
-                        {
-                            "max": 160,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "ac-miss"
-                        },
-                        {
-                            "max": 9,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 55,
-                            "min": 55,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": "Poison Nova",
-                            "prop": "gethit-skill"
-                        },
-                        {
-                            "max": 21,
-                            "min": 15,
-                            "par": "Plague Poppy",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 13,
-                            "min": 8,
-                            "par": "Twister",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "dmg-to-mana"
-                        }
-                    ]
-                }
-            ],
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 631,
                 "y": 375,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "unique",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "unique",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Nagelring",
-                    "props": [
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "thorns"
-                        },
-                        {
-                            "max": 75,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "att"
-                        },
-                        {
-                            "max": 30,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "mag%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Manald Heal",
-                    "props": [
-                        {
-                            "max": 7,
-                            "min": 4,
-                            "par": 0,
-                            "prop": "manasteal"
-                        },
-                        {
-                            "max": 8,
-                            "min": 5,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "regen-mana"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "The Stone of Jordan",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 25,
-                            "min": 25,
-                            "par": 0,
-                            "prop": "mana%"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "ltng-min"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 12,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "ltng-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Constricting Ring",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "res-all"
-                        },
-                        {
-                            "max": -30,
-                            "min": -30,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "res-all-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Bul-Kathos' Wedding Band",
-                    "props": [
-                        {
-                            "max": null,
-                            "min": null,
-                            "par": 4,
-                            "prop": "hp/lvl"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 5,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 50,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "stam"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Dwarf Star",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "gold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "stam"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "regen-stam"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 15,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "abs-fire%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Raven Frost",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "nofreeze"
-                        },
-                        {
-                            "max": 45,
-                            "min": 15,
-                            "par": 4,
-                            "prop": "dmg-cold"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "abs-cold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 20,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "dex"
-                        },
-                        {
-                            "max": 250,
-                            "min": 150,
-                            "par": 0,
-                            "prop": "att"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Nature's Peace",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "noheal"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "rip"
-                        },
-                        {
-                            "max": 11,
-                            "min": 7,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        },
-                        {
-                            "max": 30,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 5,
-                            "min": 27,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Wisp Projector",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "abs-ltng%"
-                        },
-                        {
-                            "max": 16,
-                            "min": 10,
-                            "par": "Lightning",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 2,
-                            "min": 15,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 5,
-                            "min": 13,
-                            "par": "Heart of Wolverine",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 7,
-                            "min": 11,
-                            "par": "Spirit of Barbs",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Carrion Wind",
-                    "props": [
-                        {
-                            "max": 160,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "ac-miss"
-                        },
-                        {
-                            "max": 9,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 55,
-                            "min": 55,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": "Poison Nova",
-                            "prop": "gethit-skill"
-                        },
-                        {
-                            "max": 21,
-                            "min": 15,
-                            "par": "Plague Poppy",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 13,
-                            "min": 8,
-                            "par": "Twister",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "dmg-to-mana"
-                        }
-                    ]
-                }
-            ],
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 631,
                 "y": 336,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "unique",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "unique",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Nagelring",
-                    "props": [
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "thorns"
-                        },
-                        {
-                            "max": 75,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "att"
-                        },
-                        {
-                            "max": 30,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "mag%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Manald Heal",
-                    "props": [
-                        {
-                            "max": 7,
-                            "min": 4,
-                            "par": 0,
-                            "prop": "manasteal"
-                        },
-                        {
-                            "max": 8,
-                            "min": 5,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "regen-mana"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "The Stone of Jordan",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 25,
-                            "min": 25,
-                            "par": 0,
-                            "prop": "mana%"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "ltng-min"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 12,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "ltng-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Constricting Ring",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "res-all"
-                        },
-                        {
-                            "max": -30,
-                            "min": -30,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "res-all-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Bul-Kathos' Wedding Band",
-                    "props": [
-                        {
-                            "max": null,
-                            "min": null,
-                            "par": 4,
-                            "prop": "hp/lvl"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 5,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 50,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "stam"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Dwarf Star",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "gold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "stam"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "regen-stam"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 15,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "abs-fire%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Raven Frost",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "nofreeze"
-                        },
-                        {
-                            "max": 45,
-                            "min": 15,
-                            "par": 4,
-                            "prop": "dmg-cold"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "abs-cold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 20,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "dex"
-                        },
-                        {
-                            "max": 250,
-                            "min": 150,
-                            "par": 0,
-                            "prop": "att"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Nature's Peace",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "noheal"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "rip"
-                        },
-                        {
-                            "max": 11,
-                            "min": 7,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        },
-                        {
-                            "max": 30,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 5,
-                            "min": 27,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Wisp Projector",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "abs-ltng%"
-                        },
-                        {
-                            "max": 16,
-                            "min": 10,
-                            "par": "Lightning",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 2,
-                            "min": 15,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 5,
-                            "min": 13,
-                            "par": "Heart of Wolverine",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 7,
-                            "min": 11,
-                            "par": "Spirit of Barbs",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Carrion Wind",
-                    "props": [
-                        {
-                            "max": 160,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "ac-miss"
-                        },
-                        {
-                            "max": 9,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 55,
-                            "min": 55,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": "Poison Nova",
-                            "prop": "gethit-skill"
-                        },
-                        {
-                            "max": 21,
-                            "min": 15,
-                            "par": "Plague Poppy",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 13,
-                            "min": 8,
-                            "par": "Twister",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "dmg-to-mana"
-                        }
-                    ]
-                }
-            ],
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 554,
                 "y": 305,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "unique",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "unique",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Nagelring",
-                    "props": [
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "thorns"
-                        },
-                        {
-                            "max": 75,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "att"
-                        },
-                        {
-                            "max": 30,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "mag%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Manald Heal",
-                    "props": [
-                        {
-                            "max": 7,
-                            "min": 4,
-                            "par": 0,
-                            "prop": "manasteal"
-                        },
-                        {
-                            "max": 8,
-                            "min": 5,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "regen-mana"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "The Stone of Jordan",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 25,
-                            "min": 25,
-                            "par": 0,
-                            "prop": "mana%"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "ltng-min"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 12,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "ltng-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Constricting Ring",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "res-all"
-                        },
-                        {
-                            "max": -30,
-                            "min": -30,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "res-all-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Bul-Kathos' Wedding Band",
-                    "props": [
-                        {
-                            "max": null,
-                            "min": null,
-                            "par": 4,
-                            "prop": "hp/lvl"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 5,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 50,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "stam"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Dwarf Star",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "gold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "stam"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "regen-stam"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 15,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "abs-fire%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Raven Frost",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "nofreeze"
-                        },
-                        {
-                            "max": 45,
-                            "min": 15,
-                            "par": 4,
-                            "prop": "dmg-cold"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "abs-cold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 20,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "dex"
-                        },
-                        {
-                            "max": 250,
-                            "min": 150,
-                            "par": 0,
-                            "prop": "att"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Nature's Peace",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "noheal"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "rip"
-                        },
-                        {
-                            "max": 11,
-                            "min": 7,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        },
-                        {
-                            "max": 30,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 5,
-                            "min": 27,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Wisp Projector",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "abs-ltng%"
-                        },
-                        {
-                            "max": 16,
-                            "min": 10,
-                            "par": "Lightning",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 2,
-                            "min": 15,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 5,
-                            "min": 13,
-                            "par": "Heart of Wolverine",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 7,
-                            "min": 11,
-                            "par": "Spirit of Barbs",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Carrion Wind",
-                    "props": [
-                        {
-                            "max": 160,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "ac-miss"
-                        },
-                        {
-                            "max": 9,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 55,
-                            "min": 55,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": "Poison Nova",
-                            "prop": "gethit-skill"
-                        },
-                        {
-                            "max": 21,
-                            "min": 15,
-                            "par": "Plague Poppy",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 13,
-                            "min": 8,
-                            "par": "Twister",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "dmg-to-mana"
-                        }
-                    ]
-                }
-            ],
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 707,
                 "y": 298,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "unique",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "unique",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Nagelring",
-                    "props": [
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "thorns"
-                        },
-                        {
-                            "max": 75,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "att"
-                        },
-                        {
-                            "max": 30,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "mag%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Manald Heal",
-                    "props": [
-                        {
-                            "max": 7,
-                            "min": 4,
-                            "par": 0,
-                            "prop": "manasteal"
-                        },
-                        {
-                            "max": 8,
-                            "min": 5,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "regen-mana"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "The Stone of Jordan",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 25,
-                            "min": 25,
-                            "par": 0,
-                            "prop": "mana%"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "ltng-min"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 12,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "ltng-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Constricting Ring",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "res-all"
-                        },
-                        {
-                            "max": -30,
-                            "min": -30,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "res-all-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Bul-Kathos' Wedding Band",
-                    "props": [
-                        {
-                            "max": null,
-                            "min": null,
-                            "par": 4,
-                            "prop": "hp/lvl"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 5,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 50,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "stam"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Dwarf Star",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "gold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "stam"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "regen-stam"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 15,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "abs-fire%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Raven Frost",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "nofreeze"
-                        },
-                        {
-                            "max": 45,
-                            "min": 15,
-                            "par": 4,
-                            "prop": "dmg-cold"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "abs-cold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 20,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "dex"
-                        },
-                        {
-                            "max": 250,
-                            "min": 150,
-                            "par": 0,
-                            "prop": "att"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Nature's Peace",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "noheal"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "rip"
-                        },
-                        {
-                            "max": 11,
-                            "min": 7,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        },
-                        {
-                            "max": 30,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 5,
-                            "min": 27,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Wisp Projector",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "abs-ltng%"
-                        },
-                        {
-                            "max": 16,
-                            "min": 10,
-                            "par": "Lightning",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 2,
-                            "min": 15,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 5,
-                            "min": 13,
-                            "par": "Heart of Wolverine",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 7,
-                            "min": 11,
-                            "par": "Spirit of Barbs",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Carrion Wind",
-                    "props": [
-                        {
-                            "max": 160,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "ac-miss"
-                        },
-                        {
-                            "max": 9,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 55,
-                            "min": 55,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": "Poison Nova",
-                            "prop": "gethit-skill"
-                        },
-                        {
-                            "max": 21,
-                            "min": 15,
-                            "par": "Plague Poppy",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 13,
-                            "min": 8,
-                            "par": "Twister",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "dmg-to-mana"
-                        }
-                    ]
-                }
-            ],
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 445,
                 "y": 131,
                 "w": 165,
                 "h": 43
             },
-            "name": "TYRAEL'S MIGHT",
-            "quality": "unique",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Tyrael's Might",
+            "Quality": "unique",
+            "Text": "TYRAEL'S MIGHT",
+            "BaseItem":
             {
-                "display_name": "Sacred Armor",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Sacred Armor",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 600,
                         "min": 487,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 600
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["immortal_kings_soul_cage"],
-                "type": "armor",
-                "uniques": ["tyraels_might", "templars_might"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["IMMORTALKINGSSOULCAGE"],
+                "uniques": ["TYRAELSMIGHT", "TEMPLARSMIGHT"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "sacred_armor",
-                "display_name": "Tyrael's Might",
-                "props": [
+                "DisplayName": "Tyrael's Might",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "91":
                     {
-                        "max": -100,
                         "min": -100,
-                        "par": 0,
-                        "prop": "ease"
+                        "max": -100
                     },
+                    "152":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "indestruct"
+                        "max": 1
                     },
+                    "16,0":
                     {
-                        "max": 150,
                         "min": 120,
-                        "par": 0,
-                        "prop": "ac%"
+                        "max": 150
                     },
+                    "108":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "rip"
+                        "max": 1
                     },
+                    "121":
                     {
-                        "max": 100,
                         "min": 50,
-                        "par": 0,
-                        "prop": "dmg-demon"
+                        "max": 100
                     },
+                    "153":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "nofreeze"
+                        "max": 1
                     },
+                    "96":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "move2"
+                        "max": 20
                     },
+                    "39":
                     {
-                        "max": 30,
                         "min": 20,
-                        "par": 0,
-                        "prop": "res-all"
+                        "max": 30
                     },
+                    "43":
                     {
-                        "max": 30,
                         "min": 20,
-                        "par": 0,
-                        "prop": "str"
+                        "max": 30
+                    },
+                    "41":
+                    {
+                        "min": 20,
+                        "max": 30
+                    },
+                    "45":
+                    {
+                        "min": 20,
+                        "max": 30
+                    },
+                    "0":
+                    {
+                        "min": 20,
+                        "max": 30
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 442,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 592,
                 "y": 109,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "unique",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "unique",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": [
-                {
-                    "base": "ring",
-                    "display_name": "Nagelring",
-                    "props": [
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 3,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "thorns"
-                        },
-                        {
-                            "max": 75,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "att"
-                        },
-                        {
-                            "max": 30,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "mag%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Manald Heal",
-                    "props": [
-                        {
-                            "max": 7,
-                            "min": 4,
-                            "par": 0,
-                            "prop": "manasteal"
-                        },
-                        {
-                            "max": 8,
-                            "min": 5,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "regen-mana"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "The Stone of Jordan",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 25,
-                            "min": 25,
-                            "par": 0,
-                            "prop": "mana%"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "ltng-min"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 12,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "ltng-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Constricting Ring",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "res-all"
-                        },
-                        {
-                            "max": -30,
-                            "min": -30,
-                            "par": 0,
-                            "prop": "regen"
-                        },
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "res-all-max"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Bul-Kathos' Wedding Band",
-                    "props": [
-                        {
-                            "max": null,
-                            "min": null,
-                            "par": 4,
-                            "prop": "hp/lvl"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "allskills"
-                        },
-                        {
-                            "max": 5,
-                            "min": 3,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 50,
-                            "min": 50,
-                            "par": 0,
-                            "prop": "stam"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Dwarf Star",
-                    "props": [
-                        {
-                            "max": 100,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "gold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "stam"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "regen-stam"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "hp"
-                        },
-                        {
-                            "max": 15,
-                            "min": 12,
-                            "par": 0,
-                            "prop": "red-mag"
-                        },
-                        {
-                            "max": 15,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "abs-fire%"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Raven Frost",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "nofreeze"
-                        },
-                        {
-                            "max": 45,
-                            "min": 15,
-                            "par": 4,
-                            "prop": "dmg-cold"
-                        },
-                        {
-                            "max": 20,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "abs-cold%"
-                        },
-                        {
-                            "max": 40,
-                            "min": 40,
-                            "par": 0,
-                            "prop": "mana"
-                        },
-                        {
-                            "max": 20,
-                            "min": 15,
-                            "par": 0,
-                            "prop": "dex"
-                        },
-                        {
-                            "max": 250,
-                            "min": 150,
-                            "par": 0,
-                            "prop": "att"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Nature's Peace",
-                    "props": [
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "noheal"
-                        },
-                        {
-                            "max": 1,
-                            "min": 1,
-                            "par": 0,
-                            "prop": "rip"
-                        },
-                        {
-                            "max": 11,
-                            "min": 7,
-                            "par": 0,
-                            "prop": "red-dmg"
-                        },
-                        {
-                            "max": 30,
-                            "min": 20,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 5,
-                            "min": 27,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Wisp Projector",
-                    "props": [
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "abs-ltng%"
-                        },
-                        {
-                            "max": 16,
-                            "min": 10,
-                            "par": "Lightning",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 20,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "mag%"
-                        },
-                        {
-                            "max": 2,
-                            "min": 15,
-                            "par": "Oak Sage",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 5,
-                            "min": 13,
-                            "par": "Heart of Wolverine",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 7,
-                            "min": 11,
-                            "par": "Spirit of Barbs",
-                            "prop": "charged"
-                        }
-                    ]
-                },
-                {
-                    "base": "ring",
-                    "display_name": "Carrion Wind",
-                    "props": [
-                        {
-                            "max": 160,
-                            "min": 100,
-                            "par": 0,
-                            "prop": "ac-miss"
-                        },
-                        {
-                            "max": 9,
-                            "min": 6,
-                            "par": 0,
-                            "prop": "lifesteal"
-                        },
-                        {
-                            "max": 55,
-                            "min": 55,
-                            "par": 0,
-                            "prop": "res-pois"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": "Poison Nova",
-                            "prop": "gethit-skill"
-                        },
-                        {
-                            "max": 21,
-                            "min": 15,
-                            "par": "Plague Poppy",
-                            "prop": "charged"
-                        },
-                        {
-                            "max": 13,
-                            "min": 8,
-                            "par": "Twister",
-                            "prop": "hit-skill"
-                        },
-                        {
-                            "max": 10,
-                            "min": 10,
-                            "par": 0,
-                            "prop": "dmg-to-mana"
-                        }
-                    ]
-                }
-            ],
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 304,
                 "y": 88,
                 "w": 180,
                 "h": 43
             },
-            "name": "TEMPLAR'S MIGHT",
-            "quality": "unique",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Templar's Might",
+            "Quality": "unique",
+            "Text": "TEMPLAR'S MIGHT",
+            "BaseItem":
             {
-                "display_name": "Sacred Armor",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Sacred Armor",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 600,
                         "min": 487,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 600
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["immortal_kings_soul_cage"],
-                "type": "armor",
-                "uniques": ["tyraels_might", "templars_might"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["IMMORTALKINGSSOULCAGE"],
+                "uniques": ["TYRAELSMIGHT", "TEMPLARSMIGHT"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "sacred_armor",
-                "display_name": "Templar's Might",
-                "props": [
+                "DisplayName": "Templar's Might",
+                "NTIPAliasClassID": 442,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "16,0":
                     {
-                        "max": 220,
                         "min": 170,
-                        "par": 0,
-                        "prop": "ac%"
+                        "max": 220
                     },
+                    "99":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "balance2"
+                        "max": 20
                     },
+                    "32":
                     {
-                        "max": 300,
                         "min": 250,
-                        "par": 0,
-                        "prop": "ac-miss"
+                        "max": 300
                     },
+                    "10":
                     {
-                        "max": 50,
                         "min": 40,
-                        "par": 0,
-                        "prop": "stam"
+                        "max": 50
                     },
+                    "0":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "str"
+                        "max": 15
                     },
+                    "3":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "vit"
+                        "max": 15
                     },
+                    "188,25":
                     {
-                        "max": 2,
                         "min": 1,
-                        "par": "Offensive Auras",
-                        "prop": "skilltab"
+                        "max": 2,
+                        "par": "Offensive Auras"
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 442,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 707,
                 "y": 375,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "crafted",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "crafted",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 8,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 592,
                 "y": 279,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "crafted",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "crafted",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 8,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 746,
                 "y": 254,
                 "w": 57,
                 "h": 21
             },
-            "name": "RING",
-            "quality": "crafted",
-            "type": "ring",
-            "identified": false,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "crafted",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item": null,
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 8,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         }
     ]
 }

@@ -3,7 +3,7 @@ from typing import Tuple, Union
 import cv2
 import numpy as np
 from d2r_image import d2data_lookup
-from d2r_image.data_models import D2Item, D2ItemList, ItemQuality, ItemText, ScreenObject
+from d2r_image.data_models import D2Item, D2ItemList, GroundItemList, ItemQuality, ItemText, ScreenObject
 from d2r_image.nip_helpers import parse_item
 from d2r_image.ocr import image_to_text
 from d2r_image.utils.misc import color_filter, cut_roi
@@ -18,7 +18,7 @@ def get_screen_object(image: np.ndarray, screen_object: ScreenObject):
     return detect_screen_object(screen_object, image)
 
 
-def get_ground_loot(image: np.ndarray) -> Union[list[D2Item], None]:
+def get_ground_loot(image: np.ndarray) -> Union[GroundItemList, None]:
     crop_result = crop_text_clusters(image)
     if crop_result_is_loading_screen(crop_result):
         return None

@@ -11,8 +11,8 @@ data = request.urlopen(url='https://raw.githubusercontent.com/blizzhackers/kolbo
 result = class_id_regex.findall(data)
 if result:
     for class_id in result:
-        NTIP_ALIAS_CLASS_ID_BY_BASE[class_id[0]] = int(class_id[1])
+        NTIP_ALIAS_CLASS_ID_BY_BASE[class_id[0]] = class_id[1]
 result = type_id_regex.findall(data)
 if result:
     for type_id in result:
-        NTIP_TYPE_ID_BY_TYPE[type_id[0]] = int(type_id[1])
+        NTIP_TYPE_ID_BY_TYPE[type_id[0]] = type_id[1]

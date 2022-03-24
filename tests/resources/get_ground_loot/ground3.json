@@ -1,1248 +1,1327 @@
 {
     "items": [
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 271,
                 "y": 346,
                 "w": 430,
                 "h": 21
             },
-            "name": "ACROBATIC GRAND CHARM OF CRAFTMANSHIP",
-            "quality": "magic",
-            "type": "large_charm",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "ACROBATIC GRAND CHARM OF CRAFTMANSHIP",
+            "Quality": "magic",
+            "Text": "ACROBATIC GRAND CHARM OF CRAFTMANSHIP",
+            "BaseItem":
             {
-                "display_name": "Grand Charm",
-                "sets": [],
-                "type": "large_charm",
-                "uniques": ["gheeds_fortune"]
+                "DisplayName": "Grand Charm",
+                "NTIPAliasClassID": 605,
+                "NTIPAliasType": 84,
+                "dimensions": [1, 3],
+                "uniques": ["GHEEDSFORTUNE"]
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 84,
+            "NTIPAliasClassID": 605,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 4,
+            "NTIPAliasFlag":
             {
-                "display_name": "Grand Charm",
-                "sets": [],
-                "type": "large_charm",
-                "uniques": ["gheeds_fortune"]
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 300,
                 "y": 65,
                 "w": 299,
                 "h": 22
             },
-            "name": "STURDY CHAIN MAIL OF MIGHT",
-            "quality": "magic",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "STURDY CHAIN MAIL OF MIGHT",
+            "Quality": "magic",
+            "Text": "STURDY CHAIN MAIL OF MIGHT",
+            "BaseItem":
             {
-                "display_name": "Chain Mail",
-                "item_class": "normal",
-                "props": [
+                "DisplayName": "Chain Mail",
+                "NTIPAliasClassID": 319,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 2,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 2
                     },
+                    "72": 45,
+                    "73": 45,
+                    "31":
                     {
-                        "max": 45,
-                        "min": 45,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 75,
                         "min": 72,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 75
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["cathans_mesh"],
-                "type": "armor",
-                "uniques": ["sparking_mail"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["CATHANSMESH"],
+                "uniques": ["SPARKINGMAIL"],
+                "NTIPAliasClass": 0
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 319,
+            "NTIPAliasClass": 0,
+            "NTIPAliasQuality": 4,
+            "NTIPAliasFlag":
             {
-                "display_name": "Chain Mail",
-                "item_class": "normal",
-                "props": [
-                    {
-                        "max": 2,
-                        "min": 0,
-                        "par": null,
-                        "prop": "sock"
-                    },
-                    {
-                        "max": 45,
-                        "min": 45,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 75,
-                        "min": 72,
-                        "par": null,
-                        "prop": "defense"
-                    },
-                    {
-                        "max": 1,
-                        "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
-                    }
-                ],
-                "sets": ["cathans_mesh"],
-                "type": "armor",
-                "uniques": ["sparking_mail"]
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 383,
                 "y": 260,
                 "w": 146,
                 "h": 45
             },
-            "name": "DREAD GYRE",
-            "quality": "rare",
-            "type": "orb",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "DREAD GYRE",
+            "Quality": "rare",
+            "Text": "DREAD GYRE",
+            "BaseItem":
             {
-                "display_name": "Jared's Stone",
-                "hands": "one",
-                "item_class": "normal",
-                "props": [
+                "DisplayName": "Jared's Stone",
+                "NTIPAliasClassID": 280,
+                "NTIPAliasType": 68,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 50,
+                    "73": 50,
+                    "21": 8,
+                    "22": 18,
+                    "0x400000":
                     {
-                        "max": 50,
-                        "min": 50,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 18,
-                        "min": 8,
-                        "par": null,
-                        "prop": "damage_1hand"
-                    },
-                    {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "orb",
-                "uniques": []
+                },
+                "dimensions": [1, 3],
+                "NTIPAliasClass": 0
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 68,
+            "NTIPAliasClassID": 280,
+            "NTIPAliasClass": 0,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
             {
-                "display_name": "Jared's Stone",
-                "hands": "one",
-                "item_class": "normal",
-                "props": [
-                    {
-                        "max": 4,
-                        "min": 0,
-                        "par": null,
-                        "prop": "sock"
-                    },
-                    {
-                        "max": 50,
-                        "min": 50,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 18,
-                        "min": 8,
-                        "par": null,
-                        "prop": "damage_1hand"
-                    },
-                    {
-                        "max": 1,
-                        "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
-                    }
-                ],
-                "sets": [],
-                "type": "orb",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 280,
                 "y": 217,
                 "w": 145,
                 "h": 42
             },
-            "name": "BEAST MASTER",
-            "quality": "rare",
-            "type": "ring",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "BEAST MASTER",
+            "Quality": "rare",
+            "Text": "BEAST MASTER",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 413,
                 "y": 174,
                 "w": 147,
                 "h": 42
             },
-            "name": "BITTER WHORL",
-            "quality": "rare",
-            "type": "ring",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "BITTER WHORL",
+            "Quality": "rare",
+            "Text": "BITTER WHORL",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 6,
+            "NTIPAliasFlag":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 306,
                 "y": 440,
                 "w": 217,
                 "h": 42
             },
-            "name": "MARA'S KALEIDOSCOPE",
-            "quality": "unique",
-            "type": "amulet",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Mara's Kaleidoscope",
+            "Quality": "unique",
+            "Text": "MARA'S KALEIDOSCOPE",
+            "BaseItem":
             {
-                "display_name": "Amulet",
-                "sets": ["angelic_wings", "arcannas_sign", "cathans_sigil", "civerbs_icon", "irathas_collar", "tal_rashas_adjudication", "tancreds_weird", "telling_of_beads", "vidalas_snare"],
-                "type": "amulet",
-                "uniques": ["nokozan_relic", "the_eye_of_etlich", "the_mahimoak_curio", "the_cats_eye", "the_rising_sun", "crescent_moon", "maras_kaleidoscope", "atmas_scarab", "highlords_wrath", "saracens_chance", "seraphs_hymn", "metalgrid"]
+                "DisplayName": "Amulet",
+                "NTIPAliasClassID": 520,
+                "NTIPAliasType": 12,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICWINGS", "ARCANNASSIGN", "CATHANSSIGIL", "CIVERBSICON", "IRATHASCOLLAR", "TALRASHASADJUDICATION", "TANCREDSWEIRD", "TELLINGOFBEADS", "VIDALASSNARE"],
+                "uniques": ["NOKOZANRELIC", "THEEYEOFETLICH", "THEMAHIMOAKCURIO", "THECATSEYE", "THERISINGSUN", "CRESCENTMOON", "MARASKALEIDOSCOPE", "ATMASSCARAB", "HIGHLORDSWRATH", "SARACENSCHANCE", "SERAPHSHYMN", "METALGRID"]
             },
-            "item":
+            "Item":
             {
-                "base": "amulet",
-                "display_name": "Mara's Kaleidoscope",
-                "props": [
+                "DisplayName": "Mara's Kaleidoscope",
+                "NTIPAliasClassID": 520,
+                "NTIPAliasType": 12,
+                "NTIPAliasStatProps":
+                {
+                    "127":
                     {
-                        "max": 2,
                         "min": 2,
-                        "par": 0,
-                        "prop": "allskills"
+                        "max": 2
                     },
+                    "39":
                     {
-                        "max": 30,
                         "min": 20,
-                        "par": 0,
-                        "prop": "res-all"
+                        "max": 30
                     },
+                    "43":
                     {
-                        "max": 5,
-                        "min": 5,
-                        "par": 0,
-                        "prop": "str"
+                        "min": 20,
+                        "max": 30
                     },
+                    "41":
                     {
-                        "max": 5,
-                        "min": 5,
-                        "par": 0,
-                        "prop": "dex"
+                        "min": 20,
+                        "max": 30
                     },
+                    "45":
                     {
-                        "max": 5,
-                        "min": 5,
-                        "par": 0,
-                        "prop": "vit"
+                        "min": 20,
+                        "max": 30
                     },
+                    "0":
                     {
-                        "max": 5,
                         "min": 5,
-                        "par": 0,
-                        "prop": "enr"
+                        "max": 5
+                    },
+                    "2":
+                    {
+                        "min": 5,
+                        "max": 5
+                    },
+                    "3":
+                    {
+                        "min": 5,
+                        "max": 5
+                    },
+                    "1":
+                    {
+                        "min": 5,
+                        "max": 5
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 12,
+            "NTIPAliasClassID": 520,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 414,
                 "y": 302,
                 "w": 220,
                 "h": 45
             },
-            "name": "THE STONE OF JORDAN",
-            "quality": "unique",
-            "type": "ring",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "The Stone of Jordan",
+            "Quality": "unique",
+            "Text": "THE STONE OF JORDAN",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item":
+            "Item":
             {
-                "base": "ring",
-                "display_name": "The Stone of Jordan",
-                "props": [
+                "DisplayName": "The Stone of Jordan",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "NTIPAliasStatProps":
+                {
+                    "8":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "mana"
+                        "max": 20
                     },
+                    "77":
                     {
-                        "max": 25,
                         "min": 25,
-                        "par": 0,
-                        "prop": "mana%"
+                        "max": 25
                     },
+                    "50":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "ltng-min"
+                        "max": 1
                     },
+                    "127":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "allskills"
+                        "max": 1
                     },
+                    "51":
                     {
-                        "max": 12,
                         "min": 12,
-                        "par": 0,
-                        "prop": "ltng-max"
+                        "max": 12
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 193,
                 "y": 260,
                 "w": 164,
                 "h": 43
             },
-            "name": "ARACHNID MESH",
-            "quality": "unique",
-            "type": "belt",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Arachnid Mesh",
+            "Quality": "unique",
+            "Text": "ARACHNID MESH",
+            "BaseItem":
             {
-                "display_name": "Spiderweb Sash",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Spiderweb Sash",
+                "NTIPAliasClassID": 460,
+                "NTIPAliasType": 19,
+                "NTIPAliasStatProps":
+                {
+                    "72": 12,
+                    "73": 12,
+                    "31":
                     {
-                        "max": 12,
-                        "min": 12,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 62,
                         "min": 55,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 62
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "belt",
-                "uniques": ["arachnid_mesh"]
+                },
+                "dimensions": [2, 1],
+                "uniques": ["ARACHNIDMESH"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "spiderweb_sash",
-                "display_name": "Arachnid Mesh",
-                "props": [
+                "DisplayName": "Arachnid Mesh",
+                "NTIPAliasClassID": 460,
+                "NTIPAliasType": 19,
+                "NTIPAliasStatProps":
+                {
+                    "16,0":
                     {
-                        "max": 120,
                         "min": 90,
-                        "par": 0,
-                        "prop": "ac%"
+                        "max": 120
                     },
+                    "105":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "cast2"
+                        "max": 20
                     },
+                    "204":
                     {
-                        "max": 3,
-                        "min": 11,
-                        "par": "Venom",
-                        "prop": "charged"
+                        "charges": 11,
+                        "level": 3,
+                        "skill": "Venom"
                     },
+                    "127":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "allskills"
+                        "max": 1
                     },
+                    "150":
                     {
-                        "max": 10,
                         "min": 10,
-                        "par": 0,
-                        "prop": "slow"
+                        "max": 10
                     },
+                    "77":
                     {
-                        "max": 5,
                         "min": 5,
-                        "par": 0,
-                        "prop": "mana%"
+                        "max": 5
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 19,
+            "NTIPAliasClassID": 460,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 468,
                 "y": 217,
                 "w": 180,
                 "h": 43
             },
-            "name": "NIGHTWING'S VEIL",
-            "quality": "unique",
-            "type": "helm",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Nightwing's Veil",
+            "Quality": "unique",
+            "Text": "NIGHTWING'S VEIL",
+            "BaseItem":
             {
-                "display_name": "Spired Helm",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Spired Helm",
+                "NTIPAliasClassID": 426,
+                "NTIPAliasType": 37,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 3,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 3
                     },
+                    "72": 40,
+                    "73": 40,
+                    "31":
                     {
-                        "max": 40,
-                        "min": 40,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 159,
                         "min": 114,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 159
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["ondals_almighty"],
-                "type": "helm",
-                "uniques": ["veil_of_steel", "nightwings_veil"]
+                },
+                "dimensions": [2, 2],
+                "sets": ["ONDALSALMIGHTY"],
+                "uniques": ["VEILOFSTEEL", "NIGHTWINGSVEIL"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "spired_helm",
-                "display_name": "Nightwing's Veil",
-                "props": [
+                "DisplayName": "Nightwing's Veil",
+                "NTIPAliasClassID": 426,
+                "NTIPAliasType": 37,
+                "NTIPAliasStatProps":
+                {
+                    "16,0":
                     {
-                        "max": 120,
                         "min": 90,
-                        "par": 0,
-                        "prop": "ac%"
+                        "max": 120
                     },
+                    "127":
                     {
-                        "max": 2,
                         "min": 2,
-                        "par": 0,
-                        "prop": "allskills"
+                        "max": 2
                     },
+                    "2":
                     {
-                        "max": 20,
                         "min": 10,
-                        "par": 0,
-                        "prop": "dex"
+                        "max": 20
                     },
+                    "149":
                     {
-                        "max": 9,
                         "min": 5,
-                        "par": 0,
-                        "prop": "abs-cold"
+                        "max": 9
                     },
+                    "118":
                     {
-                        "max": 1,
                         "min": 1,
-                        "par": 0,
-                        "prop": "half-freeze"
+                        "max": 1
                     },
+                    "331":
                     {
-                        "max": 15,
                         "min": 8,
-                        "par": 0,
-                        "prop": "extra-cold"
+                        "max": 15
                     },
+                    "91":
                     {
-                        "max": -50,
                         "min": -50,
-                        "par": 0,
-                        "prop": "ease"
+                        "max": -50
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 37,
+            "NTIPAliasClassID": 426,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 336,
                 "y": 131,
                 "w": 146,
                 "h": 43
             },
-            "name": "ORMUS' ROBES",
-            "quality": "unique",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Ormus' Robes",
+            "Quality": "unique",
+            "Text": "ORMUS' ROBES",
+            "BaseItem":
             {
-                "display_name": "Dusk Shroud",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Dusk Shroud",
+                "NTIPAliasClassID": 429,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 20,
+                    "73": 20,
+                    "31":
                     {
-                        "max": 20,
-                        "min": 20,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 467,
                         "min": 361,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 467
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["dark_adherent"],
-                "type": "armor",
-                "uniques": ["ormus_robes"]
+                },
+                "dimensions": [2, 3],
+                "sets": ["DARKADHERENT"],
+                "uniques": ["ORMUSROBES"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "dusk_shroud",
-                "display_name": "Ormus' Robes",
-                "props": [
+                "DisplayName": "Ormus' Robes",
+                "NTIPAliasClassID": 429,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "31":
                     {
-                        "max": 20,
                         "min": 10,
-                        "par": 0,
-                        "prop": "ac"
+                        "max": 20
                     },
+                    "105":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "cast2"
+                        "max": 20
                     },
+                    "329":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "extra-fire"
+                        "max": 15
                     },
+                    "331":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "extra-cold"
+                        "max": 15
                     },
+                    "330":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "extra-ltng"
+                        "max": 15
                     },
+                    "27":
                     {
-                        "max": 15,
                         "min": 10,
-                        "par": 0,
-                        "prop": "regen-mana"
+                        "max": 15
                     },
+                    "107,36":
                     {
-                        "max": 60,
                         "min": 36,
-                        "par": "Unsummon",
-                        "prop": "skill-rand"
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,37":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,38":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,39":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,40":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,41":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,42":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,43":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,44":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,45":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,46":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,47":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,48":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,49":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,50":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,51":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,52":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,53":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,54":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,55":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,56":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,57":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,58":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,59":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,60":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,61":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,62":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,63":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,64":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
+                    },
+                    "107,65":
+                    {
+                        "min": 36,
+                        "max": 60,
+                        "par": "Unsummon"
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 429,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 220,
                 "y": 88,
                 "w": 202,
                 "h": 43
             },
-            "name": "DEATH'S FATHOM",
-            "quality": "unique",
-            "type": "orb",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Death's Fathom",
+            "Quality": "unique",
+            "Text": "DEATH'S FATHOM",
+            "BaseItem":
             {
-                "display_name": "Dimensional Shard",
-                "hands": "one",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Dimensional Shard",
+                "NTIPAliasClassID": 300,
+                "NTIPAliasType": 68,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 50,
+                    "73": 50,
+                    "21": 30,
+                    "22": 53,
+                    "0x400000":
                     {
-                        "max": 50,
-                        "min": 50,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 53,
-                        "min": 30,
-                        "par": null,
-                        "prop": "damage_1hand"
-                    },
-                    {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "orb",
-                "uniques": ["deaths_fathom"]
+                },
+                "dimensions": [1, 3],
+                "uniques": ["DEATHSFATHOM"],
+                "NTIPAliasClass": 2
             },
-            "item":
+            "Item":
             {
-                "base": "dimensional_shard",
-                "display_name": "Death's Fathom",
-                "props": [
+                "DisplayName": "Death's Fathom",
+                "NTIPAliasClassID": 300,
+                "NTIPAliasType": 68,
+                "NTIPAliasStatProps":
+                {
+                    "83,1":
                     {
-                        "max": 3,
                         "min": 3,
-                        "par": 0,
-                        "prop": "sor"
+                        "max": 3
                     },
+                    "331":
                     {
-                        "max": 30,
                         "min": 15,
-                        "par": 0,
-                        "prop": "extra-cold"
+                        "max": 30
                     },
+                    "105":
                     {
-                        "max": 20,
                         "min": 20,
-                        "par": 0,
-                        "prop": "cast2"
+                        "max": 20
                     },
+                    "39":
                     {
-                        "max": 40,
                         "min": 25,
-                        "par": 0,
-                        "prop": "res-fire"
+                        "max": 40
                     },
+                    "41":
                     {
-                        "max": 40,
                         "min": 25,
-                        "par": 0,
-                        "prop": "res-ltng"
+                        "max": 40
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 68,
+            "NTIPAliasClassID": 300,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
-                "x": 718,
-                "y": 20,
-                "w": 209,
-                "h": 45
+                "x": 792,
+                "y": 44,
+                "w": 57,
+                "h": 21
             },
-            "name": "THE STONE OF JORDAN",
-            "quality": "unique",
-            "type": "ring",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Ring",
+            "Quality": "unique",
+            "Text": "RING",
+            "BaseItem":
             {
-                "display_name": "Ring",
-                "sets": ["angelic_halo", "cathans_seal"],
-                "type": "ring",
-                "uniques": ["nagelring", "manald_heal", "the_stone_of_jordan", "constricting_ring", "bulkathos_wedding_band", "dwarf_star", "raven_frost", "natures_peace", "wisp_projector", "carrion_wind"]
+                "DisplayName": "Ring",
+                "NTIPAliasClassID": 522,
+                "NTIPAliasType": 10,
+                "dimensions": [1, 1],
+                "sets": ["ANGELICHALO", "CATHANSSEAL"],
+                "uniques": ["NAGELRING", "MANALDHEAL", "THESTONEOFJORDAN", "CONSTRICTINGRING", "BULKATHOSWEDDINGBAND", "DWARFSTAR", "RAVENFROST", "NATURESPEACE", "WISPPROJECTOR", "CARRIONWIND"]
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 10,
+            "NTIPAliasClassID": 522,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
             {
-                "base": "ring",
-                "display_name": "The Stone of Jordan",
-                "props": [
-                    {
-                        "max": 20,
-                        "min": 20,
-                        "par": 0,
-                        "prop": "mana"
-                    },
-                    {
-                        "max": 25,
-                        "min": 25,
-                        "par": 0,
-                        "prop": "mana%"
-                    },
-                    {
-                        "max": 1,
-                        "min": 1,
-                        "par": 0,
-                        "prop": "ltng-min"
-                    },
-                    {
-                        "max": 1,
-                        "min": 1,
-                        "par": 0,
-                        "prop": "allskills"
-                    },
-                    {
-                        "max": 12,
-                        "min": 12,
-                        "par": 0,
-                        "prop": "ltng-max"
-                    }
-                ]
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
-                "x": 575,
-                "y": 20,
-                "w": 132,
-                "h": 45
+                "x": 571,
+                "y": 44,
+                "w": 141,
+                "h": 21
             },
-            "name": "WAR TRAVELER",
-            "quality": "unique",
-            "type": "boots",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "War Traveler",
+            "Quality": "unique",
+            "Text": "BATTLE BOOTS",
+            "BaseItem":
             {
-                "display_name": "Battle Boots",
-                "item_class": "exceptional",
-                "props": [
+                "DisplayName": "Battle Boots",
+                "NTIPAliasClassID": 388,
+                "NTIPAliasType": 15,
+                "NTIPAliasStatProps":
+                {
+                    "72": 18,
+                    "73": 18,
+                    "31":
                     {
-                        "max": 18,
-                        "min": 18,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 47,
                         "min": 39,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 47
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": ["aldurs_advance"],
-                "type": "boots",
-                "uniques": ["war_traveler"]
+                },
+                "dimensions": [2, 2],
+                "sets": ["ALDURSADVANCE"],
+                "uniques": ["WARTRAVELER"],
+                "NTIPAliasClass": 1
             },
-            "item":
+            "Item":
             {
-                "base": "battle_boots",
-                "display_name": "War Traveler",
-                "props": [
+                "DisplayName": "War Traveler",
+                "NTIPAliasClassID": 388,
+                "NTIPAliasType": 15,
+                "NTIPAliasStatProps":
+                {
+                    "3":
                     {
-                        "max": 10,
                         "min": 10,
-                        "par": 0,
-                        "prop": "vit"
+                        "max": 10
                     },
+                    "0":
                     {
-                        "max": 10,
                         "min": 10,
-                        "par": 0,
-                        "prop": "str"
+                        "max": 10
                     },
+                    "80":
                     {
-                        "max": 50,
                         "min": 30,
-                        "par": 0,
-                        "prop": "mag%"
+                        "max": 50
                     },
+                    "72": 30,
+                    "73": 30,
+                    "96":
                     {
-                        "max": 30,
-                        "min": 30,
-                        "par": 0,
-                        "prop": "dur"
-                    },
-                    {
-                        "max": 25,
                         "min": 25,
-                        "par": 0,
-                        "prop": "move2"
+                        "max": 25
                     },
+                    "16,0":
                     {
-                        "max": 190,
                         "min": 150,
-                        "par": 0,
-                        "prop": "ac%"
+                        "max": 190
                     },
+                    "21": 15,
+                    "22": 25,
+                    "78":
                     {
-                        "max": 25,
-                        "min": 15,
-                        "par": 0,
-                        "prop": "dmg-norm"
-                    },
-                    {
-                        "max": 10,
                         "min": 5,
-                        "par": 0,
-                        "prop": "thorns"
+                        "max": 10
                     },
+                    "154":
                     {
-                        "max": 40,
                         "min": 40,
-                        "par": 0,
-                        "prop": "stamdrain"
+                        "max": 40
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 15,
+            "NTIPAliasClassID": 388,
+            "NTIPAliasClass": 1,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
-                "x": 410,
-                "y": 20,
-                "w": 154,
-                "h": 46
+                "x": 422,
+                "y": 44,
+                "w": 139,
+                "h": 22
             },
-            "name": "HELLFIRE TORCH",
-            "quality": "unique",
-            "type": "medium_charm",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "Hellfire Torch",
+            "Quality": "unique",
+            "Text": "LARGE CHARM",
+            "BaseItem":
             {
-                "display_name": "Large Charm",
-                "sets": [],
-                "type": "medium_charm",
-                "uniques": ["hellfire_torch"]
+                "DisplayName": "Large Charm",
+                "NTIPAliasClassID": 604,
+                "NTIPAliasType": 83,
+                "dimensions": [1, 2],
+                "uniques": ["HELLFIRETORCH"]
             },
-            "item":
+            "Item":
             {
-                "base": "large_charm",
-                "display_name": "Hellfire Torch",
-                "props": [
+                "DisplayName": "Hellfire Torch",
+                "NTIPAliasClassID": 604,
+                "NTIPAliasType": 83,
+                "NTIPAliasStatProps":
+                {
+                    "83":
                     {
-                        "max": 6,
-                        "min": null,
-                        "par": 0,
-                        "prop": "randclassskill"
+                        "min": 3,
+                        "max": 3
                     },
+                    "0":
                     {
-                        "max": 20,
                         "min": 10,
-                        "par": 0,
-                        "prop": "all-stats"
+                        "max": 20
                     },
+                    "1":
                     {
-                        "max": 20,
                         "min": 10,
-                        "par": 0,
-                        "prop": "res-all"
+                        "max": 20
                     },
+                    "2":
                     {
-                        "max": 8,
+                        "min": 10,
+                        "max": 20
+                    },
+                    "3":
+                    {
+                        "min": 10,
+                        "max": 20
+                    },
+                    "39":
+                    {
+                        "min": 10,
+                        "max": 20
+                    },
+                    "43":
+                    {
+                        "min": 10,
+                        "max": 20
+                    },
+                    "41":
+                    {
+                        "min": 10,
+                        "max": 20
+                    },
+                    "45":
+                    {
+                        "min": 10,
+                        "max": 20
+                    },
+                    "89":
+                    {
                         "min": 8,
-                        "par": 0,
-                        "prop": "light"
+                        "max": 8
                     },
+                    "198":
                     {
-                        "max": 10,
-                        "min": 5,
-                        "par": "DiabWall",
-                        "prop": "hit-skill"
+                        "chance": 25,
+                        "level": 10,
+                        "skill": "Firestorm"
                     },
+                    "204":
                     {
-                        "max": 30,
-                        "min": 10,
-                        "par": "Hydra",
-                        "prop": "charged"
+                        "charges": 10,
+                        "level": 30,
+                        "skill": "Hydra"
                     }
-                ]
+                }
             },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "NTIPAliasType": 83,
+            "NTIPAliasClassID": 604,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 7,
+            "NTIPAliasFlag":
+            {
+                "0x10": false,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 320,
                 "y": 394,
                 "w": 101,
                 "h": 21
             },
-            "name": "BER RUNE",
-            "quality": "rune",
-            "type": "rune",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "BER RUNE",
+            "Quality": "rune",
+            "Text": "BER RUNE",
+            "BaseItem":
             {
-                "display_name": "Ber Rune",
-                "sets": [],
-                "type": "rune",
-                "uniques": []
+                "DisplayName": "Ber Rune",
+                "NTIPAliasClassID": 639,
+                "NTIPAliasType": 74,
+                "dimensions": [1, 1]
             },
-            "item":
+            "Item": null,
+            "NTIPAliasType": 74,
+            "NTIPAliasClassID": 639,
+            "NTIPAliasClass": null,
+            "NTIPAliasQuality": 10,
+            "NTIPAliasFlag":
             {
-                "display_name": "Ber Rune",
-                "sets": [],
-                "type": "rune",
-                "uniques": []
-            },
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 437,
                 "y": 384,
                 "w": 180,
                 "h": 42
             },
-            "name": "CHAINS OF HONOR",
-            "quality": "runeword",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "CHAINS OF HONOR",
+            "Quality": "runeword",
+            "Text": "ARCHON PLATE",
+            "BaseItem":
             {
-                "display_name": "Archon Plate",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Archon Plate",
+                "NTIPAliasClassID": 443,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 524,
                         "min": 410,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 524
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "armor",
-                "uniques": []
+                },
+                "dimensions": [2, 3],
+                "NTIPAliasClass": 2
             },
-            "item": {},
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": {},
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 443,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 9,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 241,
                 "y": 303,
                 "w": 150,
                 "h": 42
             },
-            "name": "FORTITUDE",
-            "quality": "runeword",
-            "type": "armor",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "FORTITUDE",
+            "Quality": "runeword",
+            "Text": "ARCHON PLATE",
+            "BaseItem":
             {
-                "display_name": "Archon Plate",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Archon Plate",
+                "NTIPAliasClassID": 443,
+                "NTIPAliasType": 3,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 60,
+                    "73": 60,
+                    "31":
                     {
-                        "max": 60,
-                        "min": 60,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 524,
                         "min": 410,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 524
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "armor",
-                "uniques": []
+                },
+                "dimensions": [2, 3],
+                "NTIPAliasClass": 2
             },
-            "item": {},
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": {},
+            "NTIPAliasType": 3,
+            "NTIPAliasClassID": 443,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 9,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 267,
                 "y": 174,
                 "w": 132,
                 "h": 42
             },
-            "name": "PHOENIX",
-            "quality": "runeword",
-            "type": "polearm",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "PHOENIX",
+            "Quality": "runeword",
+            "Text": "CRYPTIC AXE",
+            "BaseItem":
             {
-                "display_name": "Cryptic Axe",
-                "hands": "two",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Cryptic Axe",
+                "NTIPAliasClassID": 256,
+                "NTIPAliasType": 34,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 5,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 5
                     },
+                    "72": 65,
+                    "73": 65,
+                    "23": 33,
+                    "24": 150,
+                    "0x400000":
                     {
-                        "max": 65,
-                        "min": 65,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 150,
-                        "min": 33,
-                        "par": null,
-                        "prop": "damage_2hand"
-                    },
-                    {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "polearm",
-                "uniques": ["tomb_reaver"]
+                },
+                "dimensions": [2, 4],
+                "uniques": ["TOMBREAVER"],
+                "NTIPAliasClass": 2
             },
-            "item": {},
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": {},
+            "NTIPAliasType": 34,
+            "NTIPAliasClassID": 256,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 9,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         },
         {
-            "boundingBox":
+            "BoundingBox":
             {
                 "x": 922,
                 "y": 22,
                 "w": 101,
                 "h": 43
             },
-            "name": "SPIRIT",
-            "quality": "runeword",
-            "type": "shield",
-            "identified": true,
-            "amount": null,
-            "baseItem":
+            "Name": "SPIRIT",
+            "Quality": "runeword",
+            "Text": "MONARCH",
+            "BaseItem":
             {
-                "display_name": "Monarch",
-                "item_class": "elite",
-                "props": [
+                "DisplayName": "Monarch",
+                "NTIPAliasClassID": 447,
+                "NTIPAliasType": 2,
+                "NTIPAliasStatProps":
+                {
+                    "194":
                     {
-                        "max": 4,
                         "min": 0,
-                        "par": null,
-                        "prop": "sock"
+                        "max": 4
                     },
+                    "72": 86,
+                    "73": 86,
+                    "31":
                     {
-                        "max": 86,
-                        "min": 86,
-                        "par": null,
-                        "prop": "durability"
-                    },
-                    {
-                        "max": 148,
                         "min": 133,
-                        "par": null,
-                        "prop": "defense"
+                        "max": 148
                     },
+                    "0x400000":
                     {
-                        "max": 1,
                         "min": 0,
-                        "par": null,
-                        "prop": "ethereal"
+                        "max": 1
                     }
-                ],
-                "sets": [],
-                "type": "shield",
-                "uniques": ["stormshield"]
+                },
+                "dimensions": [2, 3],
+                "uniques": ["STORMSHIELD"],
+                "NTIPAliasClass": 2
             },
-            "item": {},
-            "uniqueItems": null,
-            "setItems": null,
-            "itemModifiers": null
+            "Item": {},
+            "NTIPAliasType": 2,
+            "NTIPAliasClassID": 447,
+            "NTIPAliasClass": 2,
+            "NTIPAliasQuality": 9,
+            "NTIPAliasFlag":
+            {
+                "0x10": true,
+                "0x4000000": true
+            }
         }
     ]
 }
