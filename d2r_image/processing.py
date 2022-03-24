@@ -140,81 +140,81 @@ def get_merc_health(image: np.ndarray) -> float:
     return round(merc_health_percentage, 2)
 
 
-def get_belt(image: np.ndarray) -> D2ItemList:
-    belt = D2ItemList([
-            None, None, None, None,
-            None, None, None, None,
-            None, None, None, None,
-            None, None, None, None
-    ])
-    for consumable in BELT_MAP:
-        belt_roi = [722, 560, 166, 156]
-        rects = detect_screen_object(ScreenObject(refs=BELT_MAP[consumable], threshold=0.95, roi=belt_roi), image)
-        if rects:
-            for rect in rects:
-                column = int((rect[0]-belt_roi[0]) / 40)
-                row = abs(3-round((rect[1]-belt_roi[1]) / 40))
-                slot_index = row * 4 + column
-                quality = None
-                type = None
-                base_item = None
-                item = None
-                if consumable != 'EMPTY BELT SLOT':
-                    quality=ItemQuality.Normal.value
-                    base_item = d2data_lookup.get_consumable(consumable)
-                    type=base_item['type']
-                    item=base_item
-                belt.items[slot_index] = D2Item(
-                    boundingBox= {
-                        'x': rect[0],
-                        'y': rect[1],
-                        'w': rect[2],
-                        'h': rect[3],
-                    },
-                    name=consumable,
-                    quality=quality,
-                    type=type,
-                    identified=True,
-                    baseItem=base_item,
-                    item=item,
-                    amount=None,
-                    uniqueItems=None,
-                    setItems=None,
-                    itemModifiers=None
-                )
-    return belt
+# def get_belt(image: np.ndarray) -> D2ItemList:
+#     belt = D2ItemList([
+#             None, None, None, None,
+#             None, None, None, None,
+#             None, None, None, None,
+#             None, None, None, None
+#     ])
+#     for consumable in BELT_MAP:
+#         belt_roi = [722, 560, 166, 156]
+#         rects = detect_screen_object(ScreenObject(refs=BELT_MAP[consumable], threshold=0.95, roi=belt_roi), image)
+#         if rects:
+#             for rect in rects:
+#                 column = int((rect[0]-belt_roi[0]) / 40)
+#                 row = abs(3-round((rect[1]-belt_roi[1]) / 40))
+#                 slot_index = row * 4 + column
+#                 quality = None
+#                 type = None
+#                 base_item = None
+#                 item = None
+#                 if consumable != 'EMPTY BELT SLOT':
+#                     quality=ItemQuality.Normal.value
+#                     base_item = d2data_lookup.get_consumable(consumable)
+#                     type=base_item['type']
+#                     item=base_item
+#                 belt.items[slot_index] = D2Item(
+#                     boundingBox= {
+#                         'x': rect[0],
+#                         'y': rect[1],
+#                         'w': rect[2],
+#                         'h': rect[3],
+#                     },
+#                     name=consumable,
+#                     quality=quality,
+#                     type=type,
+#                     identified=True,
+#                     baseItem=base_item,
+#                     item=item,
+#                     amount=None,
+#                     uniqueItems=None,
+#                     setItems=None,
+#                     itemModifiers=None
+#                 )
+#     return belt
 
 
-def get_inventory(image: np.ndarray) -> D2ItemList:
-    d2_item_list = D2ItemList([])
-    d2data_maps = [LEFT_INVENTORY_MAP, RIGHT_INVENTORY_MAP]
-    for i in range(len(d2data_maps)):
-        map = d2data_maps[i]
-        roi = UI_ROI.leftInventory if i == 1 else UI_ROI.rightInventory
-        for item in map:
-            threshold = 0.95 if item not in ['PERFECT AMETHYST', 'PERFECT SAPPHIRE'] else 0.99
-            rects = detect_screen_object(ScreenObject(refs=map[item], threshold=threshold, roi=roi), image)
-            if rects:
-                for rect in rects:
-                    quality=ItemQuality.Normal.value
-                    base_item = d2data_lookup.get_by_name(item)
-                    type=base_item['type']
-                    d2_item_list.items.append(D2Item(
-                        boundingBox= {
-                            'x': rect[0],
-                            'y': rect[1],
-                            'w': rect[2],
-                            'h': rect[3],
-                        },
-                        name=item,
-                        quality=quality,
-                        type=type,
-                        identified=True,
-                        baseItem=base_item,
-                        item=base_item,
-                        amount=None,
-                        uniqueItems=None,
-                        setItems=None,
-                        itemModifiers=None
-                    ))
-    return d2_item_list
+# def get_inventory(image: np.ndarray) -> D2ItemList:
+#     d2_item_list = D2ItemList([])
+#     d2data_maps = [LEFT_INVENTORY_MAP, RIGHT_INVENTORY_MAP]
+#     for i in range(len(d2data_maps)):
+#         map = d2data_maps[i]
+#         roi = UI_ROI.leftInventory if i == 1 else UI_ROI.rightInventory
+#         for item in map:
+#             threshold = 0.95 if item not in ['PERFECT AMETHYST', 'PERFECT SAPPHIRE'] else 0.99
+#             rects = detect_screen_object(ScreenObject(refs=map[item], threshold=threshold, roi=roi), image)
+#             if rects:
+#                 for rect in rects:
+#                     quality=ItemQuality.Normal.value
+#                     base_item = d2data_lookup.get_by_name(item)
+#                     type=base_item['type']
+#                     d2_item_list.items.append(D2Item(
+#                         boundingBox= {
+#                             'x': rect[0],
+#                             'y': rect[1],
+#                             'w': rect[2],
+#                             'h': rect[3],
+#                         },
+#                         name=item,
+#                         quality=quality,
+#                         type=type,
+#                         identified=True,
+#                         baseItem=base_item,
+#                         item=base_item,
+#                         amount=None,
+#                         uniqueItems=None,
+#                         setItems=None,
+#                         itemModifiers=None
+#                     ))
+#     return d2_item_list

@@ -7,8 +7,8 @@ D2R Image is a package aimed to help in providing an API for answering common qu
 - get_stamina(image: np.ndarray) -> float (TODO)
 - get_stamina(image: np.ndarray) -> float (TODO)
 - get_merc_health(image: np.ndarray) -> float
-- get_belt(image: np.ndarray) -> D2ItemList
-- get_inventory(image: np.ndarray) -> D2ItemList (WIP)
+<!-- - get_belt(image: np.ndarray) -> D2ItemList
+- get_inventory(image: np.ndarray) -> D2ItemList (WIP) -->
 - get_hovered_item(image: np.ndarray) -> HoveredItem
 <!-- - get_hovered_item(image: np.ndarray) -> D2Item | None 
 - get_npc_coords(npc: NPC) -> (x, y) | None 
@@ -18,35 +18,41 @@ D2R Image is a package aimed to help in providing an API for answering common qu
 - get_mana(image: np.ndarray) -> float | None 
 - get_stamina(image: np.ndarray) -> float | None 
 - get_experience(image: np.ndarray) -> float | None  -->
-## D2Item (List)
+## GroundItem (List)
 ---
 D2Item is one of the core data models returned by the d2r-image library. It aims to represent a Diablo II item that's on the ground, being hovered, or detected by an image reference (e.g., equipped green Shako)
 ```py
-class D2Item:
-    boundingBox: dict # x, y, w, h
-    name: str # e.g., HAND AXE, 1015 GOLD, ORMUS' ROBES
-    quality: str # e.g., gray, normal, magic, rare, set, unique, runeword, rune
-    type: str # e.g., helm, mace, axe, shield
-    identified: bool # whether the item is identified or not
-    amount: int # e.g., 1015 (where name is 1015 GOLD)
-    baseItem: dict # d2data base item
-    item: dict # d2data item
-    uniqueItems: list[dict] # list of possible d2data unique items
-    setItems: list[dict] # list of possible d2data set items
-    itemModifiers: dict # TODO: d2data parsed modifiers for a hovered tooltip
+class GroundItem:
+    BoundingBox: dict # x, y, w, h
+    Name: str # e.g., Hand Axe, 1015 GOLD, Ormus' Robes
+    Quality: str # e.g., gray, normal, magic, rare, set, unique, runeword, rune
+    Text: str # raw OCR text e.g., HAND AXE
+    BaseItem: dict
+    Item: Union[dict, None]
+    NTIPAliasType: int
+    NTIPAliasClassID: int
+    NTIPAliasClass: Union[int, None]
+    NTIPAliasQuality: int
+    NTIPAliasFlag: dict
 ```
 ```py
-class D2ItemList:
-    items: list[Union[D2Item, None]]class D2ItemList:
+class GroundItemList:
+    items: list[Union[GroundItem, None]]
 ```
 ## HoveredItem
 ```py
 class HoveredItem:
-    name: str # e.g., DAGGER, SPIRIT, CHILLING GRAND CHARM OF VITA
-    quality: str # e.g., gray, normal, magic, rare, set, unique, runeword, rune
-    baseItem: dict # d2data base item
-    item: Union[dict, None] # d2data item (if the hovered item is identified)
-    itemModifiers: Union[dict, None] # d2data parsed modifiers
+    Name: str # e.g., DAGGER, SPIRIT, CHILLING GRAND CHARM OF VITA
+    Quality: str # e.g., gray, normal, magic, rare, set, unique, runeword, rune
+    Text: str
+    BaseItem: dict
+    Item: Union[dict, None]
+    NTIPAliasType: int
+    NTIPAliasClassID: int
+    NTIPAliasClass: Union[int, None]
+    NTIPAliasQuality: int
+    NTIPAliasStat: Union[dict, None]
+    NTIPAliasFlag: dict
 ```
 ## Install
 ---
