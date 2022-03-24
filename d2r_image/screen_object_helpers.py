@@ -23,21 +23,21 @@ class TemplateMatch:
 
 executor = concurrent.futures.ThreadPoolExecutor()
 IMAGE_BY_REF_NAME = {}
-# pkg_paths = resource_listdir(__name__, 'resources/screen_objects')
-# for path in pkg_paths:
-#     for nested_path in resource_listdir(__name__, f'resources/screen_objects/{path}'):
-#         if nested_path is None:
-#             continue
-#         if nested_path.endswith('.png'):
-#             image_bytes = pkgutil.get_data(__name__, f"resources/screen_objects/{path}/{nested_path}")
-#             image = Image.open(io.BytesIO(image_bytes))
-#             image_data = cv2.resize(np.asarray(image), None, fx=1.0, fy=1.0, interpolation=cv2.INTER_NEAREST)
-#             IMAGE_BY_REF_NAME[nested_path.replace('.png', '').upper()] = {
-#                 'image': image,
-#                 'imageData': cv2.cvtColor(image_data, cv2.COLOR_RGBA2BGR),
-#                 'grayscaleImageData': cv2.cvtColor(image_data, cv2.COLOR_BGRA2GRAY),
-#                 'mask': alpha_to_mask(image_data)
-#             }
+pkg_paths = resource_listdir(__name__, 'resources/screen_objects')
+for path in pkg_paths:
+    for nested_path in resource_listdir(__name__, f'resources/screen_objects/{path}'):
+        if nested_path is None:
+            continue
+        if nested_path.endswith('.png'):
+            image_bytes = pkgutil.get_data(__name__, f"resources/screen_objects/{path}/{nested_path}")
+            image = Image.open(io.BytesIO(image_bytes))
+            image_data = cv2.resize(np.asarray(image), None, fx=1.0, fy=1.0, interpolation=cv2.INTER_NEAREST)
+            IMAGE_BY_REF_NAME[nested_path.replace('.png', '').upper()] = {
+                'image': image,
+                'imageData': cv2.cvtColor(image_data, cv2.COLOR_RGBA2BGR),
+                'grayscaleImageData': cv2.cvtColor(image_data, cv2.COLOR_BGRA2GRAY),
+                'mask': alpha_to_mask(image_data)
+            }
 
 
 def detect_screen_object(

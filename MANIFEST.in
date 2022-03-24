@@ -1,4 +1,5 @@
 recursive-include d2r_image/resources/demo_images *.png
+recursive-include d2r_image/resources/screen_objects *.png
 recursive-include d2r_image/resources/templates *.png
 recursive-include d2r_image/resources/tessdata *
 recursive-include d2r_image/utils *
