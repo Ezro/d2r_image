@@ -14,7 +14,7 @@ def parse_item(quality, item):
     lines = item.split('\n')
     cleaned_lines = []
     for line in lines:
-        if line:
+        if line and 'SELL VALUE' not in line and 'COST' not in line:
             cleaned_lines.append(line)
     lines = cleaned_lines
     for line in lines:

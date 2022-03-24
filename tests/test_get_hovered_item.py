@@ -5,17 +5,19 @@ from d2r_image import processing
 from d2r_image.data_models import HoveredItem
 
 
-@pytest.mark.parametrize("filename, expected_file", [
-    ('war_travs.png', 'war_travs.json'),
-    ('unid_hsarus_iron_heel.png', 'unid_hsarus_iron_heel.json'),
-    ('unid_rare_dagger.png', 'unid_rare_dagger.json'),
-    ('cold_skiller.png', 'cold_skiller.json'),
-    ('torch.png', 'torch.json'),
-    ('spirit.png', 'spirit.json'),
-    ('zod.png', 'zod.json'),
-    ('rare_ring.png', 'rare_ring.json'),
+@pytest.mark.parametrize("filename, inventory_side, expected_file", [
+    ('war_travs.png', 'right', 'war_travs.json'),
+    ('unid_hsarus_iron_heel.png', 'right', 'unid_hsarus_iron_heel.json'),
+    ('unid_rare_dagger.png', 'right', 'unid_rare_dagger.json'),
+    ('cold_skiller.png', 'right', 'cold_skiller.json'),
+    ('torch.png', 'right', 'torch.json'),
+    ('spirit.png', 'right', 'spirit.json'),
+    ('zod.png', 'right', 'zod.json'),
+    ('rare_ring.png', 'right', 'rare_ring.json'),
+    ('rare_orb_sell_larzuk.png', 'right', 'rare_orb_sell_larzuk.json'),
+    ('rare_orb_buy_larzuk.png', 'left', 'rare_orb_buy_larzuk.json'),
 ])
-def test_hovered_item(filename: str, expected_file: str):
+def test_hovered_item(filename: str, inventory_side: str, expected_file: str):
     image_path = os.path.join(
         os.path.dirname(__file__),
         'resources',
@@ -27,6 +29,6 @@ def test_hovered_item(filename: str, expected_file: str):
         'resources',
         'get_hovered_item',
         expected_file)
-    result = processing.get_hovered_item(image)
+    result = processing.get_hovered_item(image, inventory_side)
     expected = HoveredItem.from_json(open(expected_items_path).read())
     assert result == expected
