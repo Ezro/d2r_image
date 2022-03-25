@@ -97,6 +97,7 @@
     "NTIPAliasFlag":
     {
         "0x10": true,
+        "0x400000": false,
         "0x4000000": false
     }
 }

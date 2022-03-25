@@ -131,7 +131,8 @@ def parse_item(quality, item):
         NTIPAliasStat=ntip_alias_stat,
         NTIPAliasFlag={
             '0x10': item_is_identified,
-            '0x4000000': item_is_ethereal
+            '0x400000': item_is_ethereal,
+            '0x4000000': quality == ItemQuality.Runeword.value
         }
     )
 
