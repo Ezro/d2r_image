@@ -145,6 +145,21 @@ class HoveredItem:
             return False
         return self.to_json() == other.to_json()
 
+    def as_dict(self):
+        return {
+            'Name': self.Name,
+            'Quality': self.Quality,
+            'Text': self.Text,
+            'BaseItem': self.BaseItem,
+            'Item': self.Item,
+            'NTIPAliasType': self.NTIPAliasType,
+            'NTIPAliasClassID': self.NTIPAliasClassID,
+            'NTIPAliasClass': self.NTIPAliasClass,
+            'NTIPAliasQuality': self.NTIPAliasQuality,
+            'NTIPAliasStat': self.NTIPAliasStat,
+            'NTIPAliasFlag': self.NTIPAliasFlag,
+        }
+
 
 @dataclass_json
 @dataclass
