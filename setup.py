@@ -30,6 +30,7 @@ setup(
         'tesserocr',
         'dataclasses-json',
         'parse',
+        'rapidfuzz',
     ],
     dependency_links = [
         f'file://localhost{PKG_DIR}/dependencies/tesserocr-2.5.2-cp39-cp39-win_amd64.whl'
