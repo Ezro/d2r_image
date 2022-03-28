@@ -249,12 +249,14 @@ def _check_wordlist(text: str = None, word_list: str = None, confidences: list =
     for word in word_list:
         try:
             if confidences[word_count] <= 90:
-                if (word not in word_list) and (re.sub(r"[^a-zA-Z0-9]", "", word) not in word_list):
-                    closest_match = difflib.get_close_matches(
-                        word, word_list, cutoff=match_threshold)
-                    if closest_match and closest_match != word:
-                        new_string += f"{closest_match[0]} "
-                        # logging.debug(f"check_wordlist: Replacing {word} ({confidences[word_count]}%) with {closest_match[0]}, score=")
+                alphanumeric = re.sub(r"[^a-zA-Z0-9]", "", word)
+                if not alphanumeric.isnumeric() and (word not in word_list) and alphanumeric not in word_list:
+                    closest_match, similarity, _ = extractOne(word, word_list, scorer=levenshtein)
+                    normalized_similarity = 1 - similarity / len(word)
+                    if (normalized_similarity) >= (match_threshold):
+                        new_string += f"{closest_match} "
+                        # logging.debug(
+                        #     f"check_wordlist: Replacing {word} ({confidences[word_count]}%) with {closest_match}, similarity={normalized_similarity*100:.1f}%")
                     else:
                         new_string += f"{word} "
                 else:
@@ -267,42 +269,8 @@ def _check_wordlist(text: str = None, word_list: str = None, confidences: list =
             # logging.error(
             #     f"check_wordlist: IndexError for word: {word}, index: {word_count}, text: {text}")
             return text
-        except:
-            # logging.error(
-            #     f"check_wordlist: Unknown error for word: {word}, index: {word_count}, text: {text}")
-            return text
-    return new_string.strip()
-
-
-def _check_wordlist(text: str = None, word_list: str = None, confidences: list = [], match_threshold: float = 0.5) -> str:
-    word_count = 0
-    new_string = ""
-    text = text.replace('\n', ' NEWLINEHERE ')
-    for word in word_list:
-        try:
-            if confidences[word_count] <= 90:
-                alphanumeric = re.sub(r"[^a-zA-Z0-9]", "", word)
-                if not alphanumeric.isnumeric() and (word not in word_list) and alphanumeric not in word_list:
-                    closest_match, similarity, _ = extractOne(word, word_list, scorer=levenshtein)
-                    normalized_similarity = 1 - similarity / len(word)
-                    if (normalized_similarity) >= (match_threshold):
-                        new_string += f"{closest_match} "
-                        logging.debug(
-                            f"check_wordlist: Replacing {word} ({confidences[word_count]}%) with {closest_match}, similarity={normalized_similarity*100:.1f}%")
-                    else:
-                        new_string += f"{word} "
-                else:
-                    new_string += f"{word} "
-            else:
-                new_string += f"{word} "
-            word_count += 1
-        except IndexError:
-            # bizarre word_count index exceeded sometimes... can't reproduce and words otherwise seem to match up
-            logging.error(
-                f"check_wordlist: IndexError for word: {word}, index: {word_count}, text: {text}")
-            return text
         except Exception as e:
-            logging.error(
-                f"check_wordlist: Unknown error for word: {word}, index: {word_count}, text: {text}, exception: {e}")
+            # logging.error(
+            #     f"check_wordlist: Unknown error for word: {word}, index: {word_count}, text: {text}, exception: {e}")
             return text
     return new_string.strip()
