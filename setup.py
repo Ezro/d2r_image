@@ -1,4 +1,7 @@
+import os
 from setuptools import setup, find_packages
+
+PKG_DIR = os.path.dirname(os.path.abspath(__file__))
 
 with open('README.md', 'r') as readme:
     long_description = readme.read()
@@ -29,6 +32,6 @@ setup(
         'parse',
     ],
     dependency_links = [
-        'https://github.com/simonflueckiger/tesserocr-windows_build/releases/download/tesserocr-v2.5.2-tesseract-4.1.1/tesserocr-2.5.2-cp39-cp39-win_amd64.whl'
+        f'file://localhost{PKG_DIR}/dependencies/tesserocr-2.5.2-cp39-cp39-win_amd64.whl'
     ]
 )
