@@ -11,6 +11,8 @@ import os
 import shutil
 import pkgutil
 from d2r_image.ocr_data import TrainedDataSets, OCR_WORKING_DIR, ERROR_RESOLUTION_MAP, I_1, II_U, One_I, OneOne_U, OCR_CONFIG
+from rapidfuzz.process import extractOne
+from rapidfuzz.string_metric import levenshtein
 
 
 if os.path.exists(OCR_WORKING_DIR):
@@ -117,7 +119,7 @@ def image_to_text(
             text = _fix_regexps(text)
         if check_known_errors:
             text = _check_known_errors(text)
-        if check_wordlist and any([x <= 88 for x in word_confidences]):
+        if check_wordlist and any([x <= 90 for x in word_confidences]):
             text = _check_wordlist(
                 text, word_list, word_confidences, word_match_threshold)
             text = text.replace(' NEWLINEHERE ', '\n')
@@ -240,13 +242,13 @@ def _check_known_errors(text):
     return text
 
 
-def _check_wordlist(text: str = None, word_list: str = None, confidences: list = [], match_threshold: float = 0.9) -> str:
+def _check_wordlist(text: str = None, word_list: str = None, confidences: list = [], match_threshold: float = 0.5) -> str:
     word_count = 0
     new_string = ""
     text = text.replace('\n', ' NEWLINEHERE ')
     for word in word_list:
         try:
-            if confidences[word_count] <= 88:
+            if confidences[word_count] <= 90:
                 if (word not in word_list) and (re.sub(r"[^a-zA-Z0-9]", "", word) not in word_list):
                     closest_match = difflib.get_close_matches(
                         word, word_list, cutoff=match_threshold)
@@ -268,5 +270,39 @@ def _check_wordlist(text: str = None, word_list: str = None, confidences: list =
         except:
             # logging.error(
             #     f"check_wordlist: Unknown error for word: {word}, index: {word_count}, text: {text}")
+            return text
+    return new_string.strip()
+
+
+def _check_wordlist(text: str = None, word_list: str = None, confidences: list = [], match_threshold: float = 0.5) -> str:
+    word_count = 0
+    new_string = ""
+    text = text.replace('\n', ' NEWLINEHERE ')
+    for word in word_list:
+        try:
+            if confidences[word_count] <= 90:
+                alphanumeric = re.sub(r"[^a-zA-Z0-9]", "", word)
+                if not alphanumeric.isnumeric() and (word not in word_list) and alphanumeric not in word_list:
+                    closest_match, similarity, _ = extractOne(word, word_list, scorer=levenshtein)
+                    normalized_similarity = 1 - similarity / len(word)
+                    if (normalized_similarity) >= (match_threshold):
+                        new_string += f"{closest_match} "
+                        logging.debug(
+                            f"check_wordlist: Replacing {word} ({confidences[word_count]}%) with {closest_match}, similarity={normalized_similarity*100:.1f}%")
+                    else:
+                        new_string += f"{word} "
+                else:
+                    new_string += f"{word} "
+            else:
+                new_string += f"{word} "
+            word_count += 1
+        except IndexError:
+            # bizarre word_count index exceeded sometimes... can't reproduce and words otherwise seem to match up
+            logging.error(
+                f"check_wordlist: IndexError for word: {word}, index: {word_count}, text: {text}")
+            return text
+        except Exception as e:
+            logging.error(
+                f"check_wordlist: Unknown error for word: {word}, index: {word_count}, text: {text}, exception: {e}")
             return text
     return new_string.strip()
