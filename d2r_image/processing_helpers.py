@@ -14,6 +14,7 @@ from pytest import Item
 from d2r_image.data_models import D2Item, GroundItem, GroundItemList, ItemQuality, ItemQualityKeyword, ItemText, ScreenObject
 from d2r_image.nip_data import NTIP_ALIAS_QUALITY_MAP
 from d2r_image.ocr import image_to_text
+from d2r_image.ocr_data import TrainedDataSets
 from d2r_image.processing_data import Runeword
 import d2r_image.d2data_lookup as d2data_lookup
 from d2r_image.processing_data import COLORS, EXPECTED_HEIGHT_RANGE, EXPECTED_WIDTH_RANGE, GAUS_FILTER, ITEM_COLORS, QUALITY_COLOR_MAP, UI_ROI, Runeword
@@ -76,7 +77,7 @@ def crop_text_clusters(inp_img: np.ndarray, padding_y: int = 5) -> list[ItemText
                     ))
     debug_str += f" | cluster: {time.time() - start}"
     cluster_images = [key["clean_img"] for key in item_clusters]
-    results = image_to_text(cluster_images, fast=True, psm=7)
+    results = image_to_text(cluster_images, model=TrainedDataSets.engd2r_inv_th_fast.value, psm=7)
     for count, cluster in enumerate(item_clusters):
         setattr(cluster, "ocr_result", results[count])
     return item_clusters

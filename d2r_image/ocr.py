@@ -10,18 +10,19 @@ from d2r_image.data_models import OcrResult
 import os
 import shutil
 import pkgutil
-from d2r_image.ocr_data import TRAINED_DATA_SETS, OCR_WORKING_DIR, ERROR_RESOLUTION_MAP, I_1, II_U, One_I, OneOne_U, WORD_LIST, OCR_CONFIG
+from d2r_image.ocr_data import TrainedDataSets, OCR_WORKING_DIR, ERROR_RESOLUTION_MAP, I_1, II_U, One_I, OneOne_U, OCR_CONFIG
 
 
 if os.path.exists(OCR_WORKING_DIR):
     shutil.rmtree(OCR_WORKING_DIR)
 os.mkdir(OCR_WORKING_DIR)
-for trained_data_base_name in TRAINED_DATA_SETS:
-    trained_data_path = os.path.join(OCR_WORKING_DIR, f'{trained_data_base_name}.traineddata')
+for trained_data in TrainedDataSets:
+    trained_data_path = os.path.join(
+        OCR_WORKING_DIR, f'{trained_data.value}.traineddata')
     file = open(trained_data_path, 'wb')
     trained_data = pkgutil.get_data(
         __name__,
-        f"resources/tessdata/{trained_data_base_name}.traineddata")
+        f"resources/tessdata/{trained_data.value}.traineddata")
     file.write(bytearray(trained_data))
 _word_list_data = pkgutil.get_data(
     __name__,
@@ -32,10 +33,12 @@ file = open(word_list_path, 'wb')
 file.write(bytearray(word_list, encoding='utf-8'))
 file.close()
 
+
 def image_to_text(
     images: Union[np.ndarray, List[np.ndarray]],
+    model: str = "engd2r_inv_th",
     psm: int = 3,
-    fast: bool = False,
+    word_list: str = word_list,
     scale: float = 1.0,
     crop_pad: bool = True,
     erode: bool = True,
@@ -45,7 +48,7 @@ def image_to_text(
     fix_regexps: bool = True,
     check_known_errors: bool = True,
     check_wordlist: bool = True,
-    word_match_threshold: float = 0.9
+    word_match_threshold: float = 0.5
 ) -> list[str]:
     """
     Uses Tesseract to read image(s)
@@ -70,20 +73,19 @@ def image_to_text(
     if type(images) == np.ndarray:
         images = [images]
     results = []
-    lang = TRAINED_DATA_SETS[1] if fast else TRAINED_DATA_SETS[0]
     api = PyTessBaseAPI(
         psm=psm,
         oem=OEM.LSTM_ONLY,
         path=OCR_WORKING_DIR,
-        lang=lang)
+        lang=model)
     api.ReadConfigFile(OCR_CONFIG)
     api.SetVariable("user_words_file", "all_strings.txt")
-    # api.SetSourceResolution(72 * scale)
+    #api.SetSourceResolution(72 * scale)
     for image in images:
         processed_img = image
         if scale:
             processed_img = cv2.resize(
-                processed_img, None, fx=scale, fy=scale, interpolation=cv2.INTER_NEAREST)
+                processed_img, None, fx=scale, fy=scale, interpolation=cv2.INTER_LINEAR)
         if erode:
             processed_img = erode_to_black(processed_img)
         if crop_pad:
@@ -104,6 +106,7 @@ def image_to_text(
             api.SetVariable("tessedit_char_blacklist",
                             ".,!?@#$%&*()<>_-+=/:;'\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
             api.SetVariable("tessedit_char_whitelist", "0123456789")
+            api.SetVariable("classify_bln_numeric_mode", "1")
         original_text = api.GetUTF8Text()
         text = original_text
         # replace newlines if image is a single line
@@ -238,7 +241,7 @@ def _check_wordlist(text: str = None, word_list: str = None, confidences: list =
     word_count = 0
     new_string = ""
     text = text.replace('\n', ' NEWLINEHERE ')
-    for word in WORD_LIST:
+    for word in word_list:
         try:
             if confidences[word_count] <= 88:
                 if (word not in word_list) and (re.sub(r"[^a-zA-Z0-9]", "", word) not in word_list):
