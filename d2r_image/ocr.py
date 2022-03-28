@@ -163,29 +163,32 @@ def _fix_regexps(ocr_output: str, repeat_count: int = 0) -> str:
     try:
         text = II_U.sub('U', ocr_output)
     except:
-        logging.error(f"Error _II_ -> _U_ on {ocr_output}")
+        # logging.error(f"Error _II_ -> _U_ on {ocr_output}")
         text = ocr_output
     # case: two 1's within a string; e.g., "S11PER MANA POTION"
     try:
         text = OneOne_U.sub('U', text)
     except:
-        logging.error(f"Error _11_ -> _U_ on {ocr_output}")
+        # logging.error(f"Error _11_ -> _U_ on {ocr_output}")
+        pass
     # case: an I within a number or by a sign; e.g., "+32I to mana attack rating"
     try:
         text = I_1.sub('1', text)
     except:
-        logging.error(f"Error I -> 1 on {ocr_output}")
+        # logging.error(f"Error I -> 1 on {ocr_output}")
+        pass
     # case: a 1 within a string; e.g., "W1RT'S LEG"
     try:
         text = One_I.sub('I', text)
     except:
-        logging.error(f"Error 1 -> I on {ocr_output}")
+        # logging.error(f"Error 1 -> I on {ocr_output}")
+        pass
     # case: a solitary I; e.g., " I TO 5 DEFENSE"
     cnt = 0
     while True:
         cnt += 1
         if cnt > 30:
-            logging.error(f"Error ' I ' -> ' 1 ' on {ocr_output}")
+            # logging.error(f"Error ' I ' -> ' 1 ' on {ocr_output}")
             break
         if " I " in text:
             text = text.replace(" I ", " 1 ")
@@ -202,7 +205,7 @@ def _fix_regexps(ocr_output: str, repeat_count: int = 0) -> str:
     while True:
         cnt += 1
         if cnt > 30:
-            logging.error(f"Error ' S ' -> ' 5 ' on {ocr_output}")
+            # logging.error(f"Error ' S ' -> ' 5 ' on {ocr_output}")
             break
         if " S " in text:
             text = text.replace(" S ", " 5 ")
@@ -220,7 +223,7 @@ def _fix_regexps(ocr_output: str, repeat_count: int = 0) -> str:
     while "II" in text:
         cnt += 1
         if cnt > 30:
-            logging.error(f"Error 4 on {ocr_output}")
+            # logging.error(f"Error 4 on {ocr_output}")
             break
         text = text.replace("II", "11")
         repeat = True
@@ -249,8 +252,7 @@ def _check_wordlist(text: str = None, word_list: str = None, confidences: list =
                         word, word_list, cutoff=match_threshold)
                     if closest_match and closest_match != word:
                         new_string += f"{closest_match[0]} "
-                        logging.debug(
-                            f"check_wordlist: Replacing {word} ({confidences[word_count]}%) with {closest_match[0]}, score=")
+                        # logging.debug(f"check_wordlist: Replacing {word} ({confidences[word_count]}%) with {closest_match[0]}, score=")
                     else:
                         new_string += f"{word} "
                 else:
@@ -260,11 +262,11 @@ def _check_wordlist(text: str = None, word_list: str = None, confidences: list =
             word_count += 1
         except IndexError:
             # bizarre word_count index exceeded sometimes... can't reproduce and words otherwise seem to match up
-            logging.error(
-                f"check_wordlist: IndexError for word: {word}, index: {word_count}, text: {text}")
+            # logging.error(
+            #     f"check_wordlist: IndexError for word: {word}, index: {word_count}, text: {text}")
             return text
         except:
-            logging.error(
-                f"check_wordlist: Unknown error for word: {word}, index: {word_count}, text: {text}")
+            # logging.error(
+            #     f"check_wordlist: Unknown error for word: {word}, index: {word_count}, text: {text}")
             return text
     return new_string.strip()
