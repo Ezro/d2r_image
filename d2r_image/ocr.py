@@ -125,9 +125,7 @@ def image_to_text(
             original_text=original_text,
             text=text,
             word_confidences=word_confidences,
-            mean_confidence=api.MeanTextConf(),
-            original_img=image,
-            processed_img=processed_img
+            mean_confidence=api.MeanTextConf()
         ))
     return results
 

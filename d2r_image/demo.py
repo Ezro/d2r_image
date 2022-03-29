@@ -82,7 +82,7 @@ def demo_hovered_items():
             image = Image.open(io.BytesIO(image_bytes))
             image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
             start = time.time()
-            item = get_hovered_item(image_data)
+            item, _ = get_hovered_item(image_data)
             x, y, w, h = item.roi
             cv2.rectangle(
                 image_data,
