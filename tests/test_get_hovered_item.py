@@ -29,6 +29,6 @@ def test_hovered_item(filename: str, inventory_side: str, expected_file: str):
         'resources',
         'get_hovered_item',
         expected_file)
-    result = processing.get_hovered_item(image, inventory_side)
+    result, _ = processing.get_hovered_item(image, inventory_side)
     expected = HoveredItem.from_json(open(expected_items_path).read())
     assert result == expected

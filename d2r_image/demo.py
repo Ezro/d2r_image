@@ -77,7 +77,7 @@ def get_hovered_items():
                 f'resources/demo_images/{resource_path}/{image_name}')
             image = Image.open(io.BytesIO(image_bytes))
             image_data = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
-            item = get_hovered_item(image_data, 'right' if resource_path == 'hover_right' else 'left')
+            item, _ = get_hovered_item(image_data, 'right' if resource_path == 'hover_right' else 'left')
             print(item)
             cv2.imshow('Hovered Item', image_data)
             cv2.waitKey()

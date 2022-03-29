@@ -9,14 +9,14 @@ D2R Image is a package aimed to help in providing an API for answering common qu
 - get_merc_health(image: np.ndarray) -> float
 <!-- - get_belt(image: np.ndarray) -> D2ItemList
 - get_inventory(image: np.ndarray) -> D2ItemList (WIP) -->
-- get_hovered_item(image: np.ndarray) -> HoveredItem
-<!-- - get_hovered_item(image: np.ndarray) -> D2Item | None 
-- get_npc_coords(npc: NPC) -> (x, y) | None 
-- find_items_by_name(name: str) -> list[(x, y)] | None 
-- whats_in_image(image: np.ndarray) -> TODO: SreenReport 
-- get_health(image: np.ndarray) -> float | None 
-- get_mana(image: np.ndarray) -> float | None 
-- get_stamina(image: np.ndarray) -> float | None 
+- get_hovered_item(image: np.ndarray) -> tuple[HoveredItem, ItemText]
+<!-- - get_hovered_item(image: np.ndarray) -> D2Item | None
+- get_npc_coords(npc: NPC) -> (x, y) | None
+- find_items_by_name(name: str) -> list[(x, y)] | None
+- whats_in_image(image: np.ndarray) -> TODO: SreenReport
+- get_health(image: np.ndarray) -> float | None
+- get_mana(image: np.ndarray) -> float | None
+- get_stamina(image: np.ndarray) -> float | None
 - get_experience(image: np.ndarray) -> float | None  -->
 ## GroundItem (List)
 ---
