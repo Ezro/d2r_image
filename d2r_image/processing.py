@@ -1,5 +1,5 @@
 import copy
-from typing import Tuple, Union
+from typing import Union
 import cv2
 import numpy as np
 from d2r_image import d2data_lookup
@@ -29,7 +29,7 @@ def get_ground_loot(image: np.ndarray) -> Union[GroundItemList, None]:
     return build_d2_items(items_by_quality)
 
 
-def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> Tuple[HoveredItem, ItemText]:
+def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> tuple[HoveredItem, ItemText]:
     """
     Crops visible item description boxes / tooltips
     :inp_img: image from hover over item of interest.
@@ -107,7 +107,7 @@ def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> Tuple[
     return None
 
 
-def get_npc_coords(image: np.ndarray, npc: ScreenObject) -> Tuple[int, int]:
+def get_npc_coords(image: np.ndarray, npc: ScreenObject) -> tuple[int, int]:
     match = detect_screen_object(npc, image)
     return match
 
