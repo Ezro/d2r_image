@@ -52,7 +52,7 @@ def load_lookup():
     for quality_key in ['armor', 'weapons']:
         for quality_item in item_lookup_by_display_name[quality_key]:
             bases_by_name[quality_item.upper().replace(' ', '')] = item_lookup_by_display_name[quality_key][quality_item]
-    for extra_base in ['amulet', 'ring', 'grandcharm', 'largecharm', 'smallcharm']:
+    for extra_base in ['amulet', 'ring', 'grandcharm', 'largecharm', 'smallcharm', 'jewel']:
         bases_by_name[extra_base.upper()] = item_lookup_by_display_name['misc'][extra_base]
     for consumable in [
         'key',

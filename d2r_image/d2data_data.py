@@ -20477,18 +20477,50 @@ ITEM_UNIQUE_ITEMS = {
                 "min": 3,
                 "max": 5
             },
-            "199":
-            {
-                "chance": 100,
-                "level": 29,
-                "skill": "Blaze"
-            },
-            "197":
-            {
-                "min": 100,
-                "max": 31,
-                "par": "Meteor"
-            },
+            "199":[
+                {
+                    "chance": 100,
+                    "level": 43,
+                    "skill": "Frost Nova"
+                },
+                {
+                    "chance": 100,
+                    "level": 29,
+                    "skill": "Blaze"
+                },
+                {
+                    "chance": 100,
+                    "level": 41,
+                    "skill": "Nova"
+                },
+                {
+                    "chance": 100,
+                    "level": 23,
+                    "skill": "Venom"
+                },
+            ],
+            "197":[
+                {
+                    "min": 100,
+                    "max": 37,
+                    "par": "Blizzard"
+                },
+                {
+                    "min": 100,
+                    "max": 31,
+                    "par": "Meteor"
+                },
+                {
+                    "min": 100,
+                    "max": 47,
+                    "par": "Chain Lightning"
+                },
+                {
+                    "min": 100,
+                    "max": 51,
+                    "par": "Poison Nova"
+                },
+            ],
             "50": 1,
             "51": 74,
             "334":
