@@ -1,10 +1,8 @@
-import re
 from parse import compile as compile_pattern
 from d2r_image.d2data_lookup import find_base_item_from_magic_item_text, find_pattern_match, find_set_item_by_name, find_unique_item_by_name, get_base, get_rune, is_base, is_rune
 from d2r_image.data_models import HoveredItem, ItemQuality
 from d2r_image.nip_data import NIP_ALIAS_STAT_PATTERNS, NIP_PATTERNS, NIP_RE_PATTERNS
 from d2r_image.processing_data import Runeword
-from d2r_image.nip_lookup import NTIP_ALIAS_CLASS_ID_BY_BASE, NTIP_TYPE_ID_BY_TYPE
 
 
 def parse_item(quality, item):
@@ -171,5 +169,8 @@ def find_nip_pattern_match(item_lines):
                         for split_key in key:
                             nip_alias_stat[split_key] = result.fixed[i]
                     else:
-                        nip_alias_stat[key] = result.fixed[i]
+                        if result.fixed:
+                            nip_alias_stat[key] = result.fixed[i]
+                        else:
+                            nip_alias_stat[key] = True
     return nip_alias_stat
