@@ -136,6 +136,25 @@ def get_stamina(image: np.ndarray) -> float:
 
 
 def get_experience(image: np.ndarray) -> float:
+    current_bar_roi = UI_ROI.experienceStart
+    starting_x = list(current_bar_roi)[0]
+    bar_offset = 51
+    for i in range(0, 10):
+        wip_bar_roi_list = list(current_bar_roi)
+        wip_bar_roi_list[0] = starting_x + (i * bar_offset)
+        current_bar_roi = tuple(wip_bar_roi_list)
+        experience_image = cut_roi(image, current_bar_roi)
+        # experience_image = cv2.cvtColor(experience_image, cv2.COLOR_BGR2GRAY)
+        #
+        cv2.imshow('im', experience_image)
+        cv2.waitKey()
+        #
+        _, thresh = cv2.threshold(experience_image, 5, 255, cv2.THRESH_BINARY)
+        experience_percentage = (float(np.sum(thresh)) / thresh.size) * (1/255.0) * 100
+        print(experience_percentage)
+    # mask, _ = color_filter(experience_image, COLORS["experience_bar"])
+    # _, thresh = cv2.threshold(experience_image, 5, 255, cv2.THRESH_BINARY)
+    # experience_percentage = (float(np.sum(thresh)) / thresh.size) * (1/255.0) * 100
     return 0
 
 
