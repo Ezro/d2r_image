@@ -1,8 +1,9 @@
 import os
+import re
 import sys
 from parse import compile as compile_pattern
 from d2r_image.data_models import HoveredItem, ItemQuality
-from d2r_image.d2data_data import ITEM_ARMOR, ITEM_MISC, ITEM_SET_ITEMS, ITEM_TYPES, ITEM_UNIQUE_ITEMS, ITEM_WEAPONS, REF_PATTERNS
+from d2r_image.d2data_data import ITEM_ARMOR, ITEM_MISC, ITEM_SET_ITEMS, ITEM_TYPES, ITEM_UNIQUE_ITEMS, ITEM_WEAPONS, REF_PATTERNS, MAGIC_PREFIXES, MAGIC_SUFFIXES
 from d2r_image.processing_data import Runeword
 
 
@@ -34,6 +35,7 @@ elif __file__:
     application_path = os.path.dirname(__file__)
 
 d2data_path = os.path.join(application_path, 'd2data')
+magic_regex = re.compile(r"(^[\w+|']+\s).*(\sOF.*)")
 
 def load_lookup():
     for key, val in item_lookup.items():
@@ -117,14 +119,29 @@ def find_set_item_by_name(name, fuzzy=False):
             if lev(normalized_name, item_key) < 3:
                 return item_lookup_by_quality_and_display_name[quality][item_key]
 
-def find_base_item_from_magic_item_text(magic_item_text):
-    normalized_name = normalize_name(magic_item_text)
+def find_base_item_from_magic_item_text(magic_item_text, item_is_identified):
+    name_to_normalize = magic_item_text
+    if item_is_identified:
+        result = magic_regex.findall(magic_item_text)
+        if result:
+            name_to_normalize = name_to_normalize.replace(result[0][0], '').replace(result[0][1], '')
+    normalized_name = normalize_name(name_to_normalize)
     if normalized_name in bases_by_name:
         return bases_by_name[normalized_name]
+    matches = []
     for base_item_name in bases_by_name:
         if base_item_name in normalized_name:
-            return bases_by_name[base_item_name]
+            matches.append(base_item_name)
     return None
+
+def magic_item_is_identified(magic_item_name):
+    for affix in MAGIC_PREFIXES:
+        if affix in magic_item_name:
+            return True
+    for affix in MAGIC_SUFFIXES:
+        if affix in magic_item_name:
+            return True
+    return False
 
 def is_base(name: str) -> bool:
     return normalize_name(name) in bases_by_name
@@ -168,66 +185,6 @@ def get_by_name(name: str):
         return get_gem(normalized_name)
     elif is_rune(normalized_name):
         return get_rune(normalized_name)
-
-def parse_item(quality, item):
-    item_is_identified = True
-    for line in item:
-        if line == 'UNIDENTIFIED':
-            item_is_identified = False
-            break
-    # The first line is usually the item name
-    # parsed_item["display_name"] = item[0]
-    # The second line is usually the type. Map it to be sure, (for now just setting to base_type)
-    # parsed_item["base_item"] = item[1]
-    base_name = item[1] if item_is_identified and quality not in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Magic.value, ItemQuality.Crafted.value] else item[0]
-    base_name = base_name.upper().replace(' ', '')
-    base_item = None
-    if quality == ItemQuality.Magic.value:
-        base_item = find_base_item_from_magic_item_text(base_name)
-    else:
-        if quality == ItemQuality.Crafted.value and is_rune(base_name):
-            base_item = get_rune(base_name)
-            quality = ItemQuality.Rune.value
-        else:
-            if not is_base(base_name):
-                raise Exception('Unable to find item base')
-            base_item = get_base(base_name)
-    # Add matches from item data
-    found_item = None
-    item_modifiers = {}
-    if item_is_identified:
-        if quality == ItemQuality.Unique.value:
-            found_item = find_unique_item_by_name(item[0])
-        elif quality == ItemQuality.Set.value:
-            found_item = find_set_item_by_name(item[0])
-        elif quality in [ItemQuality.Gray.value, ItemQuality.Normal.value, ItemQuality.Rune.value]:
-            found_item = base_item
-        if not found_item and quality not in [ItemQuality.Magic.value, ItemQuality.Rare.value]:
-            if quality == ItemQuality.Unique.value:
-                if not Runeword(item[0]):
-                    raise Exception('Unable to find item')
-                quality = ItemQuality.Runeword.value
-            else:
-                raise Exception('Unable to find item')
-        # parsed_item["item_data_matches"] = find_unique_item_by_name(parsed_item["display_name"]) | find_set_item_by_name(parsed_item["display_name"]) | get_base(parsed_item["base_item"])
-        # The next few lines help us determine
-        for line in item:
-            match = find_pattern_match(line)
-            if match:
-                # Store the property values
-                # if match["property_id"] not in parsed_item:
-                #     parsed_item[match["property_id"]] = []
-                # parsed_item[match["property_id"]].append(match["property_values"])
-                if match["property_id"] not in item_modifiers:
-                    item_modifiers[match["property_id"]] = []
-                item_modifiers[match["property_id"]].append(match["property_values"])
-    return HoveredItem(
-        name=item[0],
-        quality=quality,
-        baseItem=base_item,
-        item=found_item,
-        itemModifiers=item_modifiers if item_modifiers else None
-    )
 
 def find_pattern_match(text):
     match = None

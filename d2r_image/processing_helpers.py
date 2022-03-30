@@ -434,7 +434,8 @@ def set_gray_and_normal_and_magic_base_items(items_by_quality):
                         items_to_remove[quality].append(item)
         elif quality == ItemQuality.Magic.value:
             for item in items_by_quality[quality]:
-                base = d2data_lookup.find_base_item_from_magic_item_text(item['text'])
+                item_is_identified = d2data_lookup.magic_item_is_identified(item['text'])
+                base = d2data_lookup.find_base_item_from_magic_item_text(item['text'], item_is_identified)
                 if base:
                     item['base'] = base
                     if len(item['text'].lower().replace(base['DisplayName'].lower(), '').replace(' ', '')) > 0:
