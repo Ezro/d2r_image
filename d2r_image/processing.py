@@ -89,12 +89,14 @@ def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> tuple[
                     quality = ItemQuality.Unique.value
                 elif contains_yellow:
                     quality = ItemQuality.Rare.value
-                elif contains_gray:
-                    quality = ItemQuality.Gray.value
                 elif contains_blue:
                     quality = ItemQuality.Magic.value
                 elif contains_orange:
                     quality = ItemQuality.Crafted.value
+                elif contains_white:
+                    quality = ItemQuality.Normal.value
+                elif contains_gray:
+                    quality = ItemQuality.Gray.value
                 else:
                     quality = ItemQuality.Normal.value
                 ocr_result = image_to_text(cropped_item, psm=6)[0]
