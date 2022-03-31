@@ -13,6 +13,7 @@ BOX_EXPECTED_HEIGHT_RANGE = [24, 710]
 ITEM_COLORS = ['white', 'gray', 'blue', 'green', 'yellow', 'gold', 'orange']
 
 
+# h_min, s_min, v_min, h_max, s_max, v_max
 COLORS = {
     "black": "0, 0, 0, 180, 255, 15",
     "black_descr": "0, 0, 0, 180, 255, 25",
@@ -32,12 +33,11 @@ COLORS = {
     "skill_charges": "70, 30, 25, 150, 163, 255",
     "health_globe_red": "178, 110, 20, 183, 255, 255",
     "health_globe_green": "47, 90, 20, 54, 255, 255",
-    "mana_globe": "117, 120, 20, 121, 255, 255",
+    "mana_globe": "117, 120, 20, 121, 255, 255"
 }
 
 
 # min and max hsv range (opencv format: h: [0-180], s: [0-255], v: [0, 255])
-# h_min, s_min, v_min, h_max, s_max, v_max
 for key in COLORS:
     COLORS[key] = np.split(np.array([int(x)
                            for x in COLORS[key].split(",")]), 2)
@@ -56,6 +56,7 @@ class UI_ROI:
     offlineOnline = (1030, 16, 232, 31)
     mercHealthSlice = (15, 14, 40, 1)
     belt = (722, 560, 166, 156)
+    experienceStart = (388, 662, 48, 5)
 
 # UI_ROI = {
 #     "chat_line_1": (12, 537, 391, 25),

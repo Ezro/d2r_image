@@ -39,7 +39,7 @@ def parse_item(quality, item):
     base_name = base_name.upper().replace(' ', '')
     base_item = None
     if quality == ItemQuality.Magic.value:
-        base_item = find_base_item_from_magic_item_text(base_name)
+        base_item = find_base_item_from_magic_item_text(cleaned_lines[0], item_is_identified)
     else:
         if quality == ItemQuality.Crafted.value and is_rune(base_name):
             base_item = get_rune(base_name)

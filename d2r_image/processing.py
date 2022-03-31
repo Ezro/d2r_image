@@ -89,12 +89,14 @@ def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> tuple[
                     quality = ItemQuality.Unique.value
                 elif contains_yellow:
                     quality = ItemQuality.Rare.value
-                elif contains_gray:
-                    quality = ItemQuality.Gray.value
                 elif contains_blue:
                     quality = ItemQuality.Magic.value
                 elif contains_orange:
                     quality = ItemQuality.Crafted.value
+                elif contains_white:
+                    quality = ItemQuality.Normal.value
+                elif contains_gray:
+                    quality = ItemQuality.Gray.value
                 else:
                     quality = ItemQuality.Normal.value
                 ocr_result = image_to_text(cropped_item, psm=6)[0]
@@ -134,6 +136,25 @@ def get_stamina(image: np.ndarray) -> float:
 
 
 def get_experience(image: np.ndarray) -> float:
+    current_bar_roi = UI_ROI.experienceStart
+    starting_x = list(current_bar_roi)[0]
+    bar_offset = 51
+    for i in range(0, 10):
+        wip_bar_roi_list = list(current_bar_roi)
+        wip_bar_roi_list[0] = starting_x + (i * bar_offset)
+        current_bar_roi = tuple(wip_bar_roi_list)
+        experience_image = cut_roi(image, current_bar_roi)
+        # experience_image = cv2.cvtColor(experience_image, cv2.COLOR_BGR2GRAY)
+        #
+        cv2.imshow('im', experience_image)
+        cv2.waitKey()
+        #
+        _, thresh = cv2.threshold(experience_image, 5, 255, cv2.THRESH_BINARY)
+        experience_percentage = (float(np.sum(thresh)) / thresh.size) * (1/255.0) * 100
+        print(experience_percentage)
+    # mask, _ = color_filter(experience_image, COLORS["experience_bar"])
+    # _, thresh = cv2.threshold(experience_image, 5, 255, cv2.THRESH_BINARY)
+    # experience_percentage = (float(np.sum(thresh)) / thresh.size) * (1/255.0) * 100
     return 0
 
 
