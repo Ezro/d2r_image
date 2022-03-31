@@ -12,7 +12,7 @@ class OcrResult:
     word_confidences: list = None
     mean_confidence: float = None
 
-    def __getitem__(key):
+    def __getitem__(self, key):
         return super().__getattribute__(key)
 
 

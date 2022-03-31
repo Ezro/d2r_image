@@ -36,6 +36,7 @@ def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> tuple[
     :param all_results: whether to return all possible results (True) or the first result (False)
     :inventory_side: enter either "left" for stash/vendor region or "right" for user inventory region
     """
+    res = ItemText()
     black_mask, _ = color_filter(image, COLORS["black"])
     contours = cv2.findContours(
         black_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -99,14 +100,13 @@ def get_hovered_item(image: np.ndarray, inventory_side: str = "right") -> tuple[
                     quality = ItemQuality.Gray.value
                 else:
                     quality = ItemQuality.Normal.value
-                ocr_result = image_to_text(cropped_item, psm=6)[0]
-                res = ItemText(
-                    roi = [x, y, w, h],
-                    img = cropped_item,
-                    ocr_result = ocr_result
-                )
-                return parse_item(quality, ocr_result.text), res
-    return None
+                res.ocr_result = image_to_text(cropped_item, psm=6)[0]
+                res.roi = [x, y, w, h]
+                res.img = cropped_item
+                break
+    try: parsed_item = parse_item(quality, res.ocr_result.text)
+    except: parsed_item = None
+    return parsed_item, res
 
 
 def get_npc_coords(image: np.ndarray, npc: ScreenObject) -> tuple[int, int]:
