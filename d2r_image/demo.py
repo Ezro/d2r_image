@@ -57,12 +57,12 @@ def get_ground_loot():
             demo_image_count += 1
     # print('\n')
     print(f'Processing all {demo_image_count} image(s) took {round(total_elapsed_time, 2)} ({round(total_elapsed_time / demo_image_count, 2)} avg)')
-    keyboard.add_hotkey('f12', lambda: os._exit(1))
-    print('Press f12 to quit')
     for image in all_image_data:
         cv2.imshow('D2R Image Demo', image)
         cv2.waitKey()
     cv2.destroyAllWindows()
+    keyboard.add_hotkey('f12', lambda: os._exit(1))
+    print('Press f12 to quit')
 
 
 def get_hovered_items():

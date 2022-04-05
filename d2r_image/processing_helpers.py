@@ -30,11 +30,8 @@ gold_regex = re.compile(r'(^[0-9]+)\sGOLD')
 
 
 def crop_text_clusters(inp_img: np.ndarray, padding_y: int = 5) -> list[ItemText]:
-    start = time.time()
     cleaned_img = clean_img(inp_img)
-    debug_str = f" | clean: {time.time() - start}"
     # Cluster item names
-    start = time.time()
     item_clusters = []
     for key in ITEM_COLORS:
         _, filtered_img = color_filter(cleaned_img, COLORS[key])
@@ -75,7 +72,6 @@ def crop_text_clusters(inp_img: np.ndarray, padding_y: int = 5) -> list[ItemText
                         img=cropped_item,
                         clean_img=cleaned_img[y:y+h, x:x+w]
                     ))
-    debug_str += f" | cluster: {time.time() - start}"
     cluster_images = [key["clean_img"] for key in item_clusters]
     results = image_to_text(cluster_images, model=TrainedDataSets.engd2r_inv_th_fast.value, psm=7)
     for count, cluster in enumerate(item_clusters):
@@ -459,7 +455,7 @@ def set_set_and_unique_base_items(items_by_quality):
             if 'item' in item:
                 continue
             item['identified'] = False
-            if quality == ItemQuality.Unique.value:
+            if quality == ItemQuality.Unique.value and 'uniques' in item['base']:
                 if len(item['base']['uniques']) == 1:
                     unique_name = item['base']['uniques'][0].replace('_', ' ').upper()
                     item['item'] = d2data_lookup.find_unique_item_by_name(unique_name, True)
@@ -469,7 +465,7 @@ def set_set_and_unique_base_items(items_by_quality):
                     for unique_item in item['base']['uniques']:
                         unique_name = unique_item.replace('_', ' ').upper()
                         item['uniqueItems'].append(d2data_lookup.find_unique_item_by_name(unique_name, True))
-            elif quality == ItemQuality.Set.value:
+            elif quality == ItemQuality.Set.value and 'sets' in item['base']:
                 if len(item['base']['sets']) == 1:
                     set_name = item['base']['sets'][0]
                     item['item'] = d2data_lookup.find_set_item_by_name(set_name, ItemQuality.Set)
@@ -486,30 +482,33 @@ def build_d2_items(items_by_quality: dict) -> Union[GroundItemList, None]:
     d2_items = ground_item_list.items
     for quality in items_by_quality:
         for item in items_by_quality[quality]:
-            new_item = GroundItem(
-                BoundingBox={
-                    'x': item['x'],
-                    'y': item['y'],
-                    'w': item['w'],
-                    'h': item['h'],
-                },
-                Name=item['name'] if 'name' in item else item['text'],
-                Quality=item['quality'].value,
-                Text=item['text'],
-                BaseItem=item['base'],
-                Item=item['item'] if 'item' in item and item['item'] != item['base'] else None,
-                NTIPAliasType=item['base']['NTIPAliasType'],
-                NTIPAliasClassID=item['base']['NTIPAliasClassID'],
-                NTIPAliasClass=item['base']['NTIPAliasClass'] if 'NTIPAliasClass' in item['base'] else None,
-                NTIPAliasQuality=NTIP_ALIAS_QUALITY_MAP[item['quality'].value],
-                NTIPAliasFlag={
-                    '0x10': item['identified'],
-                    '0x4000000': item['quality'] == ItemQuality.Runeword
-                }
-            )
-            if d2_items is None:
-                d2_items = []
-            d2_items.append(new_item)
+            try:
+                new_item = GroundItem(
+                    BoundingBox={
+                        'x': item['x'],
+                        'y': item['y'],
+                        'w': item['w'],
+                        'h': item['h'],
+                    },
+                    Name=item['name'] if 'name' in item else item['text'],
+                    Quality=item['quality'].value,
+                    Text=item['text'],
+                    BaseItem=item['base'],
+                    Item=item['item'] if 'item' in item and item['item'] != item['base'] else None,
+                    NTIPAliasType=item['base']['NTIPAliasType'],
+                    NTIPAliasClassID=item['base']['NTIPAliasClassID'],
+                    NTIPAliasClass=item['base']['NTIPAliasClass'] if 'NTIPAliasClass' in item['base'] else None,
+                    NTIPAliasQuality=NTIP_ALIAS_QUALITY_MAP[item['quality'].value],
+                    NTIPAliasFlag={
+                        '0x10': item['identified'],
+                        '0x4000000': item['quality'] == ItemQuality.Runeword
+                    }
+                )
+                if d2_items is None:
+                    d2_items = []
+                d2_items.append(new_item)
+            except Exception as e:
+                print(f'failed on item: {item} with error {e}')
     return ground_item_list
 
 

@@ -11,6 +11,7 @@ from d2r_image.data_models import D2ItemList, GroundItemList
     ("ground3.png", 'ground3.json'),
     ('ground7.png', 'ground7.json'),
     ("ground13.png", 'ground13.json'),
+    ("ground14.png", "ground14.json")
 ])
 def test_ground_loot(filename, expected_items_file):
     image_path = os.path.join(
@@ -29,7 +30,7 @@ def test_ground_loot(filename, expected_items_file):
     assert len(d2_items.items) == len(ground_expected.items)
     for item in ground_expected.items:
         assert item in d2_items.items
-    
+
 
 def generate_ground_loot_json(image_filename):
     image_path = os.path.join(
