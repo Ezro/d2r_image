@@ -42,5 +42,7 @@ ERROR_RESOLUTION_MAP = {
     'TWYO': 'TWO',
     'ATTRIOUTES': 'ATTRIBUTES',
     'MONARCHI': 'MONARCH',
-    '10 RUNE': 'IO RUNE'
+    '10 RUNE': 'IO RUNE',
+    '1O RUNE': 'IO RUNE',
+    'I0 RUNE': 'IO RUNE'
 }
